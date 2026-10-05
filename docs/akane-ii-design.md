@@ -2,7 +2,7 @@
 
 **Studio:** Ludic Studios
 **Protagonist:** Sugahara Akane
-**Status:** Draft v0.3 (pre-production)
+**Status:** Draft v0.4 (pre-production)
 **Scope:** Design only. No implementation is covered here.
 
 > Names for enemies, bosses, moves and zones are **working titles**. Items marked **[TBD]** need a decision or input from the team (several depend on the original *Akane*).
@@ -25,6 +25,7 @@
 9. [Story and Presentation](#9-story-and-presentation)
 10. [Platforms and Input](#10-platforms-and-input)
 11. [Risks and Open Questions](#11-risks-and-open-questions)
+12. [Post-launch and Scope](#12-post-launch-and-scope)
 
 Appendices: [A. Decisions Log](#appendix-a-decisions-log) · [B. Original-Game Verification Checklist](#appendix-b-original-game-verification-checklist)
 
@@ -47,10 +48,11 @@ A highly unique pixel art style that blends **Japanese ink wash (sumi-e)** with 
 - Background parallax and ink-bleed effects are kept out of the combat plane.
 - Akane has a distinct silhouette and a reserved palette, visible even among 10+ enemies.
 
-**Open art questions**
+**Decided art rules**
 
-- Ink wash effect in motion: how much animated bleeding or splatter on hits and kills? **[TBD]**
-- Color palette per map zone versus one unified palette. **[TBD]**
+- **Ink effects:** *bold on kills, restrained elsewhere.* Kills get a satisfying ink splash. Hits and movement get subtle effects, so the combat plane stays readable in crowded waves and on Switch.
+- **Palette:** a **shared ink wash base** for the whole game, with **one accent hue per zone** (for example, neon pink for the Plaza and teal for the Canals). Zone accents must never clash with the reserved telegraph and boss accent colors.
+- **Cyberpunk and ink wash together:** the ink wash is **how Akane sees and remembers the city**. Neon and technology show through as bright ink accents. This also connects to the original's flashback ending and gives Ink Step and the ink effects a story reason.
 
 ---
 
@@ -103,7 +105,7 @@ The original's core was strong, so Akane II tunes it rather than redesigns it.
 
 ### 3.3 Dash (carried over)
 
-A short, fast movement burst. Keeps its role as the player's basic repositioning and gap-closing tool. Limited by a short cooldown or charge system **[TBD]**.
+A short, fast movement burst. Keeps its role as the player's basic repositioning and gap-closing tool. Limited by **charges**: Akane has **2 dash charges** that recharge over time (about 1.5 seconds each **[TBD: tune]**). A successful Ink Step refunds one charge, which is why precise play lets players chain dashes.
 
 ### 3.4 Precise dodge: *Ink Step* (working title)
 
@@ -113,7 +115,7 @@ The new, more precise defensive move that adds depth beyond the dash.
 - **Reward:** refunds the dash, and opens a brief counter-attack window or a safe reposition. It never grants invulnerability beyond the dodge itself.
 - **Design constraint:** attack timing must be consistent. Every enemy telegraph has a fixed, learnable duration so the window is fair across the roster.
 - **Risk:** a failed dodge is a normal hit, which means death. Dash remains the safe option. Ink Step is the high-skill, high-reward one.
-- **Directional variants:** [TBD: single dodge or directional (forward/back/vertical)].
+- **Direction:** one dodge move whose direction comes from the player's input (the stick or movement keys), including up and down on the vertical map. No separate dodge types to learn.
 
 ### 3.5 Human shields
 
@@ -121,7 +123,8 @@ Akane grabs an enemy and uses them as a shield.
 
 - **Grab:** a short-range grab that targets standard-sized enemies. Not usable on bosses or heavy enemy types.
 - **Effect:** the held enemy absorbs hits from the front. Enemy projectiles that strike the shield kill it; melee hits from enemies may also hit the shield rather than Akane, depending on enemy type.
-- **Hold limit:** a short hold timer (about 3–4 seconds) or a limited number of absorbed hits, so shields are a tool and not a permanent state **[TBD]**.
+- **Hold limit:** the shield absorbs **3 hits, then breaks**. Heavy fire therefore wears it down faster, and there is no timer.
+- **Standing still can be punished, softly.** In the original you could stand still, aim and gun down a crowd, but you had to keep moving to keep up the combo. The same holds here: combo scoring decays when Akane stays put (see §8), so a stationary shield works but costs score.
 - **Mobility:** Akane moves at reduced speed and cannot dash while holding a shield. She can still attack with the gun or release the shield.
 - **Release options:** **throw** (the enemy becomes a projectile that damages others on impact) or **drop**.
 - **Abuse prevention:** enemies with area attacks, armored enemies and some special types ignore or break the shield. The grab has a cooldown.
@@ -269,7 +272,7 @@ The map is a single **vertical Mega-Tokyo tower district**, divided into **5 zon
 
 - **Ziplines:** one-way or two-way. They can be cut or disabled by certain enemies or bosses.
 - **Climbable walls and ledges:** short vertical shortcuts.
-- **Launch points** (updrafts, springs) **[TBD]**: fast ascent options.
+- **Launch points:** a **few fixed updrafts and springs** on key routes, so every player has some vertical options. The Updraft Fan gadget still adds more, in places of the player's choosing.
 - **Drops and slides:** fast descent.
 - **Shortcut gates:** locked in one direction, openable from the other side.
 
@@ -299,7 +302,7 @@ Enemies arrive in **waves** across the whole map. The game is infinite, with dif
   - **Timer length** scales with wave size and map distance **[TBD: tune in playtests]**.
   - **Boss waves** have no timer. They end when the boss dies.
 - A short **breather** between waves for pickups, route changes and positioning.
-- **Boss waves** every **10 waves**, see §7. A short **elite event** at wave 5 (and every 10 after) keeps the gap between bosses from feeling empty **[TBD]**.
+- **Boss waves** every **10 waves**, see §7. An **elite event** at waves 5, 15, 25 and so on (a short wave of elite or modified enemies with a score bonus) keeps the gap between bosses from feeling empty.
 - Difficulty scales through enemy count, enemy mix, spawn pressure and elite or modified enemies. Individual enemy lethality does not scale, because everything is already one-hit.
 
 ### 5.2 Spawning on a large map
@@ -419,7 +422,7 @@ Alter the map during the fight: collapse a bridge, flood a tunnel, cut a zipline
 | **The Demolisher** | Arena-shifting | Operates a wrecking rig that collapses sections of rooftops and bridges, shrinking safe ground |
 | **The Floodgate Warden** | Arena-shifting | Floods and drains the Underpass, shifting routes between phases |
 
-**Initial target:** 6 bosses (2 per type), with room for more post-launch **[TBD]**. Full designs are in §7.5.
+**Initial target:** 6 bosses (2 per type), with more bosses planned for the paid expansion (see §12). Full designs are in §7.5.
 
 ### 7.4 Boss design rules
 
@@ -623,8 +626,9 @@ The keeper of the old floodgates under the district, who sells control of the ca
 - **Score** comes from kills, combos, style actions (Ink Steps, human shield kills, zipline kills, bullet deflects), speed and boss clears.
 - **Unlocks** come from mastery challenges. They add options, never power.
 - **Secrets** give score bonuses, cosmetic unlocks and lore fragments. They must not provide power advantages.
-- **Cosmetic unlocks** (outfits, cigarette ink styles, sword trails) **[TBD]**.
-- **Leaderboards** by wave reached, score and time **[TBD]**.
+- **Combo scoring** decays when Akane stands still, and kills, style actions and movement refill it. It lets players stand and shoot, but rewards keeping the pace up **[TBD: tune the decay]**.
+- **Cosmetics** (no gameplay effect, never at the cost of readability): **outfits**, **cigarette ink styles** and **sword trails and kill effects**, unlocked through milestones and challenges.
+- **Leaderboards:** a main **score** board (kills, combos, style, speed) and a separate **waves reached** board. Not split by input device.
 
 ---
 
@@ -644,10 +648,14 @@ There is no campaign. Story is delivered lightly, with **light continuity** from
 - **Katsuro** returns as her Nemesis and the face of that pursuit.
 - New bosses are lieutenants or hired killers from the same network, so they reuse the setting without needing a new plot.
 - Story is told through short intro text, boss and enemy flavor text, environmental details and lore fragments found in secret rooms.
-- The ink wash style can be justified as the way Akane remembers and sees the city, and its mix with Mega-Tokyo's cyberpunk setting should be explicit in art direction **[TBD]**.
+- The ink wash style is the way Akane remembers and sees the city (see §1).
 - Menus, UI and audio should carry the same ink wash identity as the art.
 
-**Audio direction [TBD]:** traditional instrumentation with a modern pulse, adaptive intensity across wave bands, strong audio cues for telegraphs and off-screen threats.
+**Audio direction:** **traditional instruments over an electronic pulse.** Shamisen, taiko and shakuhachi sit over synth bass and drums, matching the ink wash and cyberpunk mix.
+
+- **Adaptive layers** intensify with the wave band and calm during the breather.
+- **Boss themes** are built around each boss's signature audio motif (§7.5).
+- **Gameplay audio** has strong cues for telegraphs and for off-screen or behind-the-player threats.
 
 ---
 
@@ -669,7 +677,13 @@ There is no campaign. Story is delivered lightly, with **light continuity** from
 - **Rebinding:** full remapping on both.
 - **Gadget and special inputs** must be reachable without leaving movement or aim, on both schemes.
 - **Leaderboards** are not split by input device **[TBD: confirm after playtests show whether aiming creates a gap]**.
-- **Accessibility [TBD]:** one-handed layout options, hold-versus-toggle options, adjustable telegraph visibility and hit-stop strength.
+
+### 10.3 Accessibility (all ship at launch)
+
+- **Hold/toggle and one-handed layouts:** hold-versus-toggle for every held input, and a one-handed preset on both gamepad and keyboard/mouse.
+- **Adjustable telegraph visibility:** larger or higher-contrast telegraphs and an audio-cue volume slider. Timing is never changed by these options.
+- **Hit-stop and screen shake sliders**, including a reduced-flash mode.
+- **Assist options:** optional aids such as wider Ink Step windows or slower game speed. Clearly marked, and runs that use them are kept off the main leaderboards.
 
 ---
 
@@ -693,8 +707,14 @@ There is no campaign. Story is delivered lightly, with **light continuity** from
 - [ ] Original game facts: see [Appendix B](#appendix-b-original-game-verification-checklist).
 - [ ] Tuning values: wave timers, special meter costs, vulnerability window lengths, performance budgets.
 - [ ] Map scale and crossing time (prototype).
-- [ ] Multiplayer or co-op (currently out of scope).
-- [ ] Post-launch content plan (more bosses, enemies, map areas).
+- [ ] Combo decay rate and the stand-still penalty.
+
+---
+
+## 12. Post-launch and Scope
+
+- **Plan:** free fixes and balance updates, then free events, and **one paid expansion** adding bosses, enemies and a new map area.
+- **Multiplayer and co-op are out of scope.** The AI, attack-token and flanking systems and the one-hit-kill balance are designed around a single player.
 
 ---
 
@@ -708,6 +728,17 @@ There is no campaign. Story is delivered lightly, with **light continuity** from
 | Wave advancement | Hybrid: clear or pressure timer. No timer on boss waves |
 | Dragon Slayer | Clears standard enemies in a large radius. Counts as one phase-ending hit on a boss during a vulnerability window. Meter about 40 kills |
 | Map | Vertical Mega-Tokyo tower district with 5 zones: Neon Plaza, Underpass Canals, Rooftop Signage, Shrine Heights, Hidden Network |
+| Dash | 2 charges that recharge over time. A successful Ink Step refunds one |
+| Ink Step | One dodge whose direction comes from input |
+| Human shield | Absorbs 3 hits, then breaks. Standing still is softly punished through combo decay |
+| Launch points | A few fixed updrafts and springs, plus the Updraft Fan gadget |
+| Elite events | At waves 5, 15, 25 and so on |
+| Art | Bold ink splashes on kills only. Shared ink base with one accent hue per zone. Ink wash is Akane's perception of the city |
+| Cosmetics | Outfits, cigarette ink styles, sword trails and kill effects |
+| Leaderboards | Score board plus waves-reached board, not split by input |
+| Audio | Traditional instruments over an electronic pulse |
+| Accessibility | Hold/toggle and one-handed layouts, telegraph visibility, hit-stop and shake sliders, assist options. All at launch |
+| Post-launch | Free updates, then one paid expansion. No multiplayer or co-op |
 | Platforms | PC and Nintendo Switch |
 | Input | Gamepad-first, with keyboard and mouse equally satisfying |
 | Boss types | Roaming, arena-shifting and standard duel |

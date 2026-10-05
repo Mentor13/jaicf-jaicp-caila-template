@@ -1,6 +1,6 @@
 # Akane II — Boss Move Lists
 
-Companion to [akane-ii-design.md](akane-ii-design.md) (§7 Bosses). Phase structure, vulnerability windows and evolution tables live in §7.5 of the main doc. This document adds the **move lists**, **intro and kill moments**, and **par times**.
+Companion to [akane-ii-design.md](akane-ii-design.md) (§7 Bosses). Phase structure, vulnerability windows, boss tiers and evolution tables live in §7.1 and §7.5 of the main doc. This document adds the **move lists**, **intro and kill moments**, and **par times**.
 
 > Times and distances are starting values for tuning. Telegraph tiers (Quick 0.35 s, Standard 0.55 s, Heavy 0.8 s, Long 1.0 s) are defined in [akane-ii-enemies.md](akane-ii-enemies.md). Boss attacks may use longer telegraphs, never shorter.
 
@@ -14,7 +14,7 @@ Companion to [akane-ii-design.md](akane-ii-design.md) (§7 Bosses). Phase struct
 6. [The Crimson Kite](#6-the-crimson-kite)
 7. [The Demolisher](#7-the-demolisher)
 8. [The Floodgate Warden](#8-the-floodgate-warden)
-9. [Overdrive moves](#9-overdrive-moves-wave-75-and-wave-100)
+9. [Tier 5 and tier 6 moves](#9-tier-5-and-tier-6-moves-wave-150-and-200)
 10. [Intro and kill moments](#10-intro-and-kill-moments)
 
 ---
@@ -46,7 +46,7 @@ A boss's par time is the **expected time per phase** for a competent first attem
 
 ## 3. Katsuro
 
-*Standard Duel. Tests reading dashes and Ink Step. Evolves across appearances.*
+*Standard Duel. Tests reading dashes and Ink Step. Gains moves by wave tier.*
 
 ### 3.1 Move list
 
@@ -63,9 +63,10 @@ A boss's par time is the **expected time per phase** for a competent first attem
 ### 3.2 Phase pattern
 
 - **Phase 1, Duelist:** Blood Line, Return Cut, Crescent Slash.
-- **Phase 2, Gunslinger:** adds Pistol Volley and Quickstep. Appears from his second appearance.
-- **Phase 3, Master:** adds Seven Rivers. Appears from his third appearance.
-- **Fourth appearance and later:** Mirror Step and recombined patterns. Windows become tighter by a small amount.
+- **Phase 2, Gunslinger:** adds Pistol Volley and Quickstep. Appears from **Tier 2** (wave 30+).
+- **Phase 3, Master:** adds Seven Rivers. Appears from **Tier 3** (wave 60+).
+- **Tier 4** (wave 100+): Mirror Step and recombined patterns. Windows become tighter by a small amount.
+- **Tiers 5 and 6** (wave 150+ and 200+): Twin Rivers and Final Draw (see §9).
 
 ### 3.3 Design notes
 
@@ -97,7 +98,7 @@ A boss's par time is the **expected time per phase** for a competent first attem
 
 ## 5. The Hunter
 
-*Roaming. Tests awareness and positioning. Evolves.*
+*Roaming. Tests awareness and positioning. Gains moves by wave tier.*
 
 ### 5.1 Move list
 
@@ -107,8 +108,8 @@ A boss's par time is the **expected time per phase** for a competent first attem
 | **Cloak Step** | 1+ | None (a reposition) | He moves to a new position, fully cloaked | Listen for the whisper | None |
 | **Decoy Echo** | 2+ | Long | Cloaked decoys also lunge | Find the real one, or **EMP** to reveal | A hit on the real one during its recovery |
 | **Wire Sweep** | 3+ | Heavy (0.8 s) | A wire whip sweeps a wide arc, cutting routes | Jump or dash through the gap | The end of the sweep (1.0 s) |
-| **Wire Trap** *(evolution 2)* | any | Standard | Strings wire across a zipline or corridor, which triggers when touched | Avoid or cut it | None |
-| **Spotter Drones** *(evolution 3)* | any | Standard | Releases drones that reveal Akane's location | Destroy the drones | None |
+| **Wire Trap** *(Tier 2+)* | any | Standard | Strings wire across a zipline or corridor, which triggers when touched | Avoid or cut it | None |
+| **Spotter Drones** *(Tier 3+)* | any | Standard | Releases drones that reveal Akane's location | Destroy the drones | None |
 
 ### 5.2 Design notes
 
@@ -141,7 +142,7 @@ A boss's par time is the **expected time per phase** for a competent first attem
 
 ## 7. The Demolisher
 
-*Arena-shifting. Tests route planning. Evolves.*
+*Arena-shifting. Tests route planning. Gains moves by wave tier.*
 
 ### 7.1 Move list
 
@@ -153,8 +154,8 @@ A boss's par time is the **expected time per phase** for a competent first attem
 | **Zipline Snap** | 2+ | Standard | Cuts a zipline | Use another route | None |
 | **Cab Reload** | 2+ | None | The crane arm lowers to reload | Reach the cab (by zipline) | The reload (2.0 s) |
 | **Last Swing** | 3+ | Heavy | Wide swings across what remains of the roof | Time the gaps | The arm sticks after a wide miss (1.5 s) |
-| **Grabber Claw** *(evolution 2)* | 2+ | Standard | A claw pulls a zipline down and drags Akane toward the ball | Cut or dodge the claw | The claw retracting |
-| **Scaffold Drop** *(evolution 3)* | 3+ | Heavy | Drops unstable scaffolding as hazard platforms | Avoid, or use as footing briefly | None |
+| **Grabber Claw** *(Tier 2+)* | 2+ | Standard | A claw pulls a zipline down and drags Akane toward the ball | Cut or dodge the claw | The claw retracting |
+| **Scaffold Drop** *(Tier 3+)* | 3+ | Heavy | Drops unstable scaffolding as hazard platforms | Avoid, or use as footing briefly | None |
 
 ### 7.2 Design notes
 
@@ -184,11 +185,11 @@ A boss's par time is the **expected time per phase** for a competent first attem
 
 ---
 
-## 9. Overdrive moves (wave 75+ and wave 100+)
+## 9. Tier 5 and tier 6 moves (wave 150+ and 200+)
 
-The three evolving bosses gain extra moves in the endgame (see the story and modes document, §6). Overdrive II (wave 75-99) adds the **fifth-tier** move, and Overdrive III (wave 100+) adds the **sixth-tier** move. Par times increase by 10% per tier.
+The three bosses that gain moves by tier (see the main doc §7.1 for the tier table) get one extra move each at **Tier 5** (waves 150-199) and **Tier 6** (waves 200+). Par times increase by 10% per tier from Tier 4. Tiers 5 and 6 are expected to be rare, and exist for the top of the leaderboards.
 
-| Boss | Fifth-tier move | Sixth-tier move |
+| Boss | Tier 5 move | Tier 6 move |
 |---|---|---|
 | **Katsuro** | **Twin Rivers:** two Seven Rivers paths drawn at once, with a shared safe gap | **Final Draw:** the full path is drawn in reverse after the strike, forcing a second read |
 | **The Hunter** | **Wire Web:** a net of wires strung across a zone, with a visible gap | **Silent Pair:** a decoy Hunter that lunges in sync with the real one |

@@ -162,22 +162,16 @@ After wave 50 the run enters **Overdrive.** No new content is required: escalati
 | Tier | Waves | Escalation |
 |---|---|---|
 | **Overdrive I** | 50-74 | Modifier chance on non-boss enemies rises to 30%. Elite events can combine two themes. Token limits reach their maximum |
-| **Overdrive II** | 75-99 | Modifier chance 45%. Environmental events can overlap with a normal wave (never with a boss). The three evolving bosses gain their **fifth-tier move** |
-| **Overdrive III** | 100+ | Modifier chance 60%. Elite events combine three themes. The evolving bosses gain their **sixth-tier move** |
+| **Overdrive II** | 75-99 | Modifier chance 45%. Environmental events can overlap with a normal wave (never with a boss) |
+| **Overdrive III** | 100+ | Modifier chance 60%. Elite events combine three themes |
 
-**Fifth and sixth-tier boss moves** (added to the boss document)
-
-| Boss | Fifth tier | Sixth tier |
-|---|---|---|
-| **Katsuro** | **Twin Rivers:** two Seven Rivers paths drawn at once, with a shared safe gap | **Final Draw:** the full path is drawn in reverse after the strike, forcing a second read |
-| **The Hunter** | **Wire Web:** a net of wires strung across a zone, with a visible gap | **Silent Pair:** a decoy Hunter that lunges in sync with the real one |
-| **The Demolisher** | **Double Ball:** two wrecking balls with staggered swings | **Foundation Break:** a floor-wide collapse, with a marked safe island |
+**Bosses** are handled separately, by **boss tier** (see the main doc §7.1). Tier 4 starts at wave 100, Tier 5 at wave 150 and Tier 6 at wave 200. Their extra moves are listed in the boss document (§9).
 
 **Rules**
 
 - Escalation never shortens telegraphs, and never removes weak windows.
-- Overdrive bonuses to modifiers don't apply to the first appearance of a boss.
-- The Flow stall clock for bosses scales with the added moves (par times go up by 10% per tier).
+- Overdrive modifiers never apply to bosses.
+- The Flow stall clock for bosses scales with the added moves (par times go up by 10% per tier from Tier 4).
 
 ---
 
@@ -188,7 +182,7 @@ Both modes unlock after the player **defeats Katsuro once,** like Trials. Both u
 ### 7.1 Boss Rush
 
 - **What:** fight all six bosses back to back in a fixed order: Katsuro, the Debt Collector, the Hunter, the Crimson Kite, the Demolisher, the Floodgate Warden.
-- **Tier:** every boss is at its first-appearance tier. The evolving bosses do not evolve in Boss Rush.
+- **Tier:** every boss is at Tier 1. The bosses do not gain moves in Boss Rush.
 - **Structure:** a 10-second breather between bosses. Flow carries over. There are no normal waves and no events.
 - **Death:** one hit ends the run, like arcade.
 - **Score:** based on total time, plus bonuses for speed under par and for perfect Ink Steps. Leaderboard: **fastest clear.**

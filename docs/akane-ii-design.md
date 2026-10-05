@@ -2,7 +2,7 @@
 
 **Studio:** Ludic Studios
 **Protagonist:** Sugahara Akane
-**Status:** Draft v0.9 (pre-production)
+**Status:** Draft v1.0 (pre-production)
 **Scope:** Design only. No implementation is covered here.
 
 > **Companion documents** (detail for the sections below):
@@ -373,6 +373,42 @@ Enemies arrive in **waves** across the whole map. The game is infinite, with dif
 
 ---
 
+### 5.4 Pacing and difficulty targets
+
+These targets anchor all tuning. They are starting values **[TBD: confirm in playtests]**.
+
+**Wave length.** A typical wave takes about **60 seconds** to clear. The pressure timer is set at about 1.5 times the expected clear time (about 90 seconds at typical pacing). Breathers are about 5 seconds. A boss wave takes 2-3 minutes.
+
+**Where players should end up**
+
+| Player | Typical death wave | Typical run length | What they see |
+|---|---|---|---|
+| **New player** | 8-12 | 10-15 min | The early enemies, and often the first Katsuro fight |
+| **Regular player** | 25-40 | 30-50 min | The mid-game roster, 2-3 bosses, the wave 25 story beat |
+| **Expert** | 100+ | About 2 hours | The whole roster, Overdrive, and the wave 100 story beat |
+
+**Run timeline (approximate)**
+
+| Wave | Time into the run | Milestone |
+|---|---|---|
+| 10 | 12 min | First boss (Katsuro, Tier 1) |
+| 25 | 30 min | Story beat 1. Elite event |
+| 50 | About 1 hour | Story beat 2. Overdrive I begins |
+| 75 | About 1.5 hours | Story beat 3 |
+| 100 | About 2 hours | Story beat 4 (the Tsukumo reveal). Boss Tier 4 |
+
+**Sanity checks on unlock thresholds** (using the wave budget of `8 + 3 x wave` and the scoring formula)
+
+- *Score 100,000 in a run* is reachable at about wave 25-30 with good Flow. That is a regular player's goal.
+- *5,000 total kills* is about 10 regular runs.
+- *Reach wave 15* (Wildfire) is early. *Reach wave 50* (Ash) is a high-skill goal.
+
+**Design consequences**
+
+- The first boss at wave 10 is meant to be seen by new players, so Tier 1 Katsuro must be learnable on a first attempt.
+- The difficulty ramp from wave 1 to 25 must be gentle enough for new players to reach wave 8-12, and steep enough that regulars are challenged by wave 25-40.
+- Story beats at waves 25, 50, 75 and 100 land at about 30 minutes, 1 hour, 1.5 hours and 2 hours.
+
 ## 6. Enemies
 
 ### 6.1 Roster overview
@@ -444,7 +480,7 @@ The original's enemy bugs (forgetting to attack, getting stuck) are a **bug clas
 
 - A boss arrives at **every 10th wave** (waves 10, 20, 30 and so on), replacing the normal wave. Like the original, the other enemies are cleared so the boss gets the player's full attention. This keeps the original's rhythm of a boss every N kills but adapts it to waves.
 - **No consecutive repeats:** a boss rotation ensures the same boss doesn't appear back-to-back. **Katsuro opens the rotation at wave 10** and returns every third boss; the other five fill the remaining slots. A full cycle of six bosses spans 60 waves, so most runs will see a handful of them.
-- **Escalation on return:** only a **handful of bosses evolve** (Katsuro, the Hunter and the Demolisher, see §7.5). Their changes persist for the rest of the run. The other three return with the same moves and slightly tighter windows.
+- **Boss tiers by wave band:** bosses are tuned by the wave they appear on (see "Boss tiers" below). Only three bosses (Katsuro, the Hunter and the Demolisher) gain new moves per tier. The other three keep their moves and get slightly tighter windows.
 - **Reward:** a large score bonus, and a clear breather before the next wave.
 - **Flow during boss fights:** combo decay is paused at first and sets in slowly if a fight stalls, then resets on the boss's death (see §3.8).
 - **Akane still dies in one hit.** Boss attacks are lethal and follow the telegraph rules.
@@ -453,6 +489,19 @@ The original's enemy bugs (forgetting to attack, getting stuck) are a **bug clas
   - Windows are short, telegraphed and fair, but not guaranteed to be easy to reach.
   - Valid hits include the sword, gun shots on exposed weak points, a thrown Tadus, and Dragon Slayer (see §3.7). Every boss has at least two valid ways to land a hit.
   - Each new phase changes the boss's attack pattern and, for arena-shifting bosses, the map.
+
+**Boss tiers.** Instead of counting how many times a boss has appeared, every boss uses the tier that matches the current wave. This makes sure players see evolution at whatever wave a boss shows up, and it ties the bosses to the difficulty curve.
+
+| Tier | Waves | Notes |
+|---|---|---|
+| **Tier 1** | 10-29 | Base moves. The first Katsuro fight |
+| **Tier 2** | 30-59 | The first evolution for the three evolving bosses |
+| **Tier 3** | 60-99 | Their signature moves arrive |
+| **Tier 4** | 100+ (to 149) | All moves, recombined, with slightly tighter windows |
+| **Tier 5** | 150-199 | One extra move for each evolving boss |
+| **Tier 6** | 200+ | A second extra move for each evolving boss |
+
+The non-evolving bosses (the Debt Collector, the Crimson Kite and the Floodgate Warden) reduce their vulnerability windows by about 5% per tier (with a floor) and recombine their patterns. Tiers 5 and 6 are expected to be rare, and exist for the very top of the leaderboards.
 
 ### 7.2 Boss types
 
@@ -480,7 +529,7 @@ Alter the map during the fight: collapse a bridge, flood a tunnel, cut a zipline
 
 ### 7.4 Boss design rules
 
-- **Evolution is limited to three bosses** (Katsuro, the Hunter, the Demolisher). It resets with each new run, so every run starts fair.
+- **New moves are limited to three bosses** (Katsuro, the Hunter, the Demolisher), by wave tier (see "Boss tiers" in §7.1). Every run starts at Tier 1, so runs always begin fair.
 - **One skill per boss.** Each boss is built around one clear test of the toolkit (see §7.5), so the fights rotate through different skills.
 - Every boss attack follows the shared telegraph language (§1).
 - No boss can be defeated by a single exploit (for example, only human shields). Multiple valid approaches are expected.
@@ -497,7 +546,7 @@ All bosses are **grounded Yakuza cyberpunk**: lieutenants, enforcers and hired k
 
 **Appearance order.** Katsuro always opens at wave 10 and returns every third boss (waves 10, 40, 70 and so on). The other five fill the remaining slots in a shuffled order that shows every one of them before any repeats.
 
-| Boss | Type | Tests | Zone | Evolves? |
+| Boss | Type | Tests | Zone | Gains moves by tier? |
 |---|---|---|---|---|
 | Katsuro | Standard Duel | Reading dashes, Ink Step | Shrine Heights (top arena) | **Yes** |
 | The Debt Collector | Standard Duel | Deflecting and gun reading | Neon Plaza | No |
@@ -521,17 +570,19 @@ The original boss. He stalks Akane across Mega-Tokyo and appears whenever the Ya
 **Phases and windows**
 
 1. **Phase 1, the Duelist.** Single dashes and slashes. *Window:* he skids to a stop after a missed dash.
-2. **Phase 2, the Gunslinger** (from his second appearance). Adds a pistol between dashes. *Window:* after he reloads, or after a **perfect Ink Step** through a dash, which staggers him.
-3. **Phase 3, the Master** (from his third appearance). A rapid multi-dash that ends in a heavy slash. *Window:* the long recovery after the final slash.
+2. **Phase 2, the Gunslinger** (from Tier 2). Adds a pistol between dashes. *Window:* after he reloads, or after a **perfect Ink Step** through a dash, which staggers him.
+3. **Phase 3, the Master** (from Tier 3). A rapid multi-dash that ends in a heavy slash. *Window:* the long recovery after the final slash.
 
-**Evolution across appearances in a run**
+**Evolution by tier**
 
-| Appearance | Wave | What he has |
+| Tier | Waves | What he has |
 |---|---|---|
-| 1st | 10 | Two phases: single dashes, and faster dashes. No gun |
-| 2nd | 40 | Adds the pistol phase |
-| 3rd | 70 | Adds the multi-dash finisher |
-| 4th and later | 100+ | All moves, with tighter windows and combos that chain the three phases in new orders |
+| 1 | 10-29 | Two phases: single dashes, and faster dashes. No gun |
+| 2 | 30-59 | Adds the pistol phase |
+| 3 | 60-99 | Adds the multi-dash finisher (Seven Rivers) |
+| 4 | 100-149 | All moves, plus Mirror Step, tighter windows and combos that chain the phases in new orders |
+| 5 | 150-199 | Adds **Twin Rivers** |
+| 6 | 200+ | Adds **Final Draw** |
 
 **Why it works:** each dash has a fixed, learnable timing, so the fight is a rhythm duel. It is the cleanest Ink Step test in the game. Katsuro never cheats the telegraph rules, because that is what makes the nemesis fight fair.
 
@@ -575,13 +626,16 @@ A cloaked Cyber Ninja elite hired to end Akane quietly. There's no arena. He sta
 2. **Phase 2, Decoys.** He leaves cloaked decoys that also lunge. *Window:* hitting the real one during its recovery, or revealing him with an **EMP**.
 3. **Phase 3, Cornered.** He stops hiding and fights in the open, with wire sweeps that cut off routes. *Window:* the end of each wire sweep.
 
-**Evolution across appearances in a run**
+**Evolution by tier**
 
-| Appearance | What he adds |
-|---|---|
-| 1st | Stalking and lunges |
-| 2nd | **Wire traps** strung across ziplines and corridors, which cut ziplines when triggered |
-| 3rd and later | **Spotter drones** that reveal Akane's position anywhere on the map, forcing her to destroy them |
+| Tier | Waves | What he adds |
+|---|---|---|
+| 1 | 10-29 | Stalking, lunges, decoys and wire sweeps |
+| 2 | 30-59 | **Wire traps** strung across ziplines and corridors, which cut ziplines when triggered |
+| 3 | 60-99 | **Spotter drones** that reveal Akane's position anywhere on the map, forcing her to destroy them |
+| 4 | 100-149 | All moves, tighter windows and recombined patterns |
+| 5 | 150-199 | **Wire Web:** a net of wires across a zone, with a visible gap |
+| 6 | 200+ | **Silent Pair:** a decoy Hunter that lunges in sync with the real one |
 
 **Tested skill:** staying aware and using the whole map. The best answers are the **Hologram Decoy**, **Sumi Bomb**, **EMP** and good routes through the Hidden Network.
 
@@ -629,13 +683,16 @@ A demolition-crew boss who operates a wrecking rig mounted on a crane. He's tear
 
 **Persistent map damage:** destroyed rooftops **stay broken for the rest of the run**, which opens some routes and closes others. Every route must keep the map connected (see risks).
 
-**Evolution across appearances in a run**
+**Evolution by tier**
 
-| Appearance | What he adds |
-|---|---|
-| 1st | Wrecking ball and roof collapses |
-| 2nd | Adds a **grabber claw** that pulls ziplines down and drags Akane toward the ball |
-| 3rd and later | Adds **rebuilt hazard platforms**: he drops scaffolding that is intentionally unstable |
+| Tier | Waves | What he adds |
+|---|---|---|
+| 1 | 10-29 | Wrecking ball and roof collapses |
+| 2 | 30-59 | A **grabber claw** that pulls ziplines down and drags Akane toward the ball |
+| 3 | 60-99 | **Rebuilt hazard platforms**: he drops scaffolding that is intentionally unstable |
+| 4 | 100-149 | All moves, tighter windows and recombined patterns |
+| 5 | 150-199 | **Double Ball:** two wrecking balls with staggered swings |
+| 6 | 200+ | **Foundation Break:** a floor-wide collapse with a marked safe island |
 
 **Tested skill:** reading the terrain and planning the next two moves. It is the strongest fight for players who like exploring.
 
@@ -830,7 +887,7 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | Input | Gamepad-first, with keyboard and mouse equally satisfying |
 | Boss types | Roaming, arena-shifting and standard duel |
 | Boss tone | Grounded Yakuza cyberpunk, with each boss testing one skill |
-| Boss evolution | Only Katsuro, the Hunter and the Demolisher evolve across appearances in a run. Evolution resets each run |
+| Boss evolution | Only Katsuro, the Hunter and the Demolisher gain moves, by wave tier (10-29, 30-59, 60-99, 100-149, 150-199, 200+) and not by appearance count. Every run starts at Tier 1 |
 | Combat toolkit | Original five slots (katana, gun, gadget, boots, cigarette), remixed: 7 katanas, 6 guns, 11 gadgets (one slot), 4 boots |
 | Progression | No power progression. Items unlock as sidegrades through mastery challenges |
 | Gadgets | One slot, 11 gadgets across four families (weapon augments, traversal, AI manipulation, human shield synergy), with 3 oddballs |

@@ -79,6 +79,18 @@ A highly unique blend of **Japanese ink wash (sumi-e)** and **modern pixel anima
 
 ---
 
+### 1.5 Pixel rendering
+
+Chosen to give smooth motion at any refresh rate (including the uncapped PC option) without pixel shimmer.
+
+- **Sprites and tiles are drawn at the output resolution,** with every art pixel scaled by a **whole number** (2x at 720p, 3x at 1080p, 4x at 1440p, 6x at 4K). Pixels stay square and uniform.
+- **Positions and the camera are interpolated** between the fixed 60 Hz simulation steps, to **output-pixel precision.** There is no snapping to the art grid.
+- **Soft effects** (dynamic lighting, fog, bloom, post-processing) render at the base or half resolution and are upscaled. They are soft by nature, and this keeps the original Switch within budget.
+- **Non-whole-number displays** (for example, 1366 x 768 or windowed sizes) use a sharp-bilinear upscale so edges stay crisp without uneven pixels.
+- **Pixel-snap option:** a toggle for purists that snaps to the art grid. Motion then steps at the simulation rate, with no smoothness gain from higher refresh rates.
+- **Known trade-off:** different objects' pixel grids can sit offset from each other by a fraction of an art pixel. This is invisible in an ink-wash style and is the price of smooth motion.
+- **Things to check in testing:** parallax layers, rain and particle streaks, normal-mapped lighting (lights also interpolate), and text and UI (which should snap to the grid).
+
 ## 2. Akane
 
 - **Base design:** follows the original character art. She is an **adult** swordswoman.

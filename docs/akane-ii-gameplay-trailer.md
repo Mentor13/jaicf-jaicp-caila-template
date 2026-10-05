@@ -18,8 +18,7 @@
 6. [Capture requirements](#6-capture-requirements)
 7. [Cut-downs](#7-cut-downs)
 8. [Claims check and spoiler rules](#8-claims-check-and-spoiler-rules)
-9. [Content note](#9-content-note)
-10. [Open items](#10-open-items)
+9. [Open items](#9-open-items)
 
 ---
 
@@ -258,11 +257,7 @@ Rules for all cut-downs: all-caps title, no date, and the same platform list.
 
 ---
 
-## 9. Content note
-
-The game shows red gore and dismemberment. Trailers on storefronts and video platforms may need **age-gating or content rating compliance.** Check each platform's rules before publishing, and consider a tighter cut for general-audience placements.
-
-## 10. Open items
+## 9. Open items
 
 - [ ] The original's logo and in-game display face as source files, plus what the red shape beside the E is (§2).
 - [ ] Final music for the trailer, or a trailer edit of the game's score.

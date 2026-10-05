@@ -848,7 +848,6 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 8. **Original Switch performance.** A large vertical map with many AI-driven enemies and broad destruction is demanding on 4 GB of RAM. *Mitigation:* the original Switch is the floor, with budget tiers, performance budgets from day one, and simple AI LODs for distant enemies. Switch 2 has far more headroom.
 9. **Input parity.** Mouse aiming can out-perform stick aiming. *Mitigation:* tune enemy telegraphs and windows to be forgiving enough for both, and watch leaderboard data.
 10. **Hybrid wave timer.** Stacking waves on stragglers may overwhelm players. *Mitigation:* the straggler marking, and a cap on total active enemies.
-11. **Rating and storefront compliance.** Full red gore with no gore setting may limit placements, age ratings or trailer rules on some storefronts. *Mitigation:* check each platform's content rules early, and keep the option to add a gore setting later without touching gameplay.
 
 ### Open questions
 
@@ -910,7 +909,7 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | Visual production | Base resolution 640 x 360, Akane about 48 px tall. Hand-drawn pixel sprites with brush-stroke shading. Enemies are grouped by role shape with a shared Yakuza identity. Boss scale varies by boss. Regular-enemy telegraphs are white-hot (white with a black ink outline), red belongs to gore and the logo, and each boss has its own accent color (the Kite's is lime) |
 | Environment quality | Take *Dead Cells'* environment quality bar, not its 3D-to-2D animation pipeline: dynamic lighting with hand-drawn normal maps, gradient maps for zone color and the night clock, 4 parallax layers (3 on Switch), fake volumetrics, dense particles and wet reflections. Telegraphs and hazards stay on an unlit layer so lighting never hurts readability |
 | Kill animations | No finishers: kills never lock Akane. Sword kills use a procedural slice along the real cut angle. Gun kills are headshots (as in the original), with a head reaction and headgear gag per enemy. Context kills, enemy-specific beats and a rare gag about 1 kill in 20. Hit-stop is 2-3 frames |
-| Gore and stains | Bright red gore as in the original, full gore only. Stains are painted on the background and rinsed away by the rain over 1-2 minutes, with pooled caps |
+| Gore and stains | Bright red gore as in the original, full gore only, with the same gore level and no gore option, just like the original, which shipped on every platform that way. Stains are painted on the background and rinsed away by the rain over 1-2 minutes, with pooled caps |
 | Telegraph color change | Regular-enemy telegraphs changed from vermilion-and-white to **white-hot** so that red belongs to gore and the logo. Boss accents stay, except the Crimson Kite's, which is now lime |
 | Kill sound ladder | Kill sounds step up a musical scale with the Flow combo, in the score's key, and reset when the combo breaks |
 | Kill effects (cosmetic) | A small category of five alternate kill looks (Sakura, Glitch, Ash, Paper, Neon Ink), unlocked by milestones. Cosmetic only |

@@ -2,7 +2,7 @@
 
 Source of truth for all player-facing story and flavor text. Companion to [akane-ii-story-and-modes.md](akane-ii-story-and-modes.md) and [akane-ii-run-ui-narrative.md](akane-ii-run-ui-narrative.md).
 
-> This is the **final draft** for review. Names and lines follow the decisions below. Original-game facts referenced here (Ishikawa as Akane's master, the Sugahara family, the Last Stand) are limited to what is confirmed in the design docs. Lines marked **[CHECK]** touch original canon and should get a last look from someone who knows the first game closely.
+> This is the **final draft** for review. Original-game lore was **checked against online sources** (fan wiki and review summaries, listed at the end). Lines marked **[CHECK]** still deserve a last look from someone who knows the first game closely, because the sources are summaries.
 
 ## Contents
 
@@ -18,6 +18,7 @@ Source of truth for all player-facing story and flavor text. Companion to [akane
 10. [Item flavor lines](#10-item-flavor-lines)
 11. [World text: zone cards, events and death lines](#11-world-text-zone-cards-events-and-death-lines)
 12. [Character codex entries](#12-character-codex-entries)
+13. [Lore check against the original](#13-lore-check-against-the-original-summary)
 
 ---
 
@@ -117,6 +118,20 @@ The title card appears for 2 seconds at the start of a fight: name, epithet, and
 
 ---
 
+### Katsuro's dying words
+
+In the original, Katsuro spends his dying breath complimenting Akane's swordsmanship while noting she still will not make it out alive. Akane II keeps that habit. One line is chosen at random each time he is defeated, and the lines grow warmer with the boss tier.
+
+| Tier | Lines (pool) |
+|---|---|
+| 1 | "Fine blade work. You still won't leave this city." / "Good cut. It changes nothing." |
+| 2 | "You are better than last time. So am I." / "Remember this one. I will." |
+| 3 and above | "You are the only one who ever taught me anything." / "Again, then. I am almost ready." |
+
+His **dash trail is hot pink,** as in the original.
+
+---
+
 ## 6. Enemy codex and first-encounter cards
 
 Each enemy has a **codex entry** (unlocked on first encounter) and a **first-encounter card** (shown the first time it appears: name, a one-line tip, and the telegraph color).
@@ -159,13 +174,13 @@ Twelve fragments found in the secrets. Types: dojo note (D), server log (L), civ
 | 9 | Roof Vent Drop | G | *A maintenance tag: "Vent 4 goes down. Do not lean on it. Do not ask why."* |
 | 10 | Bell of the Shrine | N | *The shrine keeper's note: "The bell rings for the departed. Tonight it rings for the ones who stayed."* |
 | 11 | Lantern Path | N | *The shrine keeper's note: "Each lantern remembers someone. Lighting them is the only way out of the dark."* |
-| 12 | The Old Dojo | D | *In Akane's hand, on the wall: "Master, I did not come to be forgiven. I came to finish the lesson."* **[CHECK]** |
+| 12 | The Old Dojo | D | *In Akane's hand, on the wall: "Master. I learned the lesson. You did not like the answer."* |
 
 ---
 
 ## 8. The Dojo Memory
 
-Unlocked by collecting all twelve fragments and opening the Old Dojo. About 60 seconds, as images with caption lines. It is a **lesson about waiting,** from Akane's apprenticeship, and it does not restage the original's tutorial flashback or Final Scene. **[CHECK]**
+Unlocked by collecting all twelve fragments and opening the Old Dojo. About 60 seconds, as images with caption lines. It is a **lesson about waiting,** from Akane's apprenticeship, and it does not restage the original's tutorial flashback or Final Scene. In the original, Akane sought out Ishikawa to avenge her family and trained under him for about a year, so the scene's quiet is **double-edged:** he teaches patience, and she is spending it. **[CHECK]**
 
 **Sequence**
 
@@ -173,6 +188,7 @@ Unlocked by collecting all twelve fragments and opening the Old Dojo. About 60 s
    > **ISHIKAWA:** "Three things. Breathe. Wait. Cut."
    > **YOUNG AKANE:** "I know the third."
    > **ISHIKAWA:** "Everyone knows the third."
+   > *Caption: She had come for the third. She had been waiting a year to use it.*
 2. *Image: a drop of rain gathers on the eave.*
    > **ISHIKAWA:** "Wait for it."
 3. *Image: the drop falls. Ink spreads where it lands.*
@@ -299,4 +315,38 @@ One wry line per item, shown in the Armory.
 |---|---|
 | **Sugahara Akane** | *Contract 118. Alive, which is the part that keeps costing them.* |
 | **Oyabun Tsukumo** | *Keeps the district's books. Never seen in a fight. Always present in the account.* |
-| **Ishikawa** | *Ishikawa taught her. Ishikawa is gone. The dojo has been sealed since.* **[CHECK]** |
+| **Ishikawa** | *Ishikawa taught her. She taught him one thing back. The dojo has been sealed since.* |
+
+---
+
+## 13. Lore check against the original (summary)
+
+Checked online in this pass. Sources are search summaries and the fan wiki, not the game itself.
+
+**Confirmed**
+
+- The first game is set in **Mega-Tokyo, 2121,** in rain-soaked neon streets. Its intro has Akane's vehicle crash, and she is surrounded by Yakuza with no hope of running. She accepts her fate and fights her final stand.
+- **Ishikawa** was her master (apprentice years 2098-2099). He is a **Yakuza** (tattoos shown in the Final Scene) who slaughtered five oyabuns in 2099, including the **Sugahara family.** Akane sought him out **for revenge,** trained under him for about a year, developed her own technique (**Dragon Slayer**) in secret, and killed him in a duel. He asked what the technique was, then died.
+- The optional **tutorial** is a flashback about **23 years before** the main game, with Akane as a child under Ishikawa.
+- **Katsuro** is the boss: he appears every 100 kills, dashes and slashes, shoots three times, does multi-dashes, has a **pink dash trail,** levels up each time he is killed, and **compliments Akane's swordsmanship with his dying breath.**
+- Outside the tutorial and the boss, the original's story is minimal.
+
+**Changes made because of this check**
+
+- Fragment 12 and the Dojo Memory no longer suggest Akane came to the dojo seeking forgiveness or learning in good faith. She came for revenge.
+- The Ishikawa codex entry now hints at how he died, in one oblique line.
+- Katsuro's accent color is now **hot pink,** as in the original (it was red), and he now has dying words.
+
+**Still unverified**
+
+- Item names and behaviors, and the six missing gadget names (Appendix B of the main doc).
+- The exact wording of the original's text and the Final Scene.
+
+**Sources**
+
+- [Akane on the fan wiki: Sugahara Akane](https://akane.fandom.com/wiki/Sugahara_Akane)
+- [Akane on the fan wiki: Ishikawa](https://akane.fandom.com/wiki/Ishikawa)
+- [Akane on the fan wiki: Katsuro](https://akane.fandom.com/wiki/Katsuro)
+- [Akane on TV Tropes](https://tvtropes.org/pmwiki/pmwiki.php/VideoGame/Akane)
+- [Akane review on Finger Guns](https://fingerguns.net/games/2022/09/20/akane-review-ps4-kill-die-repeat/)
+- [Akane on Steam](https://store.steampowered.com/app/884260)

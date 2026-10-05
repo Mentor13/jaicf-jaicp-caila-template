@@ -52,7 +52,7 @@ A boss's par time is the **expected time per phase** for a competent first attem
 
 | Move | Phase | Telegraph | Description | Counter | Window |
 |---|---|---|---|---|---|
-| **Blood Line** | 1+ | Standard (0.55 s) | A single dash along a red line, ending in a slash | Step off the line. **Perfect Ink Step** through it staggers him | The skid after a missed dash (1.0 s) |
+| **Blood Line** | 1+ | Standard (0.55 s) | A single dash along a pink line, ending in a slash | Step off the line. **Perfect Ink Step** through it staggers him | The skid after a missed dash (1.0 s) |
 | **Return Cut** | 1+ | Standard | A dash, then a reverse dash back along the same line | Ink Step the first, dodge the second | The end of the reverse dash |
 | **Crescent Slash** | 1+ | Quick (0.35 s) | A close-range arc slash after a short step | Back off, or deflect | None (a pressure move) |
 | **Pistol Volley** | 2+ | Standard | Three shots in a fan, 0.3 s apart, from a distance | Deflect (one at a time), or sidestep | A reload after the third shot (1.0 s) |

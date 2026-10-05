@@ -542,6 +542,7 @@ Each zone has one accent hue over the shared ink-wash base:
 
 - Zone hues appear only in **set dressing,** at low-to-medium saturation (capped at about 60%), and **never animate** like a threat.
 - Boss and telegraph colors are high-saturation and appear only on threats and projectiles.
+- Katsuro's **hot pink** trail (from the original) resembles the Plaza's neon pink, but he fights only on the Shrine plateau, whose set dressing is jade.
 - If a zone hue and a boss color are too close in a given fight, the arena dims its set-dressing accents during the fight **[TBD: review with art]**.
 
 ### 14.2 Visual language

@@ -566,8 +566,8 @@ All bosses are **grounded Yakuza cyberpunk**: lieutenants, enforcers and hired k
 
 The original boss. He stalks Akane across Mega-Tokyo and appears whenever the Yakuza's patience runs out. He is a swordsman first, and his dashes are his whole language.
 
-- **Look:** a lean silhouette in a dark coat. His accent color is a hot red slash trail. His sword drags a line of ink behind it.
-- **Telegraph:** a red ink line shows each dash path, and a low drum hit marks the commit.
+- **Look:** a lean silhouette in a dark coat. His accent color is a **hot pink** slash trail, as in the original. His sword drags a line of ink behind it.
+- **Telegraph:** a pink ink line shows each dash path, and a low drum hit marks the commit.
 - **Arena:** the open top of Shrine Heights, with little cover, so the fight is purely about dashes and spacing.
 
 **Phases and windows**
@@ -759,7 +759,7 @@ There is no campaign. Story is delivered lightly, with **light continuity** from
 **What the original established** (from search summaries, **[TBD: verify against the game]**)
 
 - Setting: **Mega-Tokyo, 2121** (the first game's year). Akane has angered the Yakuza and made her "Last Stand" against them.
-- Her master, **Ishikawa**, taught her the Dragon Slash technique, and she developed her own Dragon Slayer. Ishikawa wiped out the Sugahara family and other clan heads.
+- Her master, **Ishikawa**, was a Yakuza who killed five oyabuns in 2099, including the Sugahara family. Akane sought him out **for revenge,** trained under him for about a year (2098-2099), developed her own **Dragon Slayer** technique in secret, and killed him in a duel (the Final Scene). She learned his **Dragon Slash** from him.
 - The original's "Final Scene" (unlocked by collecting all equipment) is a **flashback, set in the past,** of Akane confronting Ishikawa as a child and defeating him in a duel. This is confirmed.
 - The original's optional **tutorial** is also a flashback: it takes place about **23 years before the main game,** with Akane as a child training under Ishikawa (per search summaries). **Akane was an adult during the main gameplay of the first game, and she is an adult in Akane II.** Her childhood appears only in flashbacks.
 

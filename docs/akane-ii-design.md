@@ -2,13 +2,13 @@
 
 **Studio:** Ludic Studios
 **Protagonist:** Sugahara Akane
-**Status:** Draft v0.7 (pre-production)
+**Status:** Draft v0.8 (pre-production)
 **Scope:** Design only. No implementation is covered here.
 
 > **Companion documents** (detail for the sections below):
 > - [Enemy Design](akane-ii-enemies.md): telegraph tiers, group AI, the 16 enemies, modifiers, wave composition and elite events.
 > - [Loadout Detail](akane-ii-loadout.md): katana, gun, gadget and boots stats, unlock challenges and balance checks.
-> - [Map Layout Spec](akane-ii-map.md): zones, route graph, ziplines, spawns, secrets and boss arenas.
+> - [Map Design](akane-ii-map.md): the full map write-up: zones, routes, traversal, spawns and zone heat, hazards, destruction, events, secrets, navigation and boss arenas.
 > - [Boss Move Lists](akane-ii-bosses.md): attacks, windows, par times and intro and kill moments.
 > - [Run, Scoring, Onboarding, HUD and Narrative](akane-ii-run-ui-narrative.md).
 >
@@ -300,7 +300,7 @@ One large, vertical single-level map that replaces the original single floor. It
 
 ### 4.2 Structure
 
-A full layout spec (route graph, ziplines, spawn points, secrets catalogue and boss arenas) is in the [Map Layout Spec](akane-ii-map.md).
+The full map design (scale and camera, zone designs, route graph, traversal, zone heat, hazards, destruction tiers, scripted events, secrets, navigation aids and the graybox checklist) is in the [Map Design](akane-ii-map.md) document.
 
 The map is a single **vertical Mega-Tokyo tower district**, divided into **5 zones**. Five is manageable for art, AI navigation and testing. Zones are listed from the ground up, plus the hidden network that runs through all of them.
 
@@ -806,6 +806,14 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | Unlocks | Item-specific mastery challenges, one per item, in four tiers |
 | Narrative delivery | Short text only: intro card, enemy and boss codex, lore fragments and a Final Scene flashback. No voice, no cutscenes |
 | Review confirmations | Enemy unlock schedule kept (one new type per wave over waves 1-9, the rest over waves 12-38). Trials unlock after beating Katsuro once. Starting gadget: Cyber Gloves only, or none. Unlock challenges keep the mix of single-run and cumulative |
+| Map scale and camera | About 6 x 5 screens, with a mid-zoom camera (about one screen plus look-ahead) |
+| Map variation | Fixed geometry every run. Variety comes from waves, spawns, events and boss damage |
+| Navigation | Optional minimap, off by default. Landmarks are the primary navigation |
+| Environmental events | Three scripted, telegraphed events (Rain Shower, Blackout, Canal Surge) about every 6-8 waves from wave 7 |
+| Hazards | Falls are always safe. A few marked, rhythmic lethal hazards only |
+| Anti-camping | Zone heat: staying in a zone redistributes the wave's spawns toward it, without adding budget |
+| Destruction | Broad, in tiers: indestructible structure (including at least two cover pieces per space), major destructibles that stay broken for the run, and decor. Route connectivity is built on the structural tier only |
+| Secrets | All 12 always available. Score rewards repeat each run, cosmetics and lore are one-time. Hints get subtler as the player finds more |
 | Platforms | PC and Nintendo Switch |
 | Input | Gamepad-first, with keyboard and mouse equally satisfying |
 | Boss types | Roaming, arena-shifting and standard duel |

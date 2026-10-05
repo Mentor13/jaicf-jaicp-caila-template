@@ -23,7 +23,7 @@ The main menu offers: **Arcade, Tutorial, Armory (loadout and unlock progress), 
 
 ### 1.2 The run loop
 
-1. **Loadout.** The last-used loadout is selected by default. One button changes it (the Armory view). Challenge progress shows next to each locked item.
+1. **Loadout.** The last-used loadout is selected by default. One button changes it (the Armory view). The gadget slot shows a **mod chip** when the equipped gadget has a mod (see the loadout document §3.2). Challenge progress shows next to each locked item.
 2. **Start.** Akane begins at the center of the Neon Plaza. The first wave starts after a 3-second beat.
 3. **Waves.** Waves advance by the hybrid rule (clear or pressure timer). Each wave is followed by a **breather** of about 5 seconds.
 4. **Pickups** appear during breathers: **ammo caches** and **gadget charge shards** that refill active gadgets. There are no health pickups or power-ups (see main doc §8).

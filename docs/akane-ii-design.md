@@ -2,7 +2,7 @@
 
 **Studio:** Ludic Studios
 **Protagonist:** Sugahara Akane
-**Status:** Draft v1.1 (pre-production)
+**Status:** Draft v1.2 (pre-production)
 **Scope:** Design only. No implementation is covered here.
 
 > **Companion documents** (detail for the sections below):
@@ -215,6 +215,10 @@ The roster covers four families, and **every gadget is an active or always-on to
 | **Marionette Wire** *(oddball)* | Wires a grabbed enemy | The captured enemy becomes a **controllable puppet** that walks ahead of Akane as a mobile shield and then detonates or drops on release | Short duration. Akane stays exposed from behind and the sides |
 
 **Design check for a one-slot system:** each gadget must have a clear "go-to" situation (what it excels at), a clear weakness, and at least one gadget-specific high score strategy. Playtests should compare gadget usage and the top runs. No gadget should be required to clear any wave or boss.
+
+#### Gadget mods (6)
+
+Six gadgets have an optional **mod**, chosen on the same loadout screen as the katana, gun and gadget. A mod is a **swap** (it replaces part of the gadget, never adds power). Four mods are the original game's gadget effects ("Original Spec" for Cyber Gloves, Stabilizer Bracelet, Magnetic Pulse Emitter and Katana Gun), and two are new designs for Akane II (**Swing Line** for the Grapple Anchor and **Overload** for the Hologram Decoy). Full details and unlock challenges are in the [Loadout Detail](akane-ii-loadout.md) §3.2.
 
 #### Boots (4)
 
@@ -903,6 +907,7 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | Progression | No power progression. Items unlock as sidegrades through mastery challenges |
 | Gadgets | One slot, 11 gadgets across four families (weapon augments, traversal, AI manipulation, human shield synergy), with 3 oddballs |
 | Enemy roster | ~16 types, introduced progressively across arcade waves |
+| Gadget mods | Six optional, swap-style mods on the gadget slot: four "Original Spec" mods echoing the original gadget effects, plus Swing Line (Grapple Anchor) and Overload (Hologram Decoy). Unlocked by challenges, mostly adapted from the original's unlock conditions |
 | Story | Light continuity with the original. Akane's goal is to finish the fight against Oyabun Tsukumo, who never appears in a fight. Katsuro is the Nemesis, rebuilt and obsessed |
 
 ---

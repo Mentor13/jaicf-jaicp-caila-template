@@ -263,6 +263,17 @@ One wry line per item, shown in the Armory.
 | Sumi Bomb | "Ink for the eyes of men who stare." |
 | Lure Beacon | "Everyone follows the loudest thing in the room." |
 
+**Gadget mods**
+
+| Mod | Line |
+|---|---|
+| Cyber Gloves: Original Spec | "The old model. Hungrier." |
+| Stabilizer Bracelet: Original Spec | "One bullet back becomes two. Nobody asked for the math." |
+| Magnetic Pulse Emitter: Original Spec | "One a second. Politely." |
+| Katana Gun: Original Spec | "A finishing move, with a finishing move." |
+| Grapple Anchor: Swing Line | "Gravity, with a better attitude." |
+| Hologram Decoy: Overload | "She always did leave an impression." |
+
 **Boots**
 
 | Item | Line |

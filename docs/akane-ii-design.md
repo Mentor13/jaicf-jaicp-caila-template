@@ -915,7 +915,7 @@ Original-game facts came from web search summaries, because the fan wiki and rev
 
 - [ ] Katanas: the three names (default, **Rebi**, **Tadus**) and what each actually does.
 - [ ] Guns: the six names (**Patron v26**, **Inquisitor M103**, **Vicious S36**, **Magnum XT5**, **Double Barrel Shotgun**, **Gravitational Beam Emitter**) and their behavior and ammo rules.
-- [ ] Gadgets: the five original names we kept (**Cyber Gloves**, **Stabilizer Bracelet**, **Adrenaline Shot**, **Magnetic Pulse Emitter**, **Katana Gun**) and their original effects, for continuity only. The other six gadgets are new designs by agreement, so the original's remaining names do not need to be found.
+- [x] Gadgets: the five original names we kept are real, and their original effects are recorded in the [Loadout Detail](akane-ii-loadout.md) §3.1. The other six gadgets are new designs by agreement. Optional: whether to echo each original effect in the remixed versions.
 - [ ] Gadget slots: the original allowed up to two (or none). Confirm.
 - [ ] Boots: names and effects on the dash.
 - [ ] Cigarettes: names and special-attack looks.

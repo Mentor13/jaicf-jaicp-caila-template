@@ -100,6 +100,31 @@ One slot. All 11 gadgets are strong enough to carry a run. Charges and cooldowns
 
 ---
 
+### 3.1 Original gadgets (verified) and what Akane II does with them
+
+Checked online against the fan wiki and an achievements guide (see the sources below). The original had **11 gadgets.** We kept five names for continuity and redesigned their behavior; the other six Akane II gadgets are new designs, so the original's remaining names are not needed.
+
+| Gadget | Original effect (verified) | Original unlock | Akane II |
+|---|---|---|---|
+| **Cyber Gloves** | More bullets per enemy killed | 30 kills with 100% katana accuracy | Human shield upgrade (no ammo effect) |
+| **Stabilizer Bracelet** | Deflected bullets are divided in two | Reach the first boss with a 50+ combo | Wider Ink Step window, full dash refund, no recoil |
+| **Adrenaline Shot** | Time slows in adrenaline mode | Defeat the boss with a katana special | Slow motion on an 8-kill chain |
+| **Magnetic Pulse Emitter** | Kills one nearby enemy per second while aiming | Kill a Cyber Ninja with a katana special at 50+ combo | EMP that disables cyber enemies and strips armor |
+| **Katana Gun** | Shoots after a special move | Defeat the boss at max level with a special | A shot on every sword swing |
+
+**Other original gadgets** (names only, not used): Scope Visor, Extended Magazine, Nano Watch, Magnetic Detractor, Smart Bullets, plus two not documented in the sources. None of Akane II's new gadgets (Marionette Wire, Grapple Anchor, Updraft Fan, Hologram Decoy, Sumi Bomb, Lure Beacon) reuse these names.
+
+**Optional continuity nods** (cheap ways to echo the original effects without changing the design): Cyber Gloves also give +1 ammo per sword kill; Stabilizer Bracelet splits deflected bullets in two; Magnetic Pulse Emitter kills weak enemies in its radius, not just disables them; Katana Gun also fires a burst after Dragon Slash and Dragon Slayer. **[TBD: adopt or skip.]**
+
+**Sources**
+
+- [Akane Fandom wiki: Gadget](https://akane.fandom.com/wiki/Gadget)
+- [Steam guide: All Achievements and How to Unlock](https://steamcommunity.com/sharedfiles/filedetails/?id=2925585160)
+- [Akane Fandom wiki: Cyber Gloves](https://akane.fandom.com/wiki/Cyber_Gloves)
+- [Akane Fandom wiki: Katana Gun](https://akane.fandom.com/wiki/Katana_Gun)
+
+---
+
 ## 4. Boots
 
 | Boots | Dash length | Charges | Recharge | Notes |

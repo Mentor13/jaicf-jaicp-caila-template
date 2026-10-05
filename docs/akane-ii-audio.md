@@ -245,7 +245,8 @@ Higher tiers **duck** lower ones briefly. Telegraph cues are never ducked.
 
 ### 6.3 Platform notes
 
-- **Switch:** streamed stems, compressed formats, and a cap on simultaneous voices (about 32). Priority tiers decide which sounds are dropped first (ambience and low-priority hits).
+- **Original Switch (the floor):** streamed stems, compressed formats, and a cap on simultaneous voices (about 32). Priority tiers decide which sounds are dropped first (ambience and low-priority hits).
+- **Switch 2:** the same assets with a higher voice cap (about 48) and richer ambience layers.
 - **PC:** the same mix with higher quality assets.
 - **Loudness:** consistent targets across music, SFX and UI, with a separate mix for headphones and speakers.
 

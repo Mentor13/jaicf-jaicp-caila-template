@@ -2,7 +2,7 @@
 
 **Studio:** Ludic Studios
 **Protagonist:** Sugahara Akane
-**Status:** Draft v1.4 (pre-production)
+**Status:** Draft v1.5 (pre-production)
 **Scope:** Design only. No implementation is covered here.
 
 > **Companion documents** (detail for the sections below):
@@ -793,8 +793,18 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 
 ### 10.1 Platforms
 
-- **PC and Nintendo Switch.** This matches the original's release platforms.
-- The large map, higher enemy counts and ink-wash effects need a **performance budget** from day one, especially on Switch. Budgets to set early: maximum active enemies, AI update cost, effect density and map streaming **[TBD]**.
+- **PC, Nintendo Switch 2 and the original Nintendo Switch.** The original *Akane* released on PC, then Switch. Akane II targets **Switch 2 natively** and keeps the **original Switch as the low tier,** because the original Switch hardware is still widely owned and Switch 2 plays original Switch games through backward compatibility.
+- **Hardware context** (from published specs): Switch 2 has 12 GB of RAM (about 9 GB for games), an Ampere GPU of about 1.7 TFLOPs handheld and 3.1 TFLOPs docked, and 6 CPU cores for games, with a 1080p handheld screen and up to 4K docked. The original Switch has 4 GB of RAM in total and a far weaker GPU. So the original Switch is **the floor** every piece of content must run on, and Switch 2 has headroom for PC-like budgets.
+- **Three budget tiers** (see the [Map Design](akane-ii-map.md) §15 and [Visual Briefs](akane-ii-visual-briefs.md) §9.6):
+
+| Tier | Target |
+|---|---|
+| **PC** | The highest caps |
+| **Switch 2** | PC-mid budgets, 1080p handheld |
+| **Original Switch** | The low caps (the floor), 720p handheld |
+
+- The large map, higher enemy counts and ink-wash effects need a **performance budget** from day one, especially on the original Switch. Budgets to set early: maximum active enemies, AI update cost, effect density and map streaming **[TBD]**.
+- Sources: [Tom's Hardware](https://www.tomshardware.com/pc-components/gpus/nintendo-switch-2-official-specs-confirm-gpu-similar-to-a-mobile-rtx-2050), [TweakTown](https://www.tweaktown.com/news/105247/nintendo-switch-2-specs-confirmed-cpu-gpu-memory-and-restricted-performance/index.html) and the [Digital Foundry specs summary](https://www.resetera.com/threads/digital-foundry-nintendo-switch-2-confirmed-specs-cpu-gpu-memory-system-reservation-more-6-cpu-cores-for-games-9gb-ram-for-games.1188981/).
 - Steam Deck compatibility should come for free from the controller-first design.
 
 ### 10.2 Input
@@ -828,7 +838,7 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 5. **Content scope.** 16 enemies, 6 bosses and a large map is a lot of animation and balancing. *Mitigation:* roles first, shared telegraph language, ship boss roster in stages.
 6. **Boss repetition.** Arcade runs repeat bosses, and a 10-wave cadence means each boss is seen rarely but must be strong. *Mitigation:* rotation, escalation on return, map-changing bosses.
 7. **Precise dodge tuning.** Must be learnable and not mandatory. *Mitigation:* dash stays viable, window and reward tuned through playtests.
-8. **Switch performance.** A large vertical map with many AI-driven enemies is demanding. *Mitigation:* performance budgets from day one, simple AI LODs for distant enemies.
+8. **Original Switch performance.** A large vertical map with many AI-driven enemies and broad destruction is demanding on 4 GB of RAM. *Mitigation:* the original Switch is the floor, with budget tiers, performance budgets from day one, and simple AI LODs for distant enemies. Switch 2 has far more headroom.
 9. **Input parity.** Mouse aiming can out-perform stick aiming. *Mitigation:* tune enemy telegraphs and windows to be forgiving enough for both, and watch leaderboard data.
 10. **Hybrid wave timer.** Stacking waves on stragglers may overwhelm players. *Mitigation:* the straggler marking, and a cap on total active enemies.
 
@@ -903,7 +913,7 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | Cosmetics | About 20 unlockable items in three categories, earned from beats, secrets, milestones and mode clears |
 | Zone wake-up | **Removed.** It created free camping spots. Replaced by spawn-follow |
 | Hue collisions | Low-saturation, static zone set dressing, plus dimming set-dressing accents during a boss fight if needed |
-| Platforms | PC and Nintendo Switch |
+| Platforms | PC, Nintendo Switch 2 (native, PC-mid budgets) and the original Nintendo Switch (the low tier and the floor for all content) |
 | Input | Gamepad-first, with keyboard and mouse equally satisfying |
 | Boss types | Roaming, arena-shifting and standard duel |
 | Boss tone | Grounded Yakuza cyberpunk, with each boss testing one skill |

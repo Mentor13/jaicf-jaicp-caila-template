@@ -567,17 +567,17 @@ Each zone has one accent hue over the shared ink-wash base:
 
 ## 15. Performance and platform budgets
 
-All values are starting budgets for PC and Nintendo Switch **[TBD]**.
+All values are starting budgets **[TBD]**, in three tiers. The **original Switch is the floor:** content must run there. Switch 2 targets PC-mid budgets.
 
-| Budget | Target |
-|---|---|
-| Active zones | The current zone plus its neighbors. Others are paused or streamed |
-| Active enemies | About 40 on screen or near, with simple AI beyond 20 |
-| Live destructibles | About 120 in active zones. Destroyed pieces become static rubble |
-| Debris and particles | A pooled cap of about 150 debris pieces and a fixed particle budget |
-| Destruction state | Stored per destructible (a compact bitfield) for the run |
-| Navigation updates | Incremental, limited per frame, with queued updates |
-| Switch | Lower particle and debris caps, and simpler backdrop layers |
+| Budget | PC | Switch 2 | Original Switch |
+|---|---|---|---|
+| Active zones | Current zone plus neighbors | Same | Same, with tighter streaming |
+| Active enemies | About 40, simple AI beyond 20 | About 40, simple AI beyond 20 | About 30, simple AI beyond 15 |
+| Live destructibles | About 120 | About 100 | About 70 |
+| Debris pieces | About 150 | About 120 | About 80 |
+| Destruction state | Compact bitfield per destructible | Same | Same |
+| Navigation updates | Incremental, queued | Same | Same, with a lower per-frame limit |
+| Output | Scaled from 640 x 360 | 1080p handheld, up to 4K docked | 720p handheld, 1080p docked |
 
 Destruction uses pre-authored fracture pieces, not physics simulation.
 

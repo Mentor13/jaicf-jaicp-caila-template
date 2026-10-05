@@ -339,14 +339,17 @@ Environment quality must never cost readability.
 
 ### 9.6 Budgets (starting values)
 
-| Budget | PC | Switch |
-|---|---|---|
-| Dynamic lights per screen | About 12 | About 6 |
-| Baked or static lights | Most neon and signage | Most neon and signage |
-| Parallax layers | 4 | 3 |
-| Particles on screen | About 800 | About 300 |
-| Post-processing | Bloom, vignette, grain | Half-resolution bloom, vignette |
-| Reflections | Per-strip reflections on wet ground | Reduced to key surfaces |
+| Budget | PC | Switch 2 | Original Switch |
+|---|---|---|---|
+| Dynamic lights per screen | About 12 | About 10 | About 6 |
+| Baked or static lights | Most neon and signage | Most neon and signage | Most neon and signage |
+| Parallax layers | 4 | 4 | 3 |
+| Particles on screen | About 800 | About 600 | About 300 |
+| Post-processing | Bloom, vignette, grain | Full-resolution bloom, vignette, grain | Half-resolution bloom, vignette |
+| Reflections | Per-strip reflections on wet ground | Per-strip reflections on wet ground | Reduced to key surfaces |
+| Output | Scaled from 640 x 360 | 1080p handheld, up to 4K docked | 720p handheld, 1080p docked |
+
+The **original Switch is the floor:** every effect needs a cheaper fallback that keeps gameplay readability. Switch 2 runs near PC-mid budgets, and the extra headroom should go to the heaviest cases (large waves with broad destruction).
 
 ### 9.7 Production notes
 

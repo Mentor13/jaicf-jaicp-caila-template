@@ -2,7 +2,7 @@
 
 **Studio:** Ludic Studios
 **Protagonist:** Sugahara Akane
-**Status:** Draft v1.5 (pre-production)
+**Status:** Draft v1.6 (pre-production)
 **Scope:** Design only. No implementation is covered here.
 
 > **Companion documents** (detail for the sections below):
@@ -803,6 +803,7 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | **Switch 2** | PC-mid budgets, 1080p handheld |
 | **Original Switch** | The low caps (the floor), 720p handheld |
 
+- **PC is meant to run on modest hardware.** This is a 2D game rendered at 640 x 360, comparable in scope to *Dead Cells* (whose [Steam minimum](https://www.systemrequirementslab.com/cyri/requirements/dead-cells/16012) is an i5-class CPU, 2 GB of RAM and a GTX 450-class GPU). PC graphics presets (High, Medium, Low, Potato) are in the [Visual Briefs](akane-ii-visual-briefs.md) §9.6b. The real pressure points are the CPU (AI, navigation, destruction) and memory, not the GPU.
 - The large map, higher enemy counts and ink-wash effects need a **performance budget** from day one, especially on the original Switch. Budgets to set early: maximum active enemies, AI update cost, effect density and map streaming **[TBD]**.
 - Sources: [Tom's Hardware](https://www.tomshardware.com/pc-components/gpus/nintendo-switch-2-official-specs-confirm-gpu-similar-to-a-mobile-rtx-2050), [TweakTown](https://www.tweaktown.com/news/105247/nintendo-switch-2-specs-confirmed-cpu-gpu-memory-and-restricted-performance/index.html) and the [Digital Foundry specs summary](https://www.resetera.com/threads/digital-foundry-nintendo-switch-2-confirmed-specs-cpu-gpu-memory-system-reservation-more-6-cpu-cores-for-games-9gb-ram-for-games.1188981/).
 - Steam Deck compatibility should come for free from the controller-first design.
@@ -913,6 +914,7 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | Cosmetics | About 20 unlockable items in three categories, earned from beats, secrets, milestones and mode clears |
 | Zone wake-up | **Removed.** It created free camping spots. Replaced by spawn-follow |
 | Hue collisions | Low-saturation, static zone set dressing, plus dimming set-dressing accents during a boss fight if needed |
+| PC settings | High, Medium, Low and Potato presets, so the game runs on modest hardware. The target is a *Dead Cells*-class minimum spec (to be confirmed in testing). The CPU and memory are the pressure points, not the GPU |
 | Platforms | PC, Nintendo Switch 2 (native, PC-mid budgets) and the original Nintendo Switch (the low tier and the floor for all content) |
 | Input | Gamepad-first, with keyboard and mouse equally satisfying |
 | Boss types | Roaming, arena-shifting and standard duel |

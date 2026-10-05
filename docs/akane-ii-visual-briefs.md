@@ -351,6 +351,21 @@ Environment quality must never cost readability.
 
 The **original Switch is the floor:** every effect needs a cheaper fallback that keeps gameplay readability. Switch 2 runs near PC-mid budgets, and the extra headroom should go to the heaviest cases (large waves with broad destruction).
 
+### 9.6b PC settings presets
+
+The game renders at **640 x 360** and scales up, so the GPU cost stays low even at 4K. The pressure points are the **CPU** (flanking AI, navigation updates, destruction, particles) and **memory** (hand-drawn normal maps roughly double the texture data). PC settings let low-end machines run the game.
+
+| Preset | Lights | Particles | Parallax | Post-processing | Reflections |
+|---|---|---|---|---|---|
+| **High** | About 12 | About 800 | 4 | Full | Per-strip |
+| **Medium** | About 8 | About 500 | 4 | Bloom and vignette | Per-strip, lower detail |
+| **Low** | About 4 | About 300 | 3 | Half-resolution bloom | Key surfaces only |
+| **Potato** | Baked lights only | About 100 | 2 | None | Off |
+
+- **Minimum-spec target [TBD: confirm in testing]:** 60 FPS in typical fights on hardware comparable to *Dead Cells'* minimum requirements (an Intel i5-class CPU, 2-4 GB of RAM, and a GTX 450 or Radeon HD 5750-class GPU), using the Low or Potato preset.
+- **Potato preset** also lowers the enemy simulation caps (see the map design document §15) and turns off the heaviest effects, but never removes telegraphs or any gameplay information.
+- Individual settings can be changed separately from the presets.
+
 ### 9.7 Production notes
 
 - Each environment asset ships as: **grayscale albedo, normal map, emissive mask** (and an optional reflection mask).

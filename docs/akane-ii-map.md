@@ -578,8 +578,9 @@ All values are starting budgets **[TBD]**, in three tiers. The **original Switch
 | Destruction state | Compact bitfield per destructible | Same | Same |
 | Navigation updates | Incremental, queued | Same | Same, with a lower per-frame limit |
 | Output | Scaled from 640 x 360 | 1080p handheld, up to 4K docked | 720p handheld, 1080p docked |
+| Frame rate | Uncapped option, with caps | Stable 60 FPS | Stable 60 FPS |
 
-Destruction uses pre-authored fracture pieces, not physics simulation.
+Destruction uses pre-authored fracture pieces, not physics simulation. The simulation runs at a fixed 60 Hz step, independent of the render frame rate.
 
 ---
 

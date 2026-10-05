@@ -348,6 +348,9 @@ Environment quality must never cost readability.
 | Post-processing | Bloom, vignette, grain | Full-resolution bloom, vignette, grain | Half-resolution bloom, vignette |
 | Reflections | Per-strip reflections on wet ground | Per-strip reflections on wet ground | Reduced to key surfaces |
 | Output | Scaled from 640 x 360 | 1080p handheld, up to 4K docked | 720p handheld, 1080p docked |
+| Frame rate | Uncapped option, with caps | Stable 60 FPS | Stable 60 FPS |
+
+When frame time runs over budget on console, cosmetic load drops first (particles, then lights, then fog layers). Telegraphs, hazard marks and gameplay entities are never reduced. The art style also looks good at low settings: the ink wash look does not depend on heavy effects.
 
 The **original Switch is the floor:** every effect needs a cheaper fallback that keeps gameplay readability. Switch 2 runs near PC-mid budgets, and the extra headroom should go to the heaviest cases (large waves with broad destruction).
 
@@ -365,6 +368,7 @@ The game renders at **640 x 360** and scales up, so the GPU cost stays low even 
 - **Minimum-spec target [TBD: confirm in testing]:** 60 FPS in typical fights on hardware comparable to *Dead Cells'* minimum requirements (an Intel i5-class CPU, 2-4 GB of RAM, and a GTX 450 or Radeon HD 5750-class GPU), using the Low or Potato preset.
 - **Potato preset** also lowers the enemy simulation caps (see the map design document §15) and turns off the heaviest effects, but never removes telegraphs or any gameplay information.
 - Individual settings can be changed separately from the presets.
+- **Frame rate:** an uncapped option, plus caps and vsync. Gameplay runs on a fixed 60 Hz step, so frame rate never changes timings (see the main doc §10.1).
 
 ### 9.7 Production notes
 

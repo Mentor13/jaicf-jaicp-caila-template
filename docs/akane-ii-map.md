@@ -544,6 +544,7 @@ Each zone has one accent hue over the shared ink-wash base:
 
 - Zone hues appear only in **set dressing,** at low-to-medium saturation (capped at about 60%), and **never animate** like a threat.
 - Boss and telegraph colors are high-saturation and appear only on threats and projectiles.
+- The Crimson Kite's **lime** attacks resemble Shrine Heights' jade set dressing. The collision rule applies: jade is low-saturation and static, lime is high-saturation and animated, and the arena dims set-dressing accents during the fight if needed.
 - Katsuro's **hot pink** trail (from the original) resembles the Plaza's neon pink, but he fights only on the Shrine plateau, whose set dressing is jade.
 - If a zone hue and a boss color are too close in a given fight, the arena dims its set-dressing accents during the fight **[TBD: review with art]**.
 

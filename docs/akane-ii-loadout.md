@@ -11,6 +11,7 @@ Companion to [akane-ii-design.md](akane-ii-design.md) (§3.6 Loadout).
 3. [Gadgets](#3-gadgets)
 4. [Boots](#4-boots)
 5. [Unlock challenges and order](#5-unlock-challenges-and-order)
+   (gadget mods are in §3.2)
 6. [Synergies and balance checks](#6-synergies-and-balance-checks)
 
 ---
@@ -114,7 +115,7 @@ Checked online against the fan wiki and an achievements guide (see the sources b
 
 **Other original gadgets** (names only, not used): Scope Visor, Extended Magazine, Nano Watch, Magnetic Detractor, Smart Bullets, plus two not documented in the sources. None of Akane II's new gadgets (Marionette Wire, Grapple Anchor, Updraft Fan, Hologram Decoy, Sumi Bomb, Lure Beacon) reuse these names.
 
-**Optional continuity nods** (cheap ways to echo the original effects without changing the design): Cyber Gloves also give +1 ammo per sword kill; Stabilizer Bracelet splits deflected bullets in two; Magnetic Pulse Emitter kills weak enemies in its radius, not just disables them; Katana Gun also fires a burst after Dragon Slash and Dragon Slayer. **[TBD: adopt or skip.]**
+**Continuity nods (decided):** the four original effects return as optional **gadget mods** (see §3.2), as trade-offs, not add-ons.
 
 **Sources**
 
@@ -122,6 +123,36 @@ Checked online against the fan wiki and an achievements guide (see the sources b
 - [Steam guide: All Achievements and How to Unlock](https://steamcommunity.com/sharedfiles/filedetails/?id=2925585160)
 - [Akane Fandom wiki: Cyber Gloves](https://akane.fandom.com/wiki/Cyber_Gloves)
 - [Akane Fandom wiki: Katana Gun](https://akane.fandom.com/wiki/Katana_Gun)
+
+### 3.2 Gadget mods
+
+On the same loadout screen as the katana, gun and gadget, a **mod chip** appears on the gadget slot when the equipped gadget has a mod. It is off by default and can be toggled freely before a run. A mod is a **swap: it replaces part of the gadget with something else, and never adds power on top.** Only six gadgets have a mod.
+
+| Gadget | Mod | The mod gives | The mod takes away | Unlock challenge |
+|---|---|---|---|---|
+| **Cyber Gloves** | **Original Spec** | +1 ammo on every sword kill (on top of the gun's own refill) | The shield perks: shields hold 3 hits again, no dashing while holding one, base throw strength | Get **30 sword kills** in a row with no missed swings, in a single run |
+| **Stabilizer Bracelet** | **Original Spec** | Deflected bullets **split in two** (both can kill) | The wider Ink Step window (the full dash refund and no recoil stay) | Reach the first boss (wave 10) with a **50+ combo** |
+| **Magnetic Pulse Emitter** | **Original Spec** | While aiming the gun, **kills one weak enemy per second** within the radius (not Tanks, Shieldbearers, Duelists or bosses) | The armor stripping and the cloak reveal. Aiming speed is 30% slower while it is active | Kill a **Cyber Ninja with Dragon Slash or Dragon Slayer** at a 50+ combo |
+| **Katana Gun** | **Original Spec** | After **Dragon Slash or Dragon Slayer**, fires a cone burst (about 4 tiles) that kills standard enemies | The per-swing shot | Land the final phase-ending hit on a **Tier 3 or higher boss** with a Dragon Slayer |
+| **Grapple Anchor** | **Swing Line** *(new)* | Grapples anchor points and **swings like a pendulum**, keeping momentum and allowing attacks mid-swing | One charge instead of two, and it can no longer grapple enemies | Use the Grapple Anchor **100 times** in total |
+| **Hologram Decoy** | **Overload** *(new)* | The decoy **explodes at the end**, killing standard enemies within 3 tiles | The decoy lasts 2 seconds instead of 4, so it disrupts flanking for less time | Kill **25 enemies** that were targeting a Hologram Decoy, in total |
+
+**Rules**
+
+- A mod requires its gadget to be unlocked first. A mod's challenge can only be progressed with that gadget equipped (the three "total" challenges, Swing Line, Overload and the Katana Gun one, count only with the right gadget).
+- Four mods are the original's effects ("Original Spec"), with unlock challenges adapted from the original's unlock conditions. Two are new designs for Akane II.
+- Mods obey the loadout rules: **no strict upgrades, a clear cost, and no required mod** for any wave or boss.
+- Leaderboards are not split by mod.
+- More mods for the remaining gadgets are a candidate for later content (for example, the paid expansion).
+
+**Design notes**
+
+- **Original Spec (Cyber Gloves)** turns a shield-support gadget into an ammo engine. It is the best mod for gun-heavy loadouts, and it gives up the human shield perks.
+- **Original Spec (Stabilizer)** swaps a defensive window for offensive deflects. It pairs with the Rebi katana and the Double Barrel unlock.
+- **Original Spec (Pulse Emitter)** is an aimed crowd thinner. Since it only kills weak enemies, it still needs the sword and gun for armored ones.
+- **Original Spec (Katana Gun)** rewards saving a special for a big finish.
+- **Swing Line** is a movement sidegrade for players who like momentum over precision.
+- **Overload** turns a defensive decoy into a bomb for crowd fights, at the cost of the longer flank disruption.
 
 ---
 

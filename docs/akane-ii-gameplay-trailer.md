@@ -26,7 +26,7 @@
 
 **What the trailer must sell**
 
-1. **One hit kills.** Fast, lethal, stylish combat, from Akane and from everything that comes for her.
+1. **One hit kills.** Fast, lethal, stylish and bloody combat, from Akane and from everything that comes for her. The gore is **bright red, as bloody as the original,** and every kill is instant, so Akane keeps moving.
 2. **A city to climb.** The arena is no longer one floor: it is a tall, rainy, neon district with ziplines, rooftops, canals and shortcuts.
 3. **Smart enemies, big bosses.** They flank. The bosses change the map.
 4. **Your own build.** Seven katanas, six guns and eleven gadgets, some of them strange.
@@ -41,6 +41,18 @@
 - **Show the real HUD,** minimal as designed, so the footage matches what players see.
 - **Clarity first.** A viewer should be able to read each attack coming, because that is how the game works: telegraphs are part of the sales pitch.
 - **Rhythm.** Cuts land on hit-stops and kills. The edit should feel like the game's own tempo.
+
+### 1.1 Kill presentation
+
+Kills are a big part of what the footage sells, so the trailer shows the kill animation system at its best. It follows the same rules as the game (see the Visual Briefs §10).
+
+- **Instant, never elaborate.** No finishers, kill cams or lingering. Each kill is on screen for about **0.5 seconds or less,** and Akane is already moving into the next one.
+- **Show variety, not repetition.** Across the cut, show different kinds of kill: a **diagonal slice** where the halves slide apart, a **neck-height decapitation,** a **headshot** (a gun kill is always a hit to the head, with a headgear gag such as sunglasses spinning off), a **deflect pop** (the returned bullet hits the shooter in the face), an **Ink Step counter** (the cut appears where Akane *was*), an **Echo Blade delayed kill,** a **Dragon Slash domino** (everyone falls at once when the streak ends) and a **Dragon Slayer wash** (enemies flatten into ink silhouettes).
+- **Gore is bright red,** with brush-edged flecks, matching the original and the logo. **Telegraphs are white-hot,** so a splash is never mistaken for a threat, and the telegraph layer always sits above gore.
+- **Kill sounds climb the scale.** During chains the cut, body and splash sounds step up a musical scale in the key of the score (see §5).
+- **Flow grows the splash.** The same fight shows kills getting bigger as the Flow aura rises (more splash, a few drips, one extra hit-stop frame at Flow III).
+- **Rain washes the stains.** At least one shot lets a viewer see old stains fading in the rain.
+- **Default look only.** Use the default **Blood** kill effect. Do not show the cosmetic kill effects (Sakura, Glitch, Ash, Paper, Neon Ink) in the main cut, so the brand look stays consistent.
 
 ---
 
@@ -108,10 +120,10 @@ Timings are for the main cut. "Zone" is the in-game location. All shots are game
 |---|---|---|---|---|---|
 | 1 | 0:00-0:03 | Neon Plaza | Black screen. Rain. A neon sign flickers on over wet ground. A silhouette steps into the light | | Rain only, then a single shakuhachi note |
 | 2 | 0:03-0:05 | Plaza | Akane draws her blade. Close on her pixel face and jacket in the rain | THE NIGHT ISN'T OVER. | Low pulse starts |
-| 3 | 0:05-0:07 | Plaza | A Yakuza Guy charges. **One slash, one hit-stop,** an ink splash | | Slash, kill splash, hit-stop |
-| 4 | 0:07-0:10 | Plaza | A fast chain: slash, dash, slash, three kills in a row. The **Flow aura** lights up | | Pulse locks in, taiko enters |
-| 5 | 0:10-0:12 | Plaza | A Shooter's white-hot laser line locks on Akane. She **deflects** the shot back and kills the Shooter | ONE HIT KILLS. | Servo whine, deflect ring |
-| 6 | 0:12-0:15 | Plaza | A Cyber Ninja dashes at her along a white-hot line. **She Ink Steps through it:** the world slows, an ink afterimage trails her, and she cuts it down from behind | | Slow-motion sweep, brush chime |
+| 3 | 0:05-0:07 | Plaza | A Yakuza Guy charges. **One slash, one hit-stop:** a diagonal cut, the halves slide apart along the cut line, and a bright red splash | | Slash, kill splash, hit-stop. The first kill note of the scale |
+| 4 | 0:07-0:10 | Plaza | A fast chain: slash, dash, slash, three kills in a row, **each a different kill** (a diagonal slice, a neck-height cut, a sunglasses-spinning headshot). The **Flow aura** lights up and the splashes grow | | Pulse locks in, taiko enters. Each kill steps up the scale |
+| 5 | 0:10-0:12 | Plaza | A Shooter's white-hot laser line locks on Akane. She **deflects** the shot back, and the returned bullet pops the Shooter in the face | ONE HIT KILLS. | Servo whine, deflect ring |
+| 6 | 0:12-0:15 | Plaza | A Cyber Ninja dashes at her along a white-hot line. **She Ink Steps through it:** the world slows, an ink afterimage trails her, and the cut appears where she *was,* splitting the Ninja as she reappears behind it | | Slow-motion sweep, brush chime |
 
 ### Act 2: The city (0:15-0:45)
 
@@ -124,17 +136,17 @@ Timings are for the main cut. "Zone" is the in-game location. All shots are game
 | 11 | 0:27-0:30 | Shrine Heights | A quiet vista: the torii gate under a pale sky, lanterns, mist | | Shakuhachi, bell |
 | 12 | 0:30-0:33 | Canals | A drop into the canals. Teal light, steam, dripping. A Skirmisher appears | | Echo and drip |
 | 13 | 0:33-0:37 | Canals | **Flanking:** three enemies from three sides, with a screen-edge **threat smear** behind her. Akane spins and cuts the one behind | THEY COME FROM EVERYWHERE. | Rear footsteps cue |
-| 14 | 0:37-0:41 | Plaza | **Human shield:** Akane grabs an enemy, absorbs a Shooter's volley with it, then **throws** it into a group | | Grab, thud, throw |
+| 14 | 0:37-0:41 | Plaza | **Human shield:** Akane grabs an enemy, absorbs a Shooter's volley with it, then **throws** it into a group like a bowling ball | | Grab, thud, throw |
 | 15 | 0:41-0:45 | Plaza | A Tank. Akane slips behind it and kills it with one hit to the rear plate | | Heavy groan, snap |
 
 ### Act 3: The world breaks (0:45-0:58)
 
 | # | Time | Zone | Content | Text | Audio |
 |---|---|---|---|---|---|
-| 16 | 0:45-0:48 | Plaza | A Bomber's charge blows apart a row of market stalls. Flames, ink dust, debris | BREAK ANYTHING. | Explosion |
+| 16 | 0:45-0:48 | Plaza | A Bomber's charge blows apart a row of market stalls and gibs the enemies beside it. Flames, ink dust, debris, and red stains on the walls | BREAK ANYTHING. | Explosion |
 | 17 | 0:48-0:51 | Arcade Block | Akane **cuts through a thin wall** into a new route, slicing a Hexer from behind | | Wall break |
 | 18 | 0:51-0:55 | Rooftops | A **zipline is cut** mid-ride. Akane drops to a lower roof and keeps going | | Cable snap |
-| 19 | 0:55-0:58 | Rooftops | A quick **Dragon Slash**: a bold ink streak through a line of enemies | | Ink streak |
+| 19 | 0:55-0:58 | Rooftops | A quick **Dragon Slash:** a bold ink streak through a line of enemies, who stay standing until the streak ends, then **all fall at once** | | Ink streak |
 
 ### Act 4: Build your own (0:58-1:10)
 
@@ -142,8 +154,8 @@ A fast montage, one loadout per second. Each shows a clear hook.
 
 | # | Time | Content | Text |
 |---|---|---|---|
-| 20 | 0:58-1:00 | **Tadus:** a thrown blade skewers three enemies and returns. **Echo Blade:** a slash repeats a second later | 7 KATANAS. 6 GUNS. 11 GADGETS. |
-| 21 | 1:00-1:03 | **Vicious S36:** firing pushes Akane backward. **Gravitational Beam:** enemies clump, then a single slash. **Double Barrel:** a cone clears a doorway | |
+| 20 | 0:58-1:00 | **Tadus:** a thrown blade pins three enemies to a wall and returns with a spray. **Echo Blade:** the enemy stands untouched, then the body separates a second later | 7 KATANAS. 6 GUNS. 11 GADGETS. |
+| 21 | 1:00-1:03 | **Vicious S36:** firing pushes Akane backward and the heads burst into confetti. **Magnum XT5:** one shot lights up a whole row of heads. **Gravitational Beam:** enemies clump, then a single slash. **Double Barrel:** a cone clears a doorway | |
 | 22 | 1:03-1:07 | **Gadgets:** a Hologram Decoy draws a flank, the Marionette Wire sends a puppet shield forward, the Updraft Fan launches Akane, the Sumi Bomb hides her in ink | |
 | 23 | 1:07-1:10 | **Swing Line** (Grapple mod): a pendulum swing off a sign into a kill | |
 
@@ -162,8 +174,8 @@ A fast montage, one loadout per second. Each shows a clear hook.
 
 | # | Time | Content | Text | Audio |
 |---|---|---|---|---|
-| 25 | 1:25-1:31 | Time-lapse cuts of the same fight across the run: the **wave counter** climbing, enemies multiplying, the **night deepening** and a pale glow on the horizon. Then **Dragon Slayer:** a screen-wide ink wash clears the field | ENDLESS WAVES. | Climax layer, choir-like synth |
-| 26 | 1:31-1:35 | Silence for about half a second. Then the **title lockup** cuts in: AKANE II appears as an ink stroke | AKANE II | A single taiko hit and a sting |
+| 25 | 1:25-1:31 | Time-lapse cuts of the same fight across the run: the **wave counter** climbing, enemies multiplying, the **night deepening** and a pale glow on the horizon. Old stains fade in the rain. Then **Dragon Slayer:** a screen-wide ink wash flattens the field into brush-stroke silhouettes that wash away | ENDLESS WAVES. | Climax layer, choir-like synth |
+| 26 | 1:31-1:35 | Silence for about half a second. Then the **title lockup** cuts in: the last kill's red splash settles into the spattered AKANE II lettering | AKANE II | A single taiko hit and a sting |
 | 27 | 1:35-1:40 | **End card:** the platforms over a slow rain-and-neon loop of the Plaza (see below) | | Music resolves to the bed |
 
 **End card (shot 27)**
@@ -195,6 +207,7 @@ The trailer uses the game's own adaptive score logic (see the audio design docum
 **Rules**
 
 - **Cut on the beat.** Kills and hit-stops land on the pulse.
+- **Kill notes climb the scale.** In chains, each kill sound steps up a musical scale in the key of the score and resets when the chain breaks. Edit the chains so the rising notes land on beats and the resets fall on the cuts.
 - **Keep the game audio audible.** Telegraph sounds, deflects, Ink Step chimes and zipline whines are part of the sales pitch. They should punch through the music.
 - **No voices.** Non-verbal sounds only (as in the game).
 - Include the **rain** throughout, at a low level.
@@ -210,6 +223,8 @@ The trailer uses the game's own adaptive score logic (see the audio design docum
 - **Loadouts to capture:** Kuro, Rebi, Tadus, Echo Blade, Twin Tantō; Patron v26, Vicious S36, Double Barrel, Gravitational Beam; gadgets Hologram Decoy, Marionette Wire, Updraft Fan, Sumi Bomb, Grapple Anchor with Swing Line; Cyber Gloves.
 - **Lighting bands:** capture across late night, midnight, small hours and before dawn, for the night-deepening sequence.
 - **Scripted scenarios** (set up in the practice range or a debug build, then confirmed as achievable in a real run): flanking from three sides, a human shield volley, a cut zipline, wall break-through, a full wave at high wave count, and one clean fight per boss.
+- **Kill footage:** capture each kill type listed in §1.1 from several angles (the procedural slice differs by cut angle). Keep gore on the matte red setting, and check that white-hot telegraphs stay readable above it in crowded shots.
+- **Stains:** capture a stretch where early stains fade in the rain.
 - **Every shot must be a thing a player can do.** No debug-only effects.
 - **Accessibility:** text cards are on screen long enough to read (at least 1.5 seconds each), and the edit avoids rapid flashing (no more than three flashes per second, and no large full-screen flashes).
 
@@ -224,7 +239,7 @@ The trailer uses the game's own adaptive score logic (see the audio design docum
 | **Eshop / store** | 30 s | The teaser selection, with the platform end card reflecting the storefront |
 | **Capsule loop** | 8 s | Shot 6 (Ink Step), shot 9 (zipline) and shot 19 (Dragon Slash), looping |
 
-Rules for all cut-downs: all-caps title, no date, and the same platform list.
+Rules for all cut-downs: all-caps title, no date, and the same platform list. In the short cuts, keep at least one headshot, one slice and one Dragon Slash kill so the kill variety still reads at small sizes.
 
 ---
 
@@ -238,6 +253,8 @@ Rules for all cut-downs: all-caps title, no date, and the same platform list.
 | A tall, rainy neon district with ziplines, updrafts and shortcuts | Map Design |
 | Enemies flank, with threat cues | Enemy Design §2 |
 | Human shields | Main doc §3.5 |
+| Instant, varied kills with no finishers | Visual Briefs §10 |
+| Gun kills are headshots | Loadout Detail §2 and Visual Briefs §10.3 |
 | 7 katanas, 6 guns, 11 gadgets | Loadout Detail |
 | 6 bosses, and that they learn | Main doc §7 (three bosses gain moves by wave tier) |
 | Break the environment | Map Design §9.2 |
@@ -251,6 +268,8 @@ Rules for all cut-downs: all-caps title, no date, and the same platform list.
 - **Tsukumo,** his name, or the wave 100 story beat.
 - **The Dojo Memory,** the lore fragments or the Old Dojo.
 - **Katsuro's dying words.**
+- **Cosmetic kill effects** (Sakura, Glitch, Ash, Paper, Neon Ink) in the main cut.
+- **Lingering on any kill,** and any kill-cam, finisher or slow-motion gore. Slow motion is reserved for Ink Step and Dragon Slayer.
 - **Any date, season or year,** including in metadata.
 - **Unfinished UI or placeholder art.**
 - **Original-game spoilers:** nothing from the first game's Final Scene.

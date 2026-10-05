@@ -24,7 +24,7 @@ Companion to [akane-ii-design.md](akane-ii-design.md) (§9 Story and Presentatio
 
 **Tone.** Terse, dry and noir. Sparse text and no exposition dumps. The world tells the story (codex entries, logs, boss title cards) and Akane says almost nothing.
 
-**Structure of the experience.** The game stays an **infinite arcade.** Story is delivered in short text beats at set waves (§3), plus the codex, lore fragments and the Final Scene. There are no cutscenes and no voiced lines.
+**Structure of the experience.** The game stays an **infinite arcade.** Story is delivered in short text beats at set waves (§3), plus the codex, lore fragments and the Dojo Memory. There are no cutscenes and no voiced lines.
 
 **Why it fits the design.** The map climbs from the Canals to Shrine Heights, so "taking the district from the top down" is a spatial story: the higher Akane fights, the closer she gets to Tsukumo.
 
@@ -34,6 +34,7 @@ Companion to [akane-ii-design.md](akane-ii-design.md) (§9 Story and Presentatio
 
 ### Akane (Sugahara Akane)
 
+- An **adult.** The childhood seen in the original's Final Scene is her past.
 - The protagonist. Terse, dry, driven.
 - **Goal:** finish the fight. The Yakuza will not stop, so she goes after the head of the district's hold on the city.
 - Her relationship with the dojo and Ishikawa is the emotional undertone (see the lore fragments), never exposition.
@@ -123,7 +124,9 @@ The rotation is deliberately generic so it can't contradict a future sequel.
 - **Akane is alive,** and the story can say so plainly.
 - Do not add detail about how the Last Stand ended, or about what happened to anyone else in it. Refer to it as **"that night."**
 - Do not invent an ending for the original. The first game's open ending stays open.
-- Never describe the original beyond what the Final Scene (a flashback to Akane facing Ishikawa) already shows.
+- The original's **Final Scene** is real, and it is a flashback to Akane's past (as a child, facing Ishikawa). Treat it as history. **Akane is an adult in Akane II,** and nothing in the present story shows her as a child.
+- Do not restage or retell the original's Final Scene. Akane II's own flashback (the Dojo Memory) shows a different moment.
+- Never describe the original beyond what the Final Scene already shows.
 - Akane II's story starts at a new point in time and does not need the first game's outcome beyond her survival.
 - The Katsuro explanation (rebuilt, obsessed) works whether or not the first game defeated him.
 
@@ -217,7 +220,7 @@ About **20 unlockable cosmetics** at launch (plus a default in each category), i
 | **Night Courier** | Story beat: wave 50 |
 | **Gilded Jacket** | Story beat: wave 100 |
 | **Ashen Hoodie** | Reach wave 20 with two Trials active |
-| **Crimson Dojo Gi** | Watch the Final Scene |
+| **Crimson Dojo Gi** | Watch the Dojo Memory |
 
 ### Sword trails and kill effects (7 unlockable)
 
@@ -249,7 +252,7 @@ About **20 unlockable cosmetics** at launch (plus a default in each category), i
 ## 9. Open items
 
 - [x] Original canon confirmed: no definitive ending, and Akane is alive.
-- [ ] Verify the Final Scene details against the original game (Appendix B of the main doc).
+- [x] The original's Final Scene is real and set in the past. Akane is an adult in Akane II.
 - [ ] Final copy for beats, the rotating post-100 lines, and the Tsukumo reveal.
 - [ ] Whether Tsukumo should appear in any boss title card lines.
 - [ ] Art for the ink silhouette beats.

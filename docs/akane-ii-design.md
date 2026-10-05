@@ -758,7 +758,7 @@ There is no campaign. Story is delivered lightly, with **light continuity** from
 
 - Setting: **Mega-Tokyo, 2121**. Akane has angered the Yakuza and made her "Last Stand" against them.
 - Her master, **Ishikawa**, taught her the Dragon Slash technique, and she developed her own Dragon Slayer. Ishikawa wiped out the Sugahara family and other clan heads.
-- The original's "Final Scene" (unlocked by collecting all equipment) is a flashback of Akane confronting Ishikawa as a child and defeating him in a duel.
+- The original's "Final Scene" (unlocked by collecting all equipment) is a **flashback, set in the past,** of Akane confronting Ishikawa as a child and defeating him in a duel. This is confirmed. **Akane is an adult in Akane II,** so the Final Scene is part of her past, never the present.
 
 **Akane II continuity approach**
 
@@ -868,7 +868,7 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | Onboarding | As in the original: a separate optional Tutorial from the menu (the Dojo), plus arcade that can be started cold. First-encounter cards and teaching waves 1-9 |
 | HUD | Minimal brush-drawn HUD with off-screen threat smears |
 | Unlocks | Item-specific mastery challenges, one per item, in four tiers |
-| Narrative delivery | Short text only: intro card, enemy and boss codex, lore fragments and a Final Scene flashback. No voice, no cutscenes |
+| Narrative delivery | Short text only: intro card, enemy and boss codex, lore fragments and a Dojo Memory flashback. No voice, no cutscenes |
 | Review confirmations | Enemy unlock schedule kept (one new type per wave over waves 1-9, the rest over waves 12-38). Trials unlock after beating Katsuro once. Starting gadget: Cyber Gloves only, or none. Unlock challenges keep the mix of single-run and cumulative |
 | Map scale and camera | About 6 x 5 screens, with a mid-zoom camera (about one screen plus look-ahead) |
 | Map variation | Fixed geometry every run. Variety comes from waves, spawns, events and boss damage |
@@ -924,5 +924,5 @@ Original-game facts came from web search summaries, because the fan wiki and rev
 
 - [ ] Setting: Mega-Tokyo, 2121, and Akane's "Last Stand" against the Yakuza.
 - [ ] **Ishikawa**: Akane's master, taught Dragon Slash, wiped out her family.
-- [ ] The "Final Scene" (unlocked by collecting all equipment): a childhood flashback in which Akane defeats Ishikawa.
+- [x] The "Final Scene" (unlocked by collecting all equipment): a childhood flashback in which Akane defeats Ishikawa. **Confirmed.**
 - [x] Akane's fate: confirmed. The original has no definitive ending, and she is alive.

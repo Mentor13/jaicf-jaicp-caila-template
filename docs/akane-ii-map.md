@@ -213,7 +213,7 @@ Each zone lists: role, layout and sub-areas, combat character, traversal, hazard
 | **Maintenance Shafts** | Vertical shafts with ladders | Climbs and drops. Only size S and M |
 | **Cable Hall** | A hall of cables with Z-G | A secret zipline |
 | **Server Room** | A locked room with terminals | The lore secret |
-| **Old Dojo** | A sealed dojo | The Final Scene secret |
+| **Old Dojo** | A sealed dojo | The Dojo Memory secret |
 | **Junctions** | Small hubs | Ambush nodes for Phantoms |
 
 - **Traversal:** vents (crawl), shafts (climb and drop), Z-G, and a hidden ladder and updraft (U-4) back up.
@@ -463,7 +463,7 @@ Twelve secrets. All rewards are **non-power** (score, cosmetics, lore). All 12 a
 | 9 | **Bell of the Shrine** | Shrine | Shoot the bell during a breather | 500 score + a chime, and the breather lasts 3 s longer |
 | 10 | **Lantern Path** | Shrine | Follow the unlit lanterns, lighting each with a gun shot | Cigarette ink style: *Lantern Fire* |
 | 11 | **Server Room** | Hidden | A locked room opened with a code found in the lore fragments | Lore fragments 3 to 6 (four terminals) |
-| 12 | **The Old Dojo** | Hidden | Needs all fragments. Opens a sealed room | Codex entry on Ishikawa, and the **Final Scene** flashback |
+| 12 | **The Old Dojo** | Hidden | Needs all fragments. Opens a sealed room | Codex entry on Ishikawa, and the **Dojo Memory** flashback |
 
 **Rules**
 

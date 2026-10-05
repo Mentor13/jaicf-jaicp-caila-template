@@ -270,9 +270,14 @@ Twelve short text pieces. Found in the secrets listed in the map spec. They read
 | 11 | Lantern Path | *"Each lantern remembers someone. Lighting them is the only way to leave the dark."* |
 | 12 | The Old Dojo | *"Master, I did not come to be forgiven. I came to finish the lesson."* |
 
-### 6.5 Final Scene
+### 6.5 The Dojo Memory
 
-Found by collecting all twelve fragments and opening the Old Dojo. A short **flashback** in ink, drawn with Akane as a child facing Ishikawa and winning the duel, in the spirit of the original's Final Scene. It is a text-and-image sequence of about 60 seconds. It grants a cosmetic reward and a codex entry on Ishikawa **[TBD: verify the Final Scene details against the original before final copy]**.
+Found by collecting all twelve fragments and opening the Old Dojo. A short **flashback** in ink, about 60 seconds, as text and images.
+
+- **It is a past memory,** and Akane is an adult in the present. The scene shows a **training lesson** from her apprenticeship under Ishikawa, with the young Akane learning the technique she later made her own. It does **not** restage the original game's Final Scene (the childhood duel), which stays the original's own moment and part of her past.
+- It frames the lore fragment she leaves in the dojo (*"Master, I did not come to be forgiven. I came to finish the lesson."*), written as an adult looking back.
+- It grants a cosmetic reward (*Crimson Dojo Gi*) and a codex entry on Ishikawa.
+- The codex entry stays brief and does not retell the original's story: *Ishikawa taught her. Ishikawa is gone. The dojo has been sealed since.*
 
 ### 6.6 Item flavor
 

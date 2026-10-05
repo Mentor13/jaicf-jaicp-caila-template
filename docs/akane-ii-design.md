@@ -2,7 +2,7 @@
 
 **Studio:** Ludic Studios
 **Protagonist:** Sugahara Akane
-**Status:** Draft v0.6 (pre-production)
+**Status:** Draft v0.7 (pre-production)
 **Scope:** Design only. No implementation is covered here.
 
 > **Companion documents** (detail for the sections below):
@@ -805,6 +805,7 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | HUD | Minimal brush-drawn HUD with off-screen threat smears |
 | Unlocks | Item-specific mastery challenges, one per item, in four tiers |
 | Narrative delivery | Short text only: intro card, enemy and boss codex, lore fragments and a Final Scene flashback. No voice, no cutscenes |
+| Review confirmations | Enemy unlock schedule kept (one new type per wave over waves 1-9, the rest over waves 12-38). Trials unlock after beating Katsuro once. Starting gadget: Cyber Gloves only, or none. Unlock challenges keep the mix of single-run and cumulative |
 | Platforms | PC and Nintendo Switch |
 | Input | Gamepad-first, with keyboard and mouse equally satisfying |
 | Boss types | Roaming, arena-shifting and standard duel |

@@ -276,15 +276,52 @@ Found by collecting all twelve fragments and opening the Old Dojo. A short **fla
 
 ### 6.6 Item flavor
 
-Each unlocked item has a one-line flavor in the Armory. Examples:
+Each unlocked item has a one-line flavor in the Armory. Draft copy for all 28 items:
+
+**Katanas**
 
 | Item | Line |
 |---|---|
 | Kuro | *"Plain steel. It has never been the reason she lost."* |
 | Rebi | *"It returns what it is given."* |
 | Tadus | *"A throw is a promise to come back for it."* |
-| Patron v26 | *"Six rounds and a good reason for each."* |
-| Cyber Gloves | *"A grip that doesn't tire of other people."* |
-| Silent Tabi | *"Quiet steps leave the longest silences."* |
+| Nodachi | *"Too long for alleys. The alleys can adjust."* |
+| Twin Tantō | *"Two short answers to one long question."* |
+| Echo Blade | *"The first cut is a warning. The second is the lesson."* |
+| Kusarigama | *"Distance is a courtesy. Pull it back."* |
 
-Remaining item lines follow the same pattern, one per item, written during production.
+**Guns**
+
+| Item | Line |
+|---|---|
+| Patron v26 | *"Six rounds and a good reason for each."* |
+| Inquisitor M103 | *"Three questions at a time. It rarely needs a fourth."* |
+| Vicious S36 | *"It kicks like it resents the target. Lean into it."* |
+| Magnum XT5 | *"One answer, delivered through everyone in the way."* |
+| Double Barrel | *"Diplomacy at close range."* |
+| Gravitational Beam Emitter | *"It doesn't shoot. It reminds things where they belong."* |
+
+**Gadgets**
+
+| Item | Line |
+|---|---|
+| Cyber Gloves | *"A grip that doesn't tire of other people."* |
+| Marionette Wire | *"Everyone walks, once the strings are right."* |
+| Katana Gun | *"Why choose? The blade was always going to need an opinion."* |
+| Magnetic Pulse Emitter | *"It argues with the metal in men."* |
+| Stabilizer Bracelet | *"Steady hands win quietly."* |
+| Adrenaline Shot | *"The room slows down. She doesn't."* |
+| Grapple Anchor | *"A rooftop is just a street that hasn't been introduced."* |
+| Updraft Fan | *"Cheap wind. Expensive confidence."* |
+| Hologram Decoy | *"A better Akane, for a few seconds. She tolerates the comparison."* |
+| Sumi Bomb | *"Ink for the eyes of men who stare."* |
+| Lure Beacon | *"Everyone follows the loudest thing in the room."* |
+
+**Boots**
+
+| Item | Line |
+|---|---|
+| Standard | *"Good soles. The city did the rest."* |
+| Geta Springs | *"A higher vantage is only a decision away."* |
+| Rail Skates | *"Momentum is a debt that pays in the right direction."* |
+| Silent Tabi | *"Quiet steps leave the longest silences."* |

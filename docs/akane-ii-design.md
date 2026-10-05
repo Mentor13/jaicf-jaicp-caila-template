@@ -2,7 +2,7 @@
 
 **Studio:** Ludic Studios
 **Protagonist:** Sugahara Akane
-**Status:** Draft v0.2 (pre-production)
+**Status:** Draft v0.3 (pre-production)
 **Scope:** Design only. No implementation is covered here.
 
 > Names for enemies, bosses, moves and zones are **working titles**. Items marked **[TBD]** need a decision or input from the team (several depend on the original *Akane*).
@@ -23,7 +23,10 @@
 7. [Bosses](#7-bosses)
 8. [Progression and Scoring](#8-progression-and-scoring)
 9. [Story and Presentation](#9-story-and-presentation)
-10. [Risks and Open Questions](#10-risks-and-open-questions)
+10. [Platforms and Input](#10-platforms-and-input)
+11. [Risks and Open Questions](#11-risks-and-open-questions)
+
+Appendices: [A. Decisions Log](#appendix-a-decisions-log) · [B. Original-Game Verification Checklist](#appendix-b-original-game-verification-checklist)
 
 ---
 
@@ -218,9 +221,16 @@ Items unlock through **mastery challenges tied to the item itself** (for example
 
 ### 3.7 Specials: Dragon Slash and Dragon Slayer
 
-- **Dragon Slash:** a fast dash that kills every enemy in its path. Charges from kills.
-- **Dragon Slayer:** the screen-clearing special. In a large map it kills everything **within a large radius and on screen**, not the whole map. Charges from kills and has a high cost.
-- **Design rules:** both are meter-driven, so they reward aggression. Neither works on bosses (bosses take a fixed vulnerability hit instead) **[TBD]**.
+Both are meter-driven, so they reward aggression. Meter values are starting points **[TBD: tune in playtests]**.
+
+- **Dragon Slash:** a fast dash that kills every standard enemy in its path.
+  - **Meter:** about **15 kills** (or equivalent style actions such as deflects, Ink Steps and shield kills).
+  - **Bosses:** counts as an ordinary strike. It ends a phase only if it lands in a vulnerability window (see §7.1).
+- **Dragon Slayer:** the screen-clearing special. In a large map it kills every standard enemy **within a large radius and on screen**, not the whole map.
+  - **Meter:** about **40 kills** or equivalent style actions. Does not carry between runs, and the meter does not fill from boss waves alone.
+  - **Bosses:** it does not kill a boss outright. If the boss is in a vulnerability window, Dragon Slayer counts as **one phase-ending hit**. Outside a window it only clears the boss's summoned and escort enemies.
+  - **Why:** it stays useful during boss waves without trivializing them, and the player still has to read the boss to use it.
+- **Cigarettes** change only the look of both specials.
 
 ---
 
@@ -238,15 +248,22 @@ One large, vertical single-level map that replaces the original single floor. It
 
 ### 4.2 Structure
 
-The map is divided into **zones** (working structure, **[TBD]** theme and number):
+The map is a single **vertical Mega-Tokyo tower district**, divided into **5 zones**. Five is manageable for art, AI navigation and testing. Zones are listed from the ground up, plus the hidden network that runs through all of them.
 
-| Zone | Role | Traversal |
-|---|---|---|
-| Plaza | Open ground-level hub, easy entry and the main starting area | Wide, flat, several exits |
-| Rooftops | Upper tier of rooftops, signage and beams | Ziplines, climbable walls, long jumps |
-| Underpass | Lower tier of tunnels and canals | Tight corridors, ambush spots |
-| Shrine Heights | Highest tier, a rooftop shrine and the boss-friendly open area | Steep climbs, ziplines, wind or ink effects |
-| Secret rooms | Hidden alcoves with pickups or shortcuts | Hidden entrances, discovered through exploration |
+| Zone | Theme and role | Traversal | Suited boss |
+|---|---|---|---|
+| **Neon Plaza** | Ground-level hub of food stalls and neon, with wide sightlines. The main starting area | Wide, flat, several exits | Standard Duel |
+| **Underpass Canals** | Lower tier of tunnels, canals and flood gates. Tight corridors and ambush spots | Narrow routes, water crossings, slides | Floodgate Warden |
+| **Rooftop Signage** | Mid to upper tier of rooftops, giant signs and bridges. The main zipline network | Ziplines, climbable walls, long jumps | Demolisher, Crimson Kite |
+| **Shrine Heights** | Highest tier. A rooftop shrine and the open arena at the top | Steep climbs, updrafts, long-range ziplines | Standard Duel (Katsuro), Hunter |
+| **Hidden Network** | Maintenance shafts, vents and secret rooms threading through every zone. Holds secrets and shortcuts | Hidden entrances found by exploring | None (secrets only) |
+
+**Rules**
+
+- Every zone connects to at least two others, so there is never a single required route.
+- Each zone has its own landmark silhouette and a limited color accent, kept inside the ink wash palette (see §1).
+- Each zone contains at least one open, boss-friendly area.
+- A full vertical crossing (Plaza to Shrine Heights) takes about 30–45 seconds with traversal tools **[TBD: tune in prototyping]**.
 
 ### 4.3 Traversal tools
 
@@ -275,9 +292,14 @@ Enemies arrive in **waves** across the whole map. The game is infinite, with dif
 
 ### 5.1 Structure
 
-- **Waves** are timed or cleared-based groups of enemies **[TBD: clear-to-advance versus timed pressure versus a hybrid]**.
+- **Hybrid advancement.** A wave is a group of enemies. The next wave starts when the current one is **cleared**, or when a **pressure timer** expires, whichever comes first.
+  - **Early clear:** clearing a wave before the timer gives a speed bonus to score, and no waiting.
+  - **Timer expiry:** the next wave spawns on top of whatever remains. This stops hiding and slow luring on a huge map.
+  - **Straggler help:** when about 80% of a wave is dead, the remaining enemies are marked and path toward the player, so the player isn't hunting across the whole map.
+  - **Timer length** scales with wave size and map distance **[TBD: tune in playtests]**.
+  - **Boss waves** have no timer. They end when the boss dies.
 - A short **breather** between waves for pickups, route changes and positioning.
-- **Boss waves** every **5 waves** (default **[TBD: tune after playtesting]**), see §7.
+- **Boss waves** every **10 waves**, see §7. A short **elite event** at wave 5 (and every 10 after) keeps the gap between bosses from feeling empty **[TBD]**.
 - Difficulty scales through enemy count, enemy mix, spawn pressure and elite or modified enemies. Individual enemy lethality does not scale, because everything is already one-hit.
 
 ### 5.2 Spawning on a large map
@@ -364,11 +386,16 @@ The original's enemy bugs (forgetting to attack, getting stuck) are a **bug clas
 
 ### 7.1 Boss waves
 
-- A boss arrives at **every 5th wave** (default **[TBD]**), replacing the normal wave. Like the original, the other enemies are cleared so the boss gets the player's full attention. This keeps the original's rhythm of a boss every N kills but adapts it to waves.
-- **No consecutive repeats:** a boss rotation ensures the same boss doesn't appear back-to-back.
+- A boss arrives at **every 10th wave** (waves 10, 20, 30 and so on), replacing the normal wave. Like the original, the other enemies are cleared so the boss gets the player's full attention. This keeps the original's rhythm of a boss every N kills but adapts it to waves.
+- **No consecutive repeats:** a boss rotation ensures the same boss doesn't appear back-to-back. **Katsuro opens the rotation at wave 10** and returns every third boss; the other five fill the remaining slots. A full cycle of six bosses spans 60 waves, so most runs will see a handful of them.
 - **Escalation on return:** when a boss appears again later in a run, it gains new attacks or a modified phase, so repeats stay fresh.
 - **Reward:** a large score bonus, and a clear breather before the next wave.
-- Bosses use **one-hit-kill logic on Akane** (a hit still kills her). Boss health works through **multiple weak points, phases or vulnerability windows** **[TBD: confirm one-hit versus phased for boss kills]**, not a long health bar, to stay faithful to the game's identity.
+- **Akane still dies in one hit.** Boss attacks are lethal and follow the telegraph rules.
+- **Phased weak points.** Each boss has **2–3 phases**. A phase ends when Akane lands **one clean hit** during a **vulnerability window**, which the boss opens by committing to a big attack, finishing a pattern or exposing a weak point. After the last phase, the boss dies.
+  - There is no health bar. The player sees phase pips instead.
+  - Windows are short, telegraphed and fair, but not guaranteed to be easy to reach.
+  - Valid hits include the sword, gun shots on exposed weak points, a thrown Tadus, and Dragon Slayer (see §3.7). Every boss has at least two valid ways to land a hit.
+  - Each new phase changes the boss's attack pattern and, for arena-shifting bosses, the map.
 
 ### 7.2 Boss types
 
@@ -440,7 +467,29 @@ There is no campaign. Story is delivered lightly, with **light continuity** from
 
 ---
 
-## 10. Risks and Open Questions
+## 10. Platforms and Input
+
+### 10.1 Platforms
+
+- **PC and Nintendo Switch.** This matches the original's release platforms.
+- The large map, higher enemy counts and ink-wash effects need a **performance budget** from day one, especially on Switch. Budgets to set early: maximum active enemies, AI update cost, effect density and map streaming **[TBD]**.
+- Steam Deck compatibility should come for free from the controller-first design.
+
+### 10.2 Input
+
+**Gamepad-first, with keyboard and mouse equally satisfying.** The game is designed around a controller, but the keyboard and mouse scheme is not a port. It is tuned to feel just as good.
+
+- **Gamepad:** twin-stick aiming for the gun. Light aim assist that is adjustable and can be turned off.
+- **Keyboard and mouse:** mouse aiming for the gun, with movement and abilities on the keyboard. No aim assist, and no penalties.
+- **Shared tuning:** Ink Step windows, buffering and cancel timings are identical on both schemes. Neither scheme gets an advantage in score or leaderboards.
+- **Rebinding:** full remapping on both.
+- **Gadget and special inputs** must be reachable without leaving movement or aim, on both schemes.
+- **Leaderboards** are not split by input device **[TBD: confirm after playtests show whether aiming creates a gap]**.
+- **Accessibility [TBD]:** one-handed layout options, hold-versus-toggle options, adjustable telegraph visibility and hit-stop strength.
+
+---
+
+## 11. Risks and Open Questions
 
 ### Risks
 
@@ -449,32 +498,67 @@ There is no campaign. Story is delivered lightly, with **light continuity** from
 3. **Large map readability and camera.** Verticality and scale can hurt clarity. *Mitigation:* early prototyping, strict contrast rules, camera look-ahead.
 4. **AI navigation complexity.** Traversal tools multiply path states. *Mitigation:* build navigation and stuck recovery first, before enemy variety.
 5. **Content scope.** 16 enemies, 6 bosses and a large map is a lot of animation and balancing. *Mitigation:* roles first, shared telegraph language, ship boss roster in stages.
-6. **Boss repetition.** Arcade runs repeat bosses. *Mitigation:* rotation, escalation on return, map-changing bosses.
+6. **Boss repetition.** Arcade runs repeat bosses, and a 10-wave cadence means each boss is seen rarely but must be strong. *Mitigation:* rotation, escalation on return, map-changing bosses.
 7. **Precise dodge tuning.** Must be learnable and not mandatory. *Mitigation:* dash stays viable, window and reward tuned through playtests.
+8. **Switch performance.** A large vertical map with many AI-driven enemies is demanding. *Mitigation:* performance budgets from day one, simple AI LODs for distant enemies.
+9. **Input parity.** Mouse aiming can out-perform stick aiming. *Mitigation:* tune enemy telegraphs and windows to be forgiving enough for both, and watch leaderboard data.
+10. **Hybrid wave timer.** Stacking waves on stragglers may overwhelm players. *Mitigation:* the straggler marking, and a cap on total active enemies.
 
 ### Open questions
 
-- [ ] Original game: the other six gadgets, exact item behaviors, and the original ending. Verify against the game itself.
-- [ ] Boss kills: one-hit, multiple weak points, or phased?
-- [ ] Wave advancement: clear-based, timed, or hybrid?
-- [ ] Boss interval: every 5 waves, or a different cadence?
-- [ ] Map: number of zones, theme per zone, and total traversal scale.
-- [ ] Does Dragon Slayer affect bosses, and what is its meter cost?
-- [ ] Platforms and input methods.
+- [ ] Original game facts: see [Appendix B](#appendix-b-original-game-verification-checklist).
+- [ ] Tuning values: wave timers, special meter costs, vulnerability window lengths, performance budgets.
+- [ ] Map scale and crossing time (prototype).
 - [ ] Multiplayer or co-op (currently out of scope).
 - [ ] Post-launch content plan (more bosses, enemies, map areas).
 
 ---
 
-## Appendix: Decisions Log
+## Appendix A: Decisions Log
 
 | Decision | Outcome |
 |---|---|
 | Campaign / story mode | **Cut.** Does not fit the arcade design |
-| Boss placement | Inside arcade mode, at wave milestones (every N waves) |
+| Boss placement | Inside arcade mode, **every 10 waves**. Katsuro opens the rotation at wave 10 |
+| Boss kills | Phased weak points: 2–3 phases, one clean hit per vulnerability window. Akane still dies in one hit |
+| Wave advancement | Hybrid: clear or pressure timer. No timer on boss waves |
+| Dragon Slayer | Clears standard enemies in a large radius. Counts as one phase-ending hit on a boss during a vulnerability window. Meter about 40 kills |
+| Map | Vertical Mega-Tokyo tower district with 5 zones: Neon Plaza, Underpass Canals, Rooftop Signage, Shrine Heights, Hidden Network |
+| Platforms | PC and Nintendo Switch |
+| Input | Gamepad-first, with keyboard and mouse equally satisfying |
 | Boss types | Roaming, arena-shifting and standard duel |
 | Combat toolkit | Original five slots (katana, gun, gadget, boots, cigarette), remixed: 7 katanas, 6 guns, 11 gadgets (one slot), 4 boots |
 | Progression | No power progression. Items unlock as sidegrades through mastery challenges |
 | Gadgets | One slot, 11 gadgets across four families (weapon augments, traversal, AI manipulation, human shield synergy), with 3 oddballs |
 | Enemy roster | ~16 types, introduced progressively across arcade waves |
 | Story | Light continuity with the original. Katsuro returns as the Nemesis |
+
+---
+
+## Appendix B: Original-Game Verification Checklist
+
+Original-game facts came from web search summaries, because the fan wiki and review pages could not be opened. Someone with the game or the studio's records should confirm each item and then delete or amend the matching note in the doc.
+
+**Equipment**
+
+- [ ] Katanas: the three names (default, **Rebi**, **Tadus**) and what each actually does.
+- [ ] Guns: the six names (**Patron v26**, **Inquisitor M103**, **Vicious S36**, **Magnum XT5**, **Double Barrel Shotgun**, **Gravitational Beam Emitter**) and their behavior and ammo rules.
+- [ ] Gadgets: the five confirmed names (**Cyber Gloves**, **Stabilizer Bracelet**, **Adrenaline Shot**, **Magnetic Pulse Emitter**, **Katana Gun**), their effects, and the **six missing gadget names**.
+- [ ] Gadget slots: the original allowed up to two (or none). Confirm.
+- [ ] Boots: names and effects on the dash.
+- [ ] Cigarettes: names and special-attack looks.
+- [ ] Special attacks: **Dragon Slash** and **Dragon Slayer** behavior and how they charge.
+- [ ] Unlock conditions, including the reported "deflect 25 enemies' bullets" unlock for the Double Barrel Shotgun.
+
+**Enemies and boss**
+
+- [ ] The four enemy types: **Yakuza Guy**, **Shooter**, **Tank** and **Cyber Ninja**, and whether any elite variants existed.
+- [ ] **Katsuro**: spawns after every 100 kills, clears other enemies, and evolves each time he is beaten (pistol, faster dashes, multi-dash slash).
+- [ ] Whether Katsuro is the only boss.
+
+**Story**
+
+- [ ] Setting: Mega-Tokyo, 2121, and Akane's "Last Stand" against the Yakuza.
+- [ ] **Ishikawa**: Akane's master, taught Dragon Slash, wiped out her family.
+- [ ] The "Final Scene" (unlocked by collecting all equipment): a childhood flashback in which Akane defeats Ishikawa.
+- [ ] Anything that contradicts the continuity in §9, such as Akane's fate at the end of the original.

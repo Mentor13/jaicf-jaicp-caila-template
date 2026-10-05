@@ -54,6 +54,7 @@ Gun rules shared by all guns:
 - **Passive regeneration:** if empty, one round returns every 2.5 s (so Akane is never fully without a gun).
 - Guns cannot be used while Akane holds a human shield, except to fire past the shield (a shield does not block Akane's own shots).
 - Bullets are blocked by Shieldbearer fronts, except the Magnum.
+- **Gun kills are headshots,** as in the original. Every bullet kill is a hit to the head, so the Tank is immune to bullets except the Magnum and a human shield covers the head. Kill reactions are in the [Visual Briefs](akane-ii-visual-briefs.md) §10.
 
 | Gun | Ammo | Fire rate | Sword-kill refill | Range | Notes |
 |---|---|---|---|---|---|

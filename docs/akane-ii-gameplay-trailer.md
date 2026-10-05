@@ -18,7 +18,8 @@
 6. [Capture requirements](#6-capture-requirements)
 7. [Cut-downs](#7-cut-downs)
 8. [Claims check and spoiler rules](#8-claims-check-and-spoiler-rules)
-9. [Open items](#9-open-items)
+9. [Content note](#9-content-note)
+10. [Open items](#10-open-items)
 
 ---
 
@@ -70,7 +71,7 @@ I can't name the exact typeface from the image, and I won't guess. The wordmark 
 - **The "II"** is the Roman numeral in the same face, weight, red and texture, at the same cap height, with spacing matched to the original letter spacing. It sits on the baseline with the letters and is not a separate badge, subtitle or tagline.
 - **The splatter reads as ink and blood together:** in Akane II the spatter can pick up the game's ink-splash look (brush-edged flecks), but the lettering, red and heavy weight stay recognizably the original's.
 - **Text cards** use **the original's clean in-game display face,** all-caps, **paper white with an ink-black shadow.** (I don't know what the in-game face is. Take it from the original's UI files, see below.)
-- **Red is the logo's color, not the cards' color.** The logo lockup is the one place red is used as a brand color. Text cards never use red, and the red of the lockup never appears on the gameplay layer, where vermilion is reserved for enemy telegraphs.
+- **Red is the logo's color, not the cards' color.** The logo lockup is the one place red is used as a brand color. Text cards never use red, and the red of the lockup never appears on the gameplay layer, where white-hot is reserved for enemy telegraphs. Red also belongs to gore.
 - **No substitute fonts,** and no recreating the logo by eye.
 - **Motion for the title:** the lockup appears as an ink stroke that "cuts" across the screen, then resolves into the red, spattered lettering, followed by a short Ink Step-style afterimage and one hit-stop frame (see §4, shot 26).
 
@@ -110,8 +111,8 @@ Timings are for the main cut. "Zone" is the in-game location. All shots are game
 | 2 | 0:03-0:05 | Plaza | Akane draws her blade. Close on her pixel face and jacket in the rain | THE NIGHT ISN'T OVER. | Low pulse starts |
 | 3 | 0:05-0:07 | Plaza | A Yakuza Guy charges. **One slash, one hit-stop,** an ink splash | | Slash, kill splash, hit-stop |
 | 4 | 0:07-0:10 | Plaza | A fast chain: slash, dash, slash, three kills in a row. The **Flow aura** lights up | | Pulse locks in, taiko enters |
-| 5 | 0:10-0:12 | Plaza | A Shooter's red laser line locks on Akane. She **deflects** the shot back and kills the Shooter | ONE HIT KILLS. | Servo whine, deflect ring |
-| 6 | 0:12-0:15 | Plaza | A Cyber Ninja dashes at her along a red line. **She Ink Steps through it:** the world slows, an ink afterimage trails her, and she cuts it down from behind | | Slow-motion sweep, brush chime |
+| 5 | 0:10-0:12 | Plaza | A Shooter's white-hot laser line locks on Akane. She **deflects** the shot back and kills the Shooter | ONE HIT KILLS. | Servo whine, deflect ring |
+| 6 | 0:12-0:15 | Plaza | A Cyber Ninja dashes at her along a white-hot line. **She Ink Steps through it:** the world slows, an ink afterimage trails her, and she cuts it down from behind | | Slow-motion sweep, brush chime |
 
 ### Act 2: The city (0:15-0:45)
 
@@ -257,7 +258,11 @@ Rules for all cut-downs: all-caps title, no date, and the same platform list.
 
 ---
 
-## 9. Open items
+## 9. Content note
+
+The game shows red gore and dismemberment. Trailers on storefronts and video platforms may need **age-gating or content rating compliance.** Check each platform's rules before publishing, and consider a tighter cut for general-audience placements.
+
+## 10. Open items
 
 - [ ] The original's logo and in-game display face as source files, plus what the red shape beside the E is (§2).
 - [ ] Final music for the trailer, or a trailer edit of the game's score.

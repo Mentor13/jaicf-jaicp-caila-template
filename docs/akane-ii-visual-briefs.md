@@ -15,6 +15,7 @@ Companion to [akane-ii-design.md](akane-ii-design.md) (§1 Art Direction). Brief
 7. [Animation guidelines](#7-animation-guidelines)
 8. [Asset inventory](#8-asset-inventory)
 9. [Environment quality: lighting, volumetrics and particles](#9-environment-quality-lighting-volumetrics-and-particles)
+10. [Kill animations](#10-kill-animations)
 
 ---
 
@@ -53,7 +54,7 @@ A highly unique blend of **Japanese ink wash (sumi-e)** and **modern pixel anima
 | Underpass Canals | Jade-teal |
 | Hidden Network | Dim white |
 
-- **Regular-enemy threat language:** a **vermilion and white** flare, line or ring. This is the only color for regular-enemy telegraphs and projectiles. It is never used on set dressing.
+- **Regular-enemy threat language:** a **white-hot** (a bright white flare, line or ring with a black ink outline and no hue). This is the only look for regular-enemy telegraphs and projectiles. It is emissive and unlit, and never used on set dressing or gore. **Red belongs to gore and the logo,** never to telegraphs.
 - **Boss accents** (high saturation, used only on that boss's attacks, trails and core):
 
 | Boss | Accent |
@@ -61,7 +62,7 @@ A highly unique blend of **Japanese ink wash (sumi-e)** and **modern pixel anima
 | Katsuro | Hot pink |
 | The Debt Collector | Coin gold |
 | The Hunter | Pale violet |
-| The Crimson Kite | Crimson |
+| The Crimson Kite | Lime (its frame is red and white, but its attacks and core are lime) |
 | The Demolisher | Hazard orange |
 | The Floodgate Warden | Deep teal |
 
@@ -93,7 +94,7 @@ Chosen to give smooth motion at any refresh rate (including the uncapped PC opti
 
 ### 1.6 Title lockup
 
-The title is always **AKANE II** in all-caps, matching the original's logo: a **heavy, blocky sans** in **solid saturated red** with a **distressed, blood-spattered texture,** with the Roman numeral "II" set in the same face, red and texture. Red is the logo's brand color only. It is never used on the gameplay layer, where vermilion is reserved for enemy telegraphs, and never on text cards or UI. Take the logo and display face from Ludic's original source files. Details are in the [gameplay trailer plan](akane-ii-gameplay-trailer.md) §2.
+The title is always **AKANE II** in all-caps, matching the original's logo: a **heavy, blocky sans** in **solid saturated red** with a **distressed, blood-spattered texture,** with the Roman numeral "II" set in the same face, red and texture. Red is the logo's brand color only. It is never used on the gameplay layer, where enemy telegraphs are white-hot (red belongs to the logo and to gore, never to telegraphs), and never on text cards or UI. Take the logo and display face from Ludic's original source files. Details are in the [gameplay trailer plan](akane-ii-gameplay-trailer.md) §2.
 
 ## 2. Akane
 
@@ -125,14 +126,14 @@ The title is always **AKANE II** in all-caps, matching the original's logo: a **
 
 - **Telegraph pose:** each attack has a clear wind-up pose that matches its telegraph tier (Quick 0.35 s, Standard 0.55 s, Heavy 0.8 s, Long 1.0 s). The pose must be readable even without the flare.
 - **Elites** keep the base silhouette and add one clear marker (a gold coat trim, an extra weapon, a glow), so players read "stronger version" instantly.
-- **Modifiers** (Hasted, Armored, Volatile, Shrouded, Vengeful) each have a fixed overlay: speed streaks, an ink plate, a glowing core, a shimmer, and a red mark.
+- **Modifiers** (Hasted, Armored, Volatile, Shrouded, Vengeful) each have a fixed overlay: speed streaks, an ink plate, a glowing core, a shimmer, and a hatched ink brand. None use red or white-hot.
 
 ### 3.2 Enemy briefs
 
 | # | Enemy | Role | Height | Silhouette and key details |
 |---|---|---|---|---|
 | 1 | **Yakuza Guy** | Anchor / fodder | 44 px | Standard suit and sunglasses. Short blade or baton, raised overhead in the wind-up. The "baseline" body that others build on |
-| 2 | **Shooter** | Suppressor | 50 px | Tall, still. Rifle arm and a glowing optic over one eye. Red laser line from the optic |
+| 2 | **Shooter** | Suppressor | 50 px | Tall, still. Rifle arm and a glowing optic over one eye. White-hot laser line from the optic |
 | 3 | **Skirmisher** | Pincer | 42 px | Lean, forward-leaning, light armor, twin short blades. Curved running stance and trailing coat |
 | 4 | **Tank** | Anchor | 72 px | Wide, heavy plating, a visible rear plate with a seam (the weak point). Slow turning animation |
 | 5 | **Lancer** | Anchor, reach | 56 px | Tall, narrow stance with a very long spear and a white sash. The spear defines the silhouette |
@@ -141,7 +142,7 @@ The title is always **AKANE II** in all-caps, matching the original's logo: a **
 | 8 | **Cyber Ninja** | Pincer | 50 px | Slim cybernetic body with a glowing seam. Long blade. A visible guard pose |
 | 9 | **Bomber** | Suppressor | 46 px | Hunched, a bandolier of glowing charges. The charges are the identity |
 | 10 | **Zipline Raider** | Special | 48 px | Hook-and-wire harness and a short blade. Appears with a visible wire |
-| 11 | **Banner Caller** | Support | 52 px | Carries a tall banner with an ink-red emblem above the head line. The banner defines the shape |
+| 11 | **Banner Caller** | Support | 52 px | Carries a tall banner with an ink-black emblem above the head line. The banner defines the shape |
 | 12 | **Hexer** | Support | 52 px | White mask, a brush-like staff. Draws ink zones |
 | 13 | **Drone Handler** | Support | 46 px | Wrist controller, three small drones orbiting. The drones are the identity |
 | 14 | **Phantom** | Special | 50 px | Cloaked figure with a shimmer. Mostly negative space until it strikes |
@@ -172,7 +173,7 @@ Each boss is drawn at **high detail** with its own accent color (§1.3), a recog
 | **Katsuro** | Human-scale, about 52 px | Lean figure in a dark coat | Hot pink dash trail. Cybernetic upgrades grow with the tier (see below). A sword that drags a line of ink |
 | **The Debt Collector** | Human-scale, about 56 px | Long coat, heavy shoulders | A floating ledger drone, a cybernetic arm cannon, gold coin-yellow shots |
 | **The Hunter** | Human-scale, about 50 px | Nearly invisible: shimmering cloak lines | Pale violet flicker. Fully visible only at the moment of a strike or when revealed |
-| **The Crimson Kite** | About 3x (aerial, wingspan about 150 px) | Winged drone-mech | Red-and-white frame, long rotor blades like brush strokes. Crimson dive lines |
+| **The Crimson Kite** | About 3x (aerial, wingspan about 150 px) | Winged drone-mech | Red-and-white frame, long rotor blades like brush strokes. Lime dive lines and core |
 | **The Demolisher** | About 4x (a crane rig, about 200 px) | Exo-suit pilot in a crane cab with a wrecking ball | Hazard orange impact circles. The cab is a clear target |
 | **The Floodgate Warden** | About 3x (about 150 px) | Bulky waterproof exo-rig with a pump cannon | Deep teal water gauge on his chest. The gauge shows the tide state |
 
@@ -222,14 +223,14 @@ Each zone uses the shared ink base plus its accent (§1.3). Sub-areas are listed
 
 | Effect | Brief |
 |---|---|
-| **Kill splash** | A bold ink splash in the enemy's base color (bold on kills only) |
+| **Kill splash** | A bold, bright red gore burst with brush-edged flecks (bold on kills only). See §10 |
 | **Hit / deflect** | A short brush-stroke spark. Deflect adds a white ring |
 | **Ink Step** | A brush-stroke afterimage of Akane and a very short slow-motion beat |
 | **Dash** | A thin ink streak. Boots change its length and shape |
 | **Flow aura** | An ink aura around Akane. Tier I faint, tier II brighter, tier III bold with drips. A pulse warns before a tier drops |
 | **Dragon Slash** | A bold ink streak along the dash path. Its color follows the equipped cigarette ink style |
 | **Dragon Slayer** | A screen-wide ink wash that kills in a large radius. Also follows the cigarette ink style |
-| **Telegraphs** | Vermilion and white for regular enemies, and the boss's accent for bosses. Line, ring and flare shapes per telegraph tier |
+| **Telegraphs** | White-hot for regular enemies, and the boss's accent for bosses. Line, ring and flare shapes per telegraph tier |
 | **Hazards** | Black-and-white hatching with an arc or steam animation |
 | **Destruction** | Ink splash and short dust. Debris clears from the walking plane in 2 seconds |
 | **Zipline / updraft** | A bright ink stroke for ziplines and upward ink streaks for updrafts |
@@ -400,3 +401,156 @@ The game renders at **640 x 360** and scales up, so the GPU cost stays low even 
 - [Art Design Deep Dive: Giving back colors to cryptic worlds in Dead Cells (Game Developer)](https://www.gamedeveloper.com/production/art-design-deep-dive-giving-back-colors-to-cryptic-worlds-in-i-dead-cells-i-)
 - [Art Design Deep Dive: Using a 3D pipeline for 2D animation in Dead Cells (Game Developer)](https://www.gamedeveloper.com/production/art-design-deep-dive-using-a-3d-pipeline-for-2d-animation-in-i-dead-cells-i-)
 - [The Visual Effects of Dead Cells (Unity forum)](https://discussions.unity.com/t/the-visual-effects-of-dead-cells/689349)
+
+---
+
+## 10. Kill animations
+
+The point of *Akane* is that you kill someone and instantly keep going. Kills must be satisfying, varied and **brief.** There are no finishers, kill cams or camera cuts. Variety comes from the victim's side: how they come apart, what flies off, and what it sounds like.
+
+### 10.1 Rules
+
+- **A kill never locks Akane.** Input, dash and the next swing cancel out of it at once.
+- **Hit-stop is tiny:** 2-3 frames for a normal kill, 4-5 for elites, longer only for bosses (see the boss document). It follows the accessibility hit-stop slider.
+- **Bodies clear fast** (about 0.5-1 second). Stains stay on the background, bodies do not.
+- **Every kill is three layers:** a **cut or impact signature** (weapon), a **reaction** (enemy type and direction) and **context modifiers** (airborne, on a zipline, deflected, thrown, and so on). A small authored set multiplies into hundreds of distinct-looking kills.
+- **Gore is bright red, as in the original,** and **full gore only** (there is no gore setting). Red belongs to gore and the logo. Telegraphs are white-hot, so a splash is never mistaken for a threat.
+- **Layering:** telegraphs and hazard marks sit on an unlit, emissive layer **above** all gore, gibs and stains. Gore never covers a telegraph.
+
+### 10.2 Sword kills: the procedural slice
+
+Sword kills **cut the enemy sprite along the actual slash angle** using a runtime mask. The two halves slide apart and rotate with simple physics. That gives every angle (flat, diagonal, vertical, a thrust) a different result on all 16 enemies with no extra frames.
+
+- A **high horizontal cut at neck height** is a decapitation. The sword therefore covers heads as well.
+- A multi-enemy arc (Nodachi, Dragon Slash) cuts each enemy along that arc relative to its own pose.
+- **Edge quality:** the cut edge is drawn with a pixel-clean, brush-edged finish so it matches the hand-drawn art. **[TBD: art check on the cut edge. Fallback: 3-4 hand-authored cut angles per enemy.]**
+- **Bosses and named elites** can have hand-authored finishing frames where it matters.
+
+**Signature per katana**
+
+| Katana | Kill signature |
+|---|---|
+| **Kuro** | A clean diagonal. The halves slide along the cut line and a thin ink line lingers |
+| **Rebi** | Deflect kills: the returned bullet pops the shooter (see gun kills) |
+| **Tadus** | The thrown blade pins the enemy to a wall or crate for half a second. The recall pulls it out with a spray |
+| **Nodachi** | A huge horizontal arc. Upper bodies fly off, and the lingering ink arc stays for 0.3 s |
+| **Twin Tantō** | A quick X cut. The enemy holds a beat, then comes apart in four |
+| **Echo Blade** | The enemy stands untouched, then a second later the body separates where the echo lands |
+| **Kusarigama** | The pulled enemy is clipped mid-air on the way in |
+
+### 10.3 Gun kills: headshots
+
+In the original, gun kills were always **headshots.** Akane II keeps that: every bullet kill is a hit to the head. There is no entry or exit geometry to author.
+
+- Every enemy has a **head anchor** on its sprite, and each gun kill plays a **head reaction** at that anchor. The head and body snap away from where the shot came from.
+- Armored enemies keep their rules: the **Tank** is immune to bullets except the Magnum, and a **Shieldbearer's** front blocks bullets (the Magnum pierces). A human shield covers the head.
+
+**Per gun**
+
+| Gun | Head kill |
+|---|---|
+| **Patron v26** | One clean pop |
+| **Inquisitor M103** | The head snaps three times, a triple tap |
+| **Vicious S36** | The head disintegrates into paper-like confetti |
+| **Magnum XT5** | A clean through-line that connects every head in the row, lighting up each |
+| **Double Barrel** | At close range the head vaporizes and the body is knocked back |
+| **Gravitational Beam** | No kill. Enemies crumple into a dense ink ball when a follow-up hits them |
+| **Deflected shots** | The returned bullet hits the shooter in the face, with its own sound. A Stabilizer split bullet takes two heads |
+
+**Headgear gag per enemy** (what flies off or breaks when the head is hit)
+
+| Enemy | Head gag |
+|---|---|
+| Yakuza Guy | Sunglasses spin off |
+| Shooter | The optic over his eye shatters |
+| Cyber Ninja | The visor cracks and spits sparks |
+| Tank | A helmet-ping, then the plate drops |
+| Hexer | The white mask splits |
+| Archer | The hood is blown back |
+| Banner Caller | The headband flies off |
+| Phantom | The shimmer drops for one frame |
+| Others | A matching small detail (Lancer's sash, Sniper's scope, Duelist's collar) |
+
+### 10.4 Context kills
+
+| Situation | Kill |
+|---|---|
+| **Ink Step counter** | The cut appears where Akane *was*: the afterimage does the killing |
+| **Dragon Slash** | Everyone along the line stays standing until the streak ends, then all fall at once like dominoes |
+| **Dragon Slayer** | Enemies flatten into ink-brush silhouettes and wash away instead of gibbing |
+| **Electrified hazard** | A skeleton flash for one frame, then collapse |
+| **Flood water** | They sink into black ink water |
+| **Fire** | They burn out and crumble |
+| **Zipline or airborne** | They drop with the rope, or hang for half a second |
+| **Thrown human shield** | The thrown body hits like a bowling ball |
+| **Cyber enemies** | Sparks and a flash of circuitry in the cut |
+| **Wall pin (Tadus)** | Held for half a second |
+
+### 10.5 Enemy-specific beats
+
+| Enemy | Beat |
+|---|---|
+| Tank | The plate cracks first, then it collapses. A rear-plate kill bursts the plate |
+| Bomber | The pack goes off and gibs its neighbors |
+| Shieldbearer | The shield stays standing for a beat after they fall |
+| Drone Handler | All the drones drop together |
+| Banner Caller | The banner flutters down |
+| Duelist | Still for a beat, then falls |
+| Archer, Sniper | They fall from their perch |
+
+### 10.6 Rare gags
+
+About **1 kill in 20** gets a small extra: sunglasses spinning off, a cigarette arcing through the rain, a gold tooth glinting, a tattoo dissolving. Each is **12 frames or fewer,** purely cosmetic, never repeats within 5 kills, and never hides a telegraph.
+
+### 10.7 Gore and stains
+
+- **Gore** is bright red and matte, drawn as brush-edged flecks and splashes, on bodies and on the ground and wall layers.
+- **Stains** are painted on the background as brush-stroke marks and are **rinsed away by the rain over about 1-2 minutes.** The arena is painted by the run and slowly washed.
+- **Budgets (starting values):** stain decals at about 300 on PC, 200 on Switch 2 and 100 on the original Switch, pooled and oldest-first. Gibs use a pooled cap (see §9.6).
+- Stains never sit on the telegraph layer, and never recolor walkable-surface edges or hazard marks.
+
+### 10.8 Flow escalation
+
+Kill visuals grow with the Flow tier. This is **cosmetic only** and has no gameplay effect.
+
+| Flow tier | Kill presentation |
+|---|---|
+| None | Standard splash |
+| I | A slightly larger splash |
+| II | A bigger splash with a few drips |
+| III | A bold splash with drips and one extra hit-stop frame |
+
+### 10.9 Sound
+
+Each kill is a cut or shot sound, a body sound and a splash. Kill sounds **step up a musical scale** with the Flow combo and reset when the combo breaks (see the audio document §3.2).
+
+### 10.10 Cosmetic kill effects
+
+A small separate cosmetic category (five items) that changes the **look** of the kill splash. They are optional, never change readability rules, and never use white-hot or a boss accent color.
+
+| Kill effect | Look | Unlock |
+|---|---|---|
+| **Blood (default)** | The standard bright red gore | Default |
+| **Sakura** | A burst of petals instead of gore | Reach wave 30 |
+| **Glitch** | The enemy scatters into pixels, strongest on cyber enemies | Kill 500 cyber enemies in total |
+| **Ash** | Gray ash flakes with no stain | Survive 5 Blackout events |
+| **Paper** | The enemy tears like paper | Get 100 deflect kills in total |
+| **Neon Ink** | A glowing cyan ink wash | Score 250,000 in a single run |
+
+### 10.11 Asset estimate
+
+| Group | Count |
+|---|---|
+| Enemy head reactions (2-3 per enemy) | About 40 |
+| Katana signature effects | 7 |
+| Gun head effects | 6 |
+| Context kill variants | About 10 |
+| Enemy-specific beats | About 8 |
+| Rare gags | About 8 |
+| Flow splash tiers | 4 |
+| Cosmetic kill effects | 5 |
+| Slice shader and physics | 1 system |
+
+### 10.12 Not in scope
+
+No finishers, kill cams, slow-motion kills, camera cuts, or per-enemy death scenes. Boss deaths use the freeze-frame ink slash described in the boss document.

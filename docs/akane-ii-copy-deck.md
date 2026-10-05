@@ -139,7 +139,7 @@ Each enemy has a **codex entry** (unlocked on first encounter) and a **first-enc
 | Enemy | Codex entry | First-encounter tip |
 |---|---|---|
 | **Yakuza Guy** | *Cheap, loyal and expendable. There is always another.* | "Slow and plentiful. Watch the raised blade." |
-| **Shooter** | *Paid by the eye. The scope sees what the man would rather not.* | "The red line locks. Move off it, or deflect." |
+| **Shooter** | *Paid by the eye. The scope sees what the man would rather not.* | "The white line locks. Move off it, or deflect." |
 | **Skirmisher** | *They don't fight. They arrive.* | "Fast and from behind. Listen for the footsteps." |
 | **Tank** | *Plating bought on credit. The back plate was an afterthought.* | "Armored in front. Get behind it." |
 | **Lancer** | *Reach is a promise. Step inside and it breaks.* | "Long thrust, long recovery. Step in after it." |
@@ -153,7 +153,7 @@ Each enemy has a **codex entry** (unlocked on first encounter) and a **first-enc
 | **Drone Handler** | *Three small eyes and one small man.* | "Kill the handler and the drones fall." |
 | **Phantom** | *If you hear it twice, you heard it too late.* | "A whisper, then a lunge. Move off the line." |
 | **Duelist** | *He waits for you to be brave.* | "Guard up means wait. Don't walk into the stance." |
-| **Sniper** | *Seen only by the red line that finds you.* | "A long red line. Break it, or step off before it locks." |
+| **Sniper** | *Seen only by the white line that finds you.* | "A long white line. Break it, or step off before it locks." |
 
 ---
 

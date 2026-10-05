@@ -208,7 +208,7 @@ The main menu adds Boss Rush and Time Attack once unlocked, beside Arcade, Tutor
 
 ## 8. Cosmetics roster
 
-About **20 unlockable cosmetics** at launch (plus a default in each category), in three categories. Cosmetics never affect gameplay or readability. Unlock sources are story beats, secrets, milestones and mode clears.
+About **25 unlockable cosmetics** at launch (plus a default in each category), in four categories. Cosmetics never affect gameplay or readability. Unlock sources are story beats, secrets, milestones and mode clears.
 
 ### Outfits (6 unlockable)
 
@@ -246,6 +246,19 @@ About **20 unlockable cosmetics** at launch (plus a default in each category), i
 | **Lantern Fire** | Secret: Lantern Path |
 | **Ash** | Reach wave 50 with no Trials active |
 | **Moonlight** | Clear Time Attack |
+
+### Kill effects (5 unlockable)
+
+| Kill effect | Unlock |
+|---|---|
+| **Blood** | Default |
+| **Sakura** | Reach wave 30 |
+| **Glitch** | Kill 500 cyber enemies in total |
+| **Ash** | Survive 5 Blackout events |
+| **Paper** | Get 100 deflect kills in total |
+| **Neon Ink** | Score 250,000 in a single run |
+
+Kill effects change only the look of the kill splash (see the [Visual Briefs](akane-ii-visual-briefs.md) §10.10).
 
 ---
 

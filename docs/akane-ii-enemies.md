@@ -38,6 +38,7 @@ Every telegraph has **three signals** at once: a **visual** (an ink line, ring o
 - **Weak window:** a recovery after attacking in which the enemy can always be punished.
 - **Shield rules:** whether it can be grabbed (see §3).
 - **Stuck handling:** the shared failsafes in §2.4.
+- **Head anchor and kill reactions:** every enemy has a head anchor for gun headshots and a small set of kill reactions (see the [Visual Briefs](akane-ii-visual-briefs.md) §10).
 
 ### 1.3 Budget costs and unlock waves
 
@@ -140,7 +141,7 @@ Each entry lists: role, look, attack and telegraph, counters, weakness, AI behav
 
 - **Role:** Suppressor. **Cost 3. Wave 2.**
 - **Look:** a cybernetic sharpshooter with an eye scope and a rifle arm.
-- **Attack:** an aimed shot. **Standard** telegraph: a thin red laser line tracks Akane, then **locks** for the last 0.2 s and fires along the locked line. In the original, Shooters never missed, so lock-on is the telegraph: the line is guaranteed to hit if Akane is still on it at the end.
+- **Attack:** an aimed shot. **Standard** telegraph: a thin white-hot laser line tracks Akane, then **locks** for the last 0.2 s and fires along the locked line. In the original, Shooters never missed, so lock-on is the telegraph: the line is guaranteed to hit if Akane is still on it at the end.
 - **Counters:** step off the line before it locks. **Deflect** the shot with the sword. Break line of sight. Human shield.
 - **Weakness:** after firing, a 0.8 s reload. Low mobility while aiming.
 - **AI:** keeps 8–12 tiles away and prefers cover. Repositions after every shot. Won't fire into a human shield and instead repositions to flank.
@@ -162,7 +163,7 @@ Each entry lists: role, look, attack and telegraph, counters, weakness, AI behav
 
 - **Role:** Anchor, armored. **Cost 5. Wave 4.**
 - **Look:** a bulky enforcer in heavy plating, with a visible rear plate.
-- **Attack:** a ground slam in front. **Heavy** telegraph: a vermilion-and-white ink fan on the ground.
+- **Attack:** a ground slam in front. **Heavy** telegraph: a white-hot ink fan on the ground.
 - **Counters:** the original needed more than one slash. Here, the Tank dies to **one hit from behind** (rear plate), **two sword hits** from the front, a **Magnum** shot, a **Dragon Slash**, or **one hit after an EMP** strips the plating.
 - **Weakness:** slow turning (about 0.6 s), so staying behind it works. 1.0 s of recovery after a slam.
 - **AI:** advances steadily and ignores flanking positions. Its turn speed is the exploit.
@@ -206,7 +207,7 @@ Each entry lists: role, look, attack and telegraph, counters, weakness, AI behav
 
 - **Role:** Pincer, dasher. **Cost 4. Wave 9.**
 - **Look:** a slim cybernetic figure with a glowing seam along the body and a long blade.
-- **Attack:** a dash attack. **Standard** telegraph: a red line along the path, then the dash. In the original, its defense was strong, so a front sword hit is **deflected** while it is guarding.
+- **Attack:** a dash attack. **Standard** telegraph: a white-hot line along the path, then the dash. In the original, its defense was strong, so a front sword hit is **deflected** while it is guarding.
 - **Counters:** a hit from the **side or back,** a hit during its **0.6 s recovery,** an **EMP** (which stops it), or a perfect Ink Step through the dash.
 - **Weakness:** the recovery after a dash.
 - **AI:** dashes in from the side, outside the camera's focus. Cooldown of 3 s between dashes.
@@ -238,7 +239,7 @@ Each entry lists: role, look, attack and telegraph, counters, weakness, AI behav
 ### 3.11 Banner Caller
 
 - **Role:** Support. **Cost 5. Wave 17.**
-- **Look:** a figure carrying a tall banner with an ink-red emblem.
+- **Look:** a figure carrying a tall banner with an ink-black emblem.
 - **Attack:** none directly. A banner aura (5-tile radius) gives nearby enemies **+30% move speed** and **faster token cooldowns.** It never shortens telegraphs.
 - **Counters:** a priority target. Kill it and the buff ends.
 - **Weakness:** frail and slow.
@@ -261,7 +262,7 @@ Each entry lists: role, look, attack and telegraph, counters, weakness, AI behav
 
 - **Role:** Support, summoner. **Cost 6. Wave 23.**
 - **Look:** a figure with a wrist controller and three small drones that orbit.
-- **Attack:** the drones attack one at a time. **Standard** telegraph on the drone (a red flash and a whine), then a dive.
+- **Attack:** the drones attack one at a time. **Standard** telegraph on the drone (a white flash and a whine), then a dive.
 - **Counters:** kill a drone in one hit (they are fragile). Kill the **Handler** and every drone falls. An **EMP** kills all drones at once.
 - **Weakness:** the Handler is exposed and slow. The drones recover 0.4 s after a dive.
 - **AI:** the Handler stays back and the drones orbit at about 3 tiles. Only one drone attacks at a time, using a ranged token.
@@ -313,7 +314,7 @@ Generic modifiers can be applied to any enemy. They are used in elite events and
 | **Armored** | Takes one extra hit | An ink plate on the body | Not on Tanks or Shieldbearers |
 | **Volatile** | Small explosion on death | A glowing core | Harms nearby enemies as well |
 | **Shrouded** | Partly cloaked | A shimmer | Only on enemies without Long telegraphs |
-| **Vengeful** | On death, hastes a nearby enemy | A red mark | Never stacks on one target |
+| **Vengeful** | On death, hastes a nearby enemy | A hatched ink brand | Never stacks on one target |
 
 **Rules**
 

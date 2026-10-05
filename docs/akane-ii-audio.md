@@ -124,6 +124,7 @@ A short motif (2-4 bars) plays over the score when the player enters a zone and 
 | **Defense** | Ink Step success (a clean brush chime and a brief slow-motion sweep), Ink Step miss (dull), dash charge ready (soft tick) |
 | **Human shield** | Grab, hold (strain), absorbed hit (thud), shield break, throw |
 | **Flow** | Tier up (a rising shamisen strum), tier down warning (a falling note), tier lost |
+| **Kill chain** | Kill sounds step up a **musical scale** with the Flow combo, in the **key of the current score,** and reset when the combo breaks. The ladder spans at most an octave and a half, then holds. Each kill is a cut or shot sound, a body sound and a splash |
 | **Specials** | Dragon Slash (a fast ink streak), Dragon Slayer (a rising wash and a huge release), meter ready |
 | **Loadout** | Gadget activate and ready cues (11 gadgets), mod toggle |
 | **Death** | A short, clean cut sound (so restarts stay fast) |

@@ -127,7 +127,7 @@ A boss's par time is the **expected time per phase** for a competent first attem
 
 | Move | Phase | Telegraph | Description | Counter | Window |
 |---|---|---|---|---|---|
-| **Strafing Dive** | 1+ | Heavy (0.8 s): a red line from the sky | A dive along a marked line, crashing into the roof | Step aside | The **crash stagger** (1.5 s), when the core is exposed |
+| **Strafing Dive** | 1+ | Heavy (0.8 s): a lime line from the sky | A dive along a marked line, crashing into the roof | Step aside | The **crash stagger** (1.5 s), when the core is exposed |
 | **Rotor Sweep** | 1+ | Standard | A low sweep across a rooftop | Jump over, or dash | None |
 | **Mine Drop** | 2+ | Standard | Drops mines that explode after 1.5 s | Leave the rings | None |
 | **Drone Release** | 2+ | Standard | Releases small drones | Kill them in one hit | The Kite lands to recharge (1.5 s), at close range |

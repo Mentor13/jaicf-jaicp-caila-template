@@ -72,41 +72,16 @@ Codex entries and title cards may reference the department lightly, never in mor
 
 Story beats appear at waves **25, 50, 75 and 100,** during the breather. Each is a short text card (readable in a few seconds), with an ink silhouette image, and awards a cosmetic (see §8). Beats can be skipped with one button, and are re-readable from the codex.
 
-### Beat 1: Wave 25, "The Count" (Midnight)
+The final text for all four beats and the post-100 rotation is in the [Copy Deck](akane-ii-copy-deck.md) (§3 and §4), which is the source of truth for all player-facing text. Summary:
 
-> **TSUKUMO** *(voice)*: "Twenty-five waves. My accountants are impressed."
-> **AKANE**: "Add it to the bill."
+| Wave | Title | Hour | Tsukumo's stance | Reward |
+|---|---|---|---|---|
+| 25 | The Count | Midnight | Businesslike, dismissive ("My accountants are impressed. I am not. Yet.") | Rain Coat |
+| 50 | The Ledger | Small Hours | Treats her as an expensive problem and offers a price | Night Courier |
+| 75 | The Archive | Before Dawn | Admits Katsuro is learning from her, and that she is a good student too | Gold Leaf trail |
+| 100 | The Name | Still Night | Gives his name and admits he has enjoyed the night | Gilded Jacket |
 
-### Beat 2: Wave 50, "The Ledger" (Small Hours)
-
-> **TSUKUMO**: "You cost more every night. Name a price."
-> **AKANE**: "No price."
-
-### Beat 3: Wave 75, "The Archive" (Before Dawn)
-
-> **TSUKUMO**: "Katsuro remembers every cut. Every rebuild is paid for with what you teach him."
-> **AKANE**: "Then he is a good student."
-
-### Beat 4: Wave 100, "The Name" (Still Night)
-
-An ink silhouette stands on a balcony above the Shrine Heights plateau.
-
-> **TSUKUMO**: "I am Tsukumo. This district has been mine for forty years."
-> **AKANE**: "Then it is overdue."
-
-The silhouette does not fight. The run continues.
-
-### After wave 100
-
-The run goes on as the endless climb. Story beats **repeat every 25 waves** with short variations about other crews and other districts that "are not yet his," so the game never stops, but the story has a peak at wave 100. Example rotation:
-
-- *"Another crew. Another name."*
-- *"The district is yours now. The city is not."*
-- *"Tsukumo has other districts. So do his friends."*
-- *"Rest is for the ones who finished."*
-- *"The sun is late. It is always late."*
-
-The rotation is deliberately generic so it can't contradict a future sequel.
+His respect grows across the four beats, without ever turning sentimental. After wave 100 a short beat plays every 25 waves from an eight-line pool (copy deck §4).
 
 ### Delivery rules
 
@@ -173,6 +148,7 @@ The whole run is **one night,** and the night deepens as waves pass. **Dawn neve
 
 - Calm and businesslike. Speaks like someone reading a ledger.
 - Talks about cost, debt and accounts, never about hatred.
+- His respect for Akane grows across the four beats.
 
 **Narrator / codex**
 
@@ -277,8 +253,9 @@ About **20 unlockable cosmetics** at launch (plus a default in each category), i
 
 - [x] Original canon confirmed: no definitive ending, and Akane is alive.
 - [x] The original's Final Scene is real and set in the past. Akane was an adult during the first game's gameplay and is an adult in Akane II.
-- [ ] Decide whether Akane II's Dojo tutorial is also framed as a flashback (as the original's was). See the narrative document §4.1.
-- [ ] Final copy for beats, the rotating post-100 lines, and the Tsukumo reveal.
-- [ ] Whether Tsukumo should appear in any boss title card lines.
+- [x] The Dojo tutorial is framed as a flashback to the dojo, as the original's was (see the copy deck §9).
+- [x] Final copy for beats, the post-100 rotation, the Tsukumo reveal and all other text: see the [Copy Deck](akane-ii-copy-deck.md).
+- [x] Tsukumo's name is confirmed. Boss title cards carry a small department tag instead of Tsukumo's name.
+- [ ] A last read of the lines marked **[CHECK]** in the copy deck by someone who knows the first game closely.
 - [ ] Art for the ink silhouette beats.
 - [ ] Localization plan (the text is deliberately short).

@@ -2,7 +2,7 @@
 
 **Studio:** Ludic Studios
 **Protagonist:** Sugahara Akane
-**Status:** Draft v1.0 (pre-production)
+**Status:** Draft v1.1 (pre-production)
 **Scope:** Design only. No implementation is covered here.
 
 > **Companion documents** (detail for the sections below):
@@ -11,6 +11,7 @@
 > - [Map Design](akane-ii-map.md): the full map write-up: zones, routes, traversal, spawns and zone heat, hazards, destruction, events, secrets, navigation and boss arenas.
 > - [Boss Move Lists](akane-ii-bosses.md): attacks, windows, par times and intro and kill moments.
 > - [Run, Scoring, Onboarding, HUD and Narrative](akane-ii-run-ui-narrative.md).
+> - [Copy Deck](akane-ii-copy-deck.md): the final draft of all player-facing story and flavor text.
 > - [Story, Endgame, Modes and Cosmetics](akane-ii-story-and-modes.md): the story premise and cast, milestone beats, Overdrive tiers, Boss Rush and Time Attack, and the cosmetics roster.
 >
 > Names for enemies, bosses, moves and zones are **working titles**. Items marked **[TBD]** need a decision or input from the team (several depend on the original *Akane*).
@@ -831,7 +832,7 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 - [ ] Tuning values: wave timers, special meter costs, vulnerability window lengths, performance budgets.
 - [ ] Map scale and crossing time (prototype).
 - [ ] Combo decay rate, the stand-still penalty, Flow thresholds and bonus values, and each boss's par time.
-- [ ] Story copy: final text for beats, the post-100 rotation and the Tsukumo reveal (see the story and modes document §9).
+- [x] Story copy: final draft written (see the [Copy Deck](akane-ii-copy-deck.md)). Remaining: a last read of the lines marked [CHECK] by someone who knows the first game closely.
 
 ---
 
@@ -880,6 +881,8 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | Anti-camping | Zone heat: staying in a zone redistributes the wave's spawns toward it, without adding budget |
 | Destruction | Broad, in tiers: indestructible structure (including at least two cover pieces per space), major destructibles that stay broken for the run, and decor. Route connectivity is built on the structural tier only |
 | Secrets | All 12 always available. Score rewards repeat each run, cosmetics and lore are one-time. Hints get subtler as the player finds more |
+| Villain and copy | Oyabun Tsukumo confirmed. Text register is dry noir with a little bite. Tsukumo's respect for Akane grows across the four beats. The wave 100 beat is just the name and the confrontation. Item lines are wry one-liners. Lore fragments mix logs, notes and graffiti. All text is in the Copy Deck |
+| Dojo tutorial | Framed as a flashback to the dojo, as the original's was. The Dojo Memory secret is a lesson about waiting |
 | Win state | None. The game stays endless, with story beats at waves 25, 50, 75 and 100 and a rotation of short beats after 100 |
 | Katsuro's rebuilds | A deliberate noir conceit. Never explained mechanically, in a one-night setting |
 | Setting and timing | 2121, the same night as the first game, continuing after the Last Stand. The whole game is one night |

@@ -215,6 +215,9 @@ All new moves follow the usual telegraph rules (Heavy tier or longer), and each 
 
 ### 10.3 Boss lines
 
+These are the title-card epithets. The final text, department tags and codex entries are in the [Copy Deck](akane-ii-copy-deck.md) §5.
+
+
 | Boss | Epithet on the title card |
 |---|---|
 | Katsuro | *"The one who never stays dead."* |

@@ -140,7 +140,7 @@ If the same deflect kill happened at no Flow, it would score 150 + 100 = 250. Th
 
 An optional, menu-accessible set of short lessons. Each is skippable and replayable.
 
-**Framing option [TBD]:** the original's optional tutorial was a flashback, set about 23 years before the main game, with Akane as a child training under Ishikawa. The Dojo could keep that framing (lessons as memories of the same dojo), or be presented as a plain training space. The name "Dojo" is chosen to work with either.
+**Framing (decided):** the original's optional tutorial was a flashback, set about 23 years before the main game, with Akane as a child training under Ishikawa. Akane II's Dojo keeps that framing: the lessons are memories of the dojo, each opened by one line of text from Ishikawa (see the copy deck §9). The practice range is a neutral sandbox with no story text.
 
 | Lesson | Teaches |
 |---|---|
@@ -211,125 +211,16 @@ Menus use the same brush-drawn identity: ink-stroke selection, a calm layout and
 
 ## 6. Narrative content
 
-**Tone:** terse and noir-leaning, with little exposition. Akane speaks rarely. The story is told through short text, with no cutscenes and no voiced lines.
+All player-facing story and flavor text now lives in the [Copy Deck](akane-ii-copy-deck.md), which is the source of truth. It contains:
 
-### 6.1 Intro card (shown at the first launch and available from the menu)
+- the intro card and the four story beats (with the post-100 rotation),
+- boss title cards and codex entries,
+- enemy codex entries and first-encounter cards,
+- the 12 lore fragments,
+- the Dojo Memory script,
+- the tutorial (Dojo) lines,
+- item flavor lines for all 28 items,
+- zone cards, event announcements and death lines,
+- character codex entries.
 
-> *Mega-Tokyo, 2121. The night is not over.*
-> *Akane walked out of the Last Stand alive. The Yakuza are still counting.*
-> *Oyabun Tsukumo owns this district. Katsuro has been sent again. So have the others.*
-> *Akane remembers the city in ink. She intends to leave it in ink as well.*
-
-### 6.2 Enemy codex (draft entries)
-
-Codex entries unlock on first encounter. Each is one or two lines.
-
-| Enemy | Entry |
-|---|---|
-| Yakuza Guy | *Cheap, loyal and expendable. There is always another.* |
-| Shooter | *Paid by the eye. The scope sees what the man would rather not.* |
-| Skirmisher | *They don't fight. They arrive.* |
-| Tank | *Plating bought on credit. The back plate was an afterthought.* |
-| Lancer | *Reach is a promise. Step inside and it breaks.* |
-| Archer | *Patient men with a view.* |
-| Shieldbearer | *A wall that walks. Walls have sides.* |
-| Cyber Ninja | *The body was sold first. The blade followed.* |
-| Bomber | *Nobody remembers his face, only the sound.* |
-| Zipline Raider | *The city is wired for rent. He rides it for free.* |
-| Banner Caller | *Loud colors for quiet men.* |
-| Hexer | *He doesn't paint walls. He paints where you can't step.* |
-| Drone Handler | *Three small eyes and one small man.* |
-| Phantom | *If you hear it twice, you heard it too late.* |
-| Duelist | *He waits for you to be brave.* |
-| Sniper | *Seen only by the red line that finds you.* |
-
-### 6.3 Boss codex (draft entries)
-
-| Boss | Entry |
-|---|---|
-| Katsuro | *He should be dead. The Yakuza kept him anyway, and every defeat taught him something new.* |
-| The Debt Collector | *Every bullet is an invoice. He has never failed to collect.* |
-| The Hunter | *A Cyber Ninja who took the contract no one else would take.* |
-| The Crimson Kite | *Piloted from a quiet room, a long way from the sky it owns.* |
-| The Demolisher | *If a building stands in the Yakuza's way, he has already marked it.* |
-| The Floodgate Warden | *He sold the canals years ago. Now he collects.* |
-
-### 6.4 Lore fragments (secret rooms)
-
-Twelve short text pieces. Found in the secrets listed in the map spec. They read like salvaged notes, messages and logs.
-
-| # | Found in | Fragment |
-|---|---|---|
-| 1 | Koi Pond Wall | *"The old master taught three things: breathe, wait, cut. She learned the third first."* |
-| 2 | Pipe Whisper | *"Water remembers everything that was dropped into it. It gives back the heavy things first."* |
-| 3 | Server Room terminal 1 | *Log: "Contract 118. Subject: Sugahara A. Status: alive. Escalate. Authorized: T."* |
-| 4 | Server Room terminal 2 | *Log: "Katsuro reassigned. Third time. Second Pistol requisitioned."* |
-| 5 | Server Room terminal 3 | *Log: "Hunter requires no surveillance. He prefers to be the surveillance."* |
-| 6 | Server Room terminal 4 | *Log: "Dojo basement sealed after the Ishikawa incident. Do not reopen."* |
-| 7 | Neon Kanji | *A shop sign, half burned: "Open all night. Closed to Yakuza."* |
-| 8 | Broken Sign Roost | *Scrawled note: "Whoever climbs this far, I hope you're running toward something."* |
-| 9 | Roof Vent Drop | *Maintenance tag: "Vent 4 leads down. Do not lean on it. Do not ask why."* |
-| 10 | Bell of the Shrine | *"The bell rings for the departed. Tonight it rings for the ones who stayed."* |
-| 11 | Lantern Path | *"Each lantern remembers someone. Lighting them is the only way to leave the dark."* |
-| 12 | The Old Dojo | *"Master, I did not come to be forgiven. I came to finish the lesson."* |
-
-### 6.5 The Dojo Memory
-
-Found by collecting all twelve fragments and opening the Old Dojo. A short **flashback** in ink, about 60 seconds, as text and images.
-
-- **It is a past memory,** and Akane is an adult in the present. The scene shows a **late-apprenticeship lesson** under Ishikawa, between the original's tutorial flashback (her early training) and its Final Scene (the duel), with the young Akane learning the technique she later made her own. It does **not** restage either of those original flashbacks, which stay the original's own moments and part of her past.
-- It frames the lore fragment she leaves in the dojo (*"Master, I did not come to be forgiven. I came to finish the lesson."*), written as an adult looking back.
-- It grants a cosmetic reward (*Crimson Dojo Gi*) and a codex entry on Ishikawa.
-- The codex entry stays brief and does not retell the original's story: *Ishikawa taught her. Ishikawa is gone. The dojo has been sealed since.*
-
-### 6.6 Item flavor
-
-Each unlocked item has a one-line flavor in the Armory. Draft copy for all 28 items:
-
-**Katanas**
-
-| Item | Line |
-|---|---|
-| Kuro | *"Plain steel. It has never been the reason she lost."* |
-| Rebi | *"It returns what it is given."* |
-| Tadus | *"A throw is a promise to come back for it."* |
-| Nodachi | *"Too long for alleys. The alleys can adjust."* |
-| Twin Tantō | *"Two short answers to one long question."* |
-| Echo Blade | *"The first cut is a warning. The second is the lesson."* |
-| Kusarigama | *"Distance is a courtesy. Pull it back."* |
-
-**Guns**
-
-| Item | Line |
-|---|---|
-| Patron v26 | *"Six rounds and a good reason for each."* |
-| Inquisitor M103 | *"Three questions at a time. It rarely needs a fourth."* |
-| Vicious S36 | *"It kicks like it resents the target. Lean into it."* |
-| Magnum XT5 | *"One answer, delivered through everyone in the way."* |
-| Double Barrel | *"Diplomacy at close range."* |
-| Gravitational Beam Emitter | *"It doesn't shoot. It reminds things where they belong."* |
-
-**Gadgets**
-
-| Item | Line |
-|---|---|
-| Cyber Gloves | *"A grip that doesn't tire of other people."* |
-| Marionette Wire | *"Everyone walks, once the strings are right."* |
-| Katana Gun | *"Why choose? The blade was always going to need an opinion."* |
-| Magnetic Pulse Emitter | *"It argues with the metal in men."* |
-| Stabilizer Bracelet | *"Steady hands win quietly."* |
-| Adrenaline Shot | *"The room slows down. She doesn't."* |
-| Grapple Anchor | *"A rooftop is just a street that hasn't been introduced."* |
-| Updraft Fan | *"Cheap wind. Expensive confidence."* |
-| Hologram Decoy | *"A better Akane, for a few seconds. She tolerates the comparison."* |
-| Sumi Bomb | *"Ink for the eyes of men who stare."* |
-| Lure Beacon | *"Everyone follows the loudest thing in the room."* |
-
-**Boots**
-
-| Item | Line |
-|---|---|
-| Standard | *"Good soles. The city did the rest."* |
-| Geta Springs | *"A higher vantage is only a decision away."* |
-| Rail Skates | *"Momentum is a debt that pays in the right direction."* |
-| Silent Tabi | *"Quiet steps leave the longest silences."* |
+**Tone:** dry noir with a little bite. Akane speaks rarely, in at most about 8 words. The Dojo tutorial is a flashback to the dojo, with one line of text from Ishikawa per lesson.

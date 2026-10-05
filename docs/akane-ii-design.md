@@ -59,6 +59,7 @@ A highly unique pixel art style that blends **Japanese ink wash (sumi-e)** with 
 
 **Decided art rules**
 
+- **Night and rain:** the whole game is one rainy night in 2121. Lighting deepens with the wave band (see the story and modes document), and dawn never arrives. Zone hues and telegraphs must stay readable in every lighting band.
 - **Ink effects:** *bold on kills, restrained elsewhere.* Kills get a satisfying ink splash. Hits and movement get subtle effects, so the combat plane stays readable in crowded waves and on Switch.
 - **Palette:** a **shared ink wash base** for the whole game, with **one accent hue per zone** (for example, neon pink for the Plaza and teal for the Canals). Zone accents must never clash with the reserved telegraph and boss accent colors.
 - **Cyberpunk and ink wash together:** the ink wash is **how Akane sees and remembers the city**. Neon and technology show through as bright ink accents. This also connects to the original's flashback ending and gives Ink Step and the ink effects a story reason.
@@ -763,7 +764,7 @@ There is no campaign. Story is delivered lightly, with **light continuity** from
 
 **Akane II continuity approach**
 
-- Akane II is set in **Mega-Tokyo** in a district run by **Oyabun Tsukumo,** and Akane has come to **finish the fight.** The original has no definitive ending and Akane is alive, so the story says she survived, refers to the Last Stand only as "that night," and adds nothing more.
+- Akane II is set in **Mega-Tokyo in 2121, on the same night as the first game,** right after her Last Stand, in a district run by **Oyabun Tsukumo,** and Akane has come to **finish the fight.** The original has no definitive ending and Akane is alive, so the story says she survived, refers to the Last Stand only as "the Last Stand" or "earlier tonight," and adds nothing more.
 - **Katsuro** returns as her Nemesis: rebuilt by the Yakuza after every defeat, and obsessed with learning her. Tsukumo never appears in a fight and is revealed by name at wave 100.
 - Story beats play at waves 25, 50, 75 and 100. Details, cast, voice rules, Overdrive tiers, modes and cosmetics are in the [Story, Endgame, Modes and Cosmetics](akane-ii-story-and-modes.md) document.
 - New bosses are lieutenants or hired killers from the same network, so they reuse the setting without needing a new plot.
@@ -880,7 +881,9 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | Destruction | Broad, in tiers: indestructible structure (including at least two cover pieces per space), major destructibles that stay broken for the run, and decor. Route connectivity is built on the structural tier only |
 | Secrets | All 12 always available. Score rewards repeat each run, cosmetics and lore are one-time. Hints get subtler as the player finds more |
 | Win state | None. The game stays endless, with story beats at waves 25, 50, 75 and 100 and a rotation of short beats after 100 |
-| Original canon | Confirmed: the original has no definitive ending, and Akane is alive. The story says she survived, refers to the Last Stand only as "that night," and invents nothing more |
+| Setting and timing | 2121, the same night as the first game, continuing after the Last Stand. The whole game is one night |
+| Night clock | The night deepens across waves (late night, midnight, small hours, before dawn), and dawn never comes. Baseline weather is light rain |
+| Original canon | Confirmed: the original has no definitive ending, and Akane is alive. The story says she survived, refers to the Last Stand only as "the Last Stand" or "earlier tonight," and invents nothing more |
 | Akane's voice | Terse and dry, about 8 words per line at most, only at story beats |
 | Endgame | Overdrive tiers from wave 50 (stacking modifiers and combined events). Bosses gain moves by wave tier instead, with Tiers 5 and 6 at waves 150+ and 200+ |
 | Extra modes | Boss Rush and Time Attack, unlocked after defeating Katsuro once. No daily challenge |

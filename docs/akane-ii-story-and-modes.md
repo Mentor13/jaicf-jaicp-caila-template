@@ -20,7 +20,7 @@ Companion to [akane-ii-design.md](akane-ii-design.md) (§9 Story and Presentatio
 
 ## 1. Premise and tone
 
-**Premise.** Mega-Tokyo, some time after the first game (which is set in 2121) **[TBD: year]**. A single Yakuza head, **Oyabun Tsukumo,** controls one vertical district of the city: its roofs, its canals, its shrines and the infrastructure beneath. Akane has come to **finish the fight,** and the only way is up, through everything his organization sends.
+**Premise.** Mega-Tokyo, **2121,** the **same night** as the first game, continuing right after Akane's Last Stand. She was cornered by a horde and made her final stand in the rain-soaked neon streets, and she walked out alive. Now a single Yakuza head, **Oyabun Tsukumo,** controls the vertical district ahead of her: its roofs, its canals, its shrines and the infrastructure beneath. Akane has come to **finish the fight,** and the only way is up, through everything his organization sends. The whole game is **one night.**
 
 **Tone.** Terse, dry and noir. Sparse text and no exposition dumps. The world tells the story (codex entries, logs, boss title cards) and Akane says almost nothing.
 
@@ -41,7 +41,7 @@ Companion to [akane-ii-design.md](akane-ii-design.md) (§9 Story and Presentatio
 
 ### Katsuro (the Nemesis)
 
-- **Rebuilt and obsessed.** The Yakuza rebuild him with cybernetics each time he is beaten, and he **remembers every defeat.** His evolution across a run is the story: he is learning Akane.
+- **Rebuilt and obsessed.** Within this one night, the Yakuza's field engineers rebuild him with cybernetics each time he is beaten, and he **remembers every defeat.** His evolution across a run is the story: he is learning Akane.
 - He has no stated personal tie to her. That keeps him compatible with the original.
 - In text he is treated like a force of nature: patient, relentless, and a little sad.
 
@@ -71,22 +71,22 @@ Codex entries and title cards may reference the department lightly, never in mor
 
 Story beats appear at waves **25, 50, 75 and 100,** during the breather. Each is a short text card (readable in a few seconds), with an ink silhouette image, and awards a cosmetic (see §8). Beats can be skipped with one button, and are re-readable from the codex.
 
-### Beat 1: Wave 25, "The Count"
+### Beat 1: Wave 25, "The Count" (Midnight)
 
 > **TSUKUMO** *(voice)*: "Twenty-five waves. My accountants are impressed."
 > **AKANE**: "Add it to the bill."
 
-### Beat 2: Wave 50, "The Ledger"
+### Beat 2: Wave 50, "The Ledger" (Small Hours)
 
 > **TSUKUMO**: "You cost more every night. Name a price."
 > **AKANE**: "No price."
 
-### Beat 3: Wave 75, "The Archive"
+### Beat 3: Wave 75, "The Archive" (Before Dawn)
 
 > **TSUKUMO**: "Katsuro remembers every cut. Every rebuild is paid for with what you teach him."
 > **AKANE**: "Then he is a good student."
 
-### Beat 4: Wave 100, "The Name"
+### Beat 4: Wave 100, "The Name" (Still Night)
 
 An ink silhouette stands on a balcony above the Shrine Heights plateau.
 
@@ -103,6 +103,7 @@ The run goes on as the endless climb. Story beats **repeat every 25 waves** with
 - *"The district is yours now. The city is not."*
 - *"Tsukumo has other districts. So do his friends."*
 - *"Rest is for the ones who finished."*
+- *"The sun is late. It is always late."*
 
 The rotation is deliberately generic so it can't contradict a future sequel.
 
@@ -115,6 +116,27 @@ The rotation is deliberately generic so it can't contradict a future sequel.
 
 ---
 
+### Night clock
+
+The whole run is **one night,** and the night deepens as waves pass. **Dawn never comes.**
+
+| Waves | Hour (story beat label) | Lighting and weather |
+|---|---|---|
+| 1-24 | Late night | Dusk-blue sky, steady drizzle, bright neon |
+| 25-49 | Midnight | Deep blue-black, heavier rain, neon strongest against the dark |
+| 50-74 | Small hours | The darkest band, with sparse lights and long reflections |
+| 75-99 | Before dawn | A faint pale glow on the horizon, rain thinning |
+| 100+ | "Still night" | The glow never grows. The hour never changes |
+
+**Rules**
+
+- Lighting shifts are gradual (over several waves), and the **zone accent hues and telegraph colors stay readable** in every band (the Blackout event raises telegraph contrast, and the same applies to the darkest band).
+- The weather baseline is **light rain** ("rain-soaked neon streets" from the first game). The Rain Shower event is a **downpour,** not the first rain.
+- Story beats are labeled with the hour (*Midnight*, *Small Hours*, *Before Dawn*, *Still Night*), so the text marks the night's progress.
+- Past wave 100 the night simply does not end, which keeps the one-night framing and the endless arcade compatible.
+
+---
+
 ## 4. Canon handling
 
 **Confirmed canon:** the original *Akane* has **no definitive ending, and Akane is alive.** This story builds on exactly that and nothing more.
@@ -122,7 +144,8 @@ The rotation is deliberately generic so it can't contradict a future sequel.
 **Rules**
 
 - **Akane is alive,** and the story can say so plainly.
-- Do not add detail about how the Last Stand ended, or about what happened to anyone else in it. Refer to it as **"that night."**
+- **It is the same night.** Akane II continues the first game's night in 2121 and covers one night only. Nothing is dated beyond that night, and no scene shows daylight.
+- Do not add detail about how the Last Stand ended, or about what happened to anyone else in it. Refer to it as **"the Last Stand"** or **"earlier tonight."**
 - Do not invent an ending for the original. The first game's open ending stays open.
 - The original's **Final Scene** and its **tutorial** are real flashbacks to Akane's childhood (the tutorial is set about 23 years before the main game; the Final Scene shows her as a child facing Ishikawa). Treat both as history. **Akane was an adult during the first game's gameplay and is an adult in Akane II,** and nothing in the present story shows her as a child.
 - Do not restage or retell the original's Final Scene. Akane II's own flashback (the Dojo Memory) shows a different moment.
@@ -132,7 +155,7 @@ The rotation is deliberately generic so it can't contradict a future sequel.
 
 **Text affected**
 
-- The **intro card** states that Akane walked away from that night (see the narrative document).
+- The **intro card** states that the night is not over and that Akane walked out of the Last Stand alive (see the narrative document).
 - **Lore fragment 3** reads "Status: alive."
 
 ---

@@ -215,7 +215,8 @@ Menus use the same brush-drawn identity: ink-stroke selection, a calm layout and
 
 ### 6.1 Intro card (shown at the first launch and available from the menu)
 
-> *Mega-Tokyo. Akane walked away from that night. The Yakuza are still counting.*
+> *Mega-Tokyo, 2121. The night is not over.*
+> *Akane walked out of the Last Stand alive. The Yakuza are still counting.*
 > *Oyabun Tsukumo owns this district. Katsuro has been sent again. So have the others.*
 > *Akane remembers the city in ink. She intends to leave it in ink as well.*
 

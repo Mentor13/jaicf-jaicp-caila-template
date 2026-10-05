@@ -434,7 +434,7 @@ Occasional, telegraphed environmental events add variety. Each is announced abou
 
 | Event | Effect | Rules |
 |---|---|---|
-| **Rain Shower** | Slippery rooftops: dashes and landings slide a little further. Rain streaks add ink texture | Telegraph visibility unchanged. Affects the Rooftops and Shrine Heights |
+| **Rain Shower** | A downpour on top of the baseline drizzle. Slippery rooftops: dashes and landings slide a little further. Rain streaks add ink texture | Telegraph visibility unchanged. Affects the Rooftops and Shrine Heights |
 | **Blackout** | Neon lights go dark in a zone. The background dims and enemy silhouettes are lit by their own accents | **Telegraph contrast is increased,** never reduced. Affects one zone at a time |
 | **Canal Surge** | The Canals' water rises for about 20 seconds, covering the lower channels | Lethal only in flagged lower channels, with the usual 0.8 s warning |
 
@@ -523,6 +523,8 @@ Twelve secrets. All rewards are **non-power** (score, cosmetics, lore). All 12 a
 ---
 
 ## 14. Art, audio and visual language
+
+**Night and weather.** The map is a rainy 2121 night, with light rain as the baseline and the lighting deepening across wave bands (late night, midnight, small hours, before dawn, and then a night that never ends). Wet surfaces add reflections of neon. Lighting bands never reduce the contrast of walkable surfaces, hazard marks or telegraphs.
 
 ### 14.1 Zone accent hues
 

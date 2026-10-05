@@ -2,9 +2,16 @@
 
 **Studio:** Ludic Studios
 **Protagonist:** Sugahara Akane
-**Status:** Draft v0.5 (pre-production)
+**Status:** Draft v0.6 (pre-production)
 **Scope:** Design only. No implementation is covered here.
 
+> **Companion documents** (detail for the sections below):
+> - [Enemy Design](akane-ii-enemies.md): telegraph tiers, group AI, the 16 enemies, modifiers, wave composition and elite events.
+> - [Loadout Detail](akane-ii-loadout.md): katana, gun, gadget and boots stats, unlock challenges and balance checks.
+> - [Map Layout Spec](akane-ii-map.md): zones, route graph, ziplines, spawns, secrets and boss arenas.
+> - [Boss Move Lists](akane-ii-bosses.md): attacks, windows, par times and intro and kill moments.
+> - [Run, Scoring, Onboarding, HUD and Narrative](akane-ii-run-ui-narrative.md).
+>
 > Names for enemies, bosses, moves and zones are **working titles**. Items marked **[TBD]** need a decision or input from the team (several depend on the original *Akane*).
 >
 > Original-game facts were gathered from web search summaries (the Akane fan wiki, store pages and reviews). The wiki pages themselves could not be opened, so item names are reliable but **item behaviors, unlock conditions and the full gadget list are not**. Every remix in §3 is a new design, not a description of the original.
@@ -138,7 +145,7 @@ Akane grabs an enemy and uses them as a shield.
 
 Akane picks one item per slot **before a run**. Every item is a **sidegrade**, never a strict upgrade, and every item has a clear strength and a clear cost. A few items are strange on purpose, but all must be viable for a high score and none may be required.
 
-Original item names that are known are kept where it helps continuity. Their behaviors below are new designs.
+Original item names that are known are kept where it helps continuity. Their behaviors below are new designs. Full stats, unlock challenges and balance checks are in the [Loadout Detail](akane-ii-loadout.md) document.
 
 #### Katanas (7)
 
@@ -179,7 +186,7 @@ The roster covers four families, and **every gadget is an active or always-on to
 |---|---|---|---|
 | **Katana Gun** | Gun mounted on the sword | Every swing also fires a shot along the swing arc | Drains ammo twice as fast |
 | **Magnetic Pulse Emitter** | Short EMP | Disables cybernetic enemies (Shooters, Cyber Ninjas, Drone Handlers) and strips Tank armor | Short range, slow recharge |
-| **Stabilizer Bracelet** | Steady frame | Widens the Ink Step window, refunds the dash on a successful Ink Step, and removes gun recoil | Passive. Rewards skill, gives no active power |
+| **Stabilizer Bracelet** | Steady frame | Widens the Ink Step window, refunds both dash charges on a successful Ink Step, and removes gun recoil | Passive. Rewards skill, gives no active power |
 | **Adrenaline Shot** | Kill-fueled burst | Kill chains trigger a brief slow-motion burst with faster attacks | Weak when you are not chaining |
 
 **Traversal (2)**
@@ -293,6 +300,8 @@ One large, vertical single-level map that replaces the original single floor. It
 
 ### 4.2 Structure
 
+A full layout spec (route graph, ziplines, spawn points, secrets catalogue and boss arenas) is in the [Map Layout Spec](akane-ii-map.md).
+
 The map is a single **vertical Mega-Tokyo tower district**, divided into **5 zones**. Five is manageable for art, AI navigation and testing. Zones are listed from the ground up, plus the hidden network that runs through all of them.
 
 | Zone | Theme and role | Traversal | Suited boss |
@@ -370,26 +379,26 @@ The original had 4 basic enemy types (Yakuza Guy, Shooter, Tank and Cyber Ninja)
 
 The roster is organised by **role**, so each enemy does a distinct job and combines interestingly with others.
 
-| # | Working title | Role | Behavior summary | Unlock |
+| # | Enemy | Role | Behavior summary | Unlock |
 |---|---|---|---|---|
 | 1 | **Yakuza Guy** (original) | Grunt / melee | The common footsoldier. Easy to read and fast to kill | Wave 1 |
-| 2 | **Shooter** (original) | Ranged | A cybernetically enhanced sharpshooter. The original never missed, so every shot needs a visible telegraph | Wave 1 |
-| 3 | **Tank** (original) | Armored | The only original enemy needing more than one slash. Needs a clear counter (flank, Magnum, EMP) | Wave 1 |
-| 4 | **Cyber Ninja** (original) | Dasher | Deadly dash attacks and a strong defense. A natural fit for Ink Step | Wave 1 |
-| 5 | Lancer | Melee, long reach | Thrusts from range. Punishes careless dashes | Wave 2 |
-| 6 | Shieldbearer | Armored | Front-blocking shield. Must be flanked, dodged around or shield-broken | Wave 3 |
-| 7 | Archer | Ranged, high ground | Prefers elevated spots. Telegraphed arrow lines | Wave 4 |
-| 8 | Skirmisher | Flanker | Fast, circles to the player's back. Low commitment attacks | Wave 5 |
-| 9 | Bomber | Area denial | Throws delayed charges that zone the ground | Wave 7 |
-| 10 | Zipline Raider | Traversal | Uses ziplines and ledges to arrive from above | Wave 8 |
-| 11 | Banner Caller | Support | Buffs nearby enemies' speed. Priority target | Wave 10 |
-| 12 | Hexer | Control | Places lingering ink zones that restrict movement | Wave 12 |
-| 13 | Drone Handler | Summoner | Controls a few small drones. Killing the handler disables them | Wave 14 |
-| 14 | Phantom | Ambusher | Appears from hidden spots, attacks, then repositions | Wave 16 |
-| 15 | Duelist | Elite melee | Mirrors Akane's timing. Tests Ink Step | Wave 18 |
-| 16 | Sniper | Long-range elite | Long telegraphed line shot. Forces cover and verticality | Wave 20 |
+| 2 | **Shooter** (original) | Ranged | A cybernetic sharpshooter. The original never missed, so every shot has a lock-on telegraph | Wave 2 |
+| 3 | Skirmisher | Flanker | Fast, circles to the player's back. Low commitment attacks | Wave 3 |
+| 4 | **Tank** (original) | Armored | The only original enemy needing more than one slash. Dies to one hit from behind | Wave 4 |
+| 5 | Lancer | Melee, long reach | Thrusts from range. Punishes careless dashes | Wave 6 |
+| 6 | Archer | Ranged, high ground | Prefers elevated spots. Telegraphed arrow arcs | Wave 7 |
+| 7 | Shieldbearer | Armored | Front-blocking shield. Must be flanked, pierced or pulled aside | Wave 8 |
+| 8 | **Cyber Ninja** (original) | Dasher | Deadly dash attacks and a strong guard. A natural fit for Ink Step | Wave 9 |
+| 9 | Bomber | Area denial | Throws delayed charges that zone the ground | Wave 12 |
+| 10 | Zipline Raider | Traversal | Uses ziplines and ledges to arrive from above | Wave 14 |
+| 11 | Banner Caller | Support | Buffs nearby enemies' speed. Priority target | Wave 17 |
+| 12 | Hexer | Control | Places lingering ink zones that restrict movement | Wave 21 |
+| 13 | Drone Handler | Summoner | Controls a few small drones. Killing the handler disables them | Wave 23 |
+| 14 | Phantom | Ambusher | Appears from hidden spots, attacks, then repositions | Wave 27 |
+| 15 | Duelist | Elite melee | Counter stance and ripostes. Tests Ink Step | Wave 32 |
+| 16 | Sniper | Long-range elite | Long lock-on shot. Forces cover and verticality | Wave 38 |
 
-The first 8 types (the four carried-over types plus Lancer, Shieldbearer, Archer and Skirmisher) are the early set, available by wave 5. The other 8 (Bomber through Sniper) trickle in between waves 7 and 20. **[TBD: tune the unlock curve in playtesting.]**
+The first 8 types (the four originals plus Skirmisher, Lancer, Archer and Shieldbearer) are the early set, introduced one per wave over waves 1-9. The other 8 trickle in between waves 12 and 38. Boss waves and elite events never introduce a new type. Full designs, telegraph tiers, budgets, group AI and wave composition are in the [Enemy Design](akane-ii-enemies.md) document.
 
 ### 6.2 Design rules for every enemy
 
@@ -477,6 +486,8 @@ Alter the map during the fight: collapse a bridge, flood a tunnel, cut a zipline
 - Roaming bosses must always be **perceivable**: audio and visual cues indicate their direction when off-screen.
 
 ### 7.5 Boss designs
+
+Move lists, par times and intro and kill moments are in the [Boss Move Lists](akane-ii-bosses.md) document.
 
 All bosses are **grounded Yakuza cyberpunk**: lieutenants, enforcers and hired killers from Katsuro's network, so they fit the original's setting. Each tests **one skill**, and each has a signature telegraph sound that can be recognized with the screen off.
 
@@ -663,6 +674,8 @@ The keeper of the old floodgates under the district, who sells control of the ca
 
 ## 8. Progression and Scoring
 
+The scoring formula, bonuses, Trials (optional challenge modifiers) and run structure are in the [Run, Scoring, Onboarding, HUD and Narrative](akane-ii-run-ui-narrative.md) document.
+
 **Pure skill during play.** Every run starts equal, with no power progression within a run. Between runs, the player unlocks **sidegrade items** (see §3.6), a system that existed in the original, where equipment unlocked through achievements.
 
 - **Reward:** score and leaderboards.
@@ -703,6 +716,8 @@ There is no campaign. Story is delivered lightly, with **light continuity** from
 ---
 
 ## 10. Platforms and Input
+
+HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrative](akane-ii-run-ui-narrative.md) document.
 
 ### 10.1 Platforms
 
@@ -782,6 +797,14 @@ There is no campaign. Story is delivered lightly, with **light continuity** from
 | Audio | Traditional instruments over an electronic pulse |
 | Accessibility | Hold/toggle and one-handed layouts, telegraph visibility, hit-stop and shake sliders, assist options. All at launch |
 | Post-launch | Free updates, then one paid expansion. No multiplayer or co-op |
+| Elites | Named elites for eight enemy types, plus generic modifiers. Elite events at waves 5, 15, 25... draw from a pool of six themes |
+| Run loop | Instant restart with the last loadout. A short, skippable run summary. The Armory is one button away |
+| Scoring | Base points (50 x enemy cost) x Flow multiplier, plus flat style bonuses and wave, event and boss bonuses |
+| Difficulty | One fair curve, plus Trials (optional challenge modifiers with score multipliers) unlocked after defeating Katsuro |
+| Onboarding | As in the original: a separate optional Tutorial from the menu (the Dojo), plus arcade that can be started cold. First-encounter cards and teaching waves 1-9 |
+| HUD | Minimal brush-drawn HUD with off-screen threat smears |
+| Unlocks | Item-specific mastery challenges, one per item, in four tiers |
+| Narrative delivery | Short text only: intro card, enemy and boss codex, lore fragments and a Final Scene flashback. No voice, no cutscenes |
 | Platforms | PC and Nintendo Switch |
 | Input | Gamepad-first, with keyboard and mouse equally satisfying |
 | Boss types | Roaming, arena-shifting and standard duel |

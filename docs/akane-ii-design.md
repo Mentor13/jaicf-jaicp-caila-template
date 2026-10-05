@@ -915,7 +915,7 @@ Original-game facts came from web search summaries, because the fan wiki and rev
 
 - [ ] Katanas: the three names (default, **Rebi**, **Tadus**) and what each actually does.
 - [ ] Guns: the six names (**Patron v26**, **Inquisitor M103**, **Vicious S36**, **Magnum XT5**, **Double Barrel Shotgun**, **Gravitational Beam Emitter**) and their behavior and ammo rules.
-- [ ] Gadgets: the five confirmed names (**Cyber Gloves**, **Stabilizer Bracelet**, **Adrenaline Shot**, **Magnetic Pulse Emitter**, **Katana Gun**), their effects, and the **six missing gadget names**.
+- [ ] Gadgets: the five original names we kept (**Cyber Gloves**, **Stabilizer Bracelet**, **Adrenaline Shot**, **Magnetic Pulse Emitter**, **Katana Gun**) and their original effects, for continuity only. The other six gadgets are new designs by agreement, so the original's remaining names do not need to be found.
 - [ ] Gadget slots: the original allowed up to two (or none). Confirm.
 - [ ] Boots: names and effects on the dash.
 - [ ] Cigarettes: names and special-attack looks.

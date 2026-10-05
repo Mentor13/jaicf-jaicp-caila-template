@@ -339,7 +339,7 @@ Checked online in this pass. Sources are search summaries and the fan wiki, not 
 
 **Still unverified**
 
-- Item names and behaviors, and the six missing gadget names (Appendix B of the main doc).
+- Item names and original behaviors for the items we kept by name (Appendix B of the main doc). The other six gadgets are new designs by agreement, so their names are not an open question.
 - The exact wording of the original's text and the Final Scene.
 
 **Sources**

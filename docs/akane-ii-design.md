@@ -309,8 +309,8 @@ The map is a single **vertical Mega-Tokyo tower district**, divided into **5 zon
 |---|---|---|---|
 | **Neon Plaza** | Ground-level hub of food stalls and neon, with wide sightlines. The main starting area | Wide, flat, several exits | Standard Duel |
 | **Underpass Canals** | Lower tier of tunnels, canals and flood gates. Tight corridors and ambush spots | Narrow routes, water crossings, slides | Floodgate Warden |
-| **Rooftop Signage** | Mid to upper tier of rooftops, giant signs and bridges. The main zipline network | Ziplines, climbable walls, long jumps | Demolisher, Crimson Kite |
-| **Shrine Heights** | Highest tier. A rooftop shrine and the open arena at the top | Steep climbs, updrafts, long-range ziplines | Standard Duel (Katsuro), Hunter |
+| **Rooftop Signage** | Mid to upper tier of rooftops, giant signs and bridges. The main zipline network | Ziplines, climbable walls, long jumps | Demolisher, Crimson Kite, Hunter |
+| **Shrine Heights** | Highest tier. A rooftop shrine and the open arena at the top | Steep climbs, updrafts, long-range ziplines | Standard Duel (Katsuro), Crimson Kite |
 | **Hidden Network** | Maintenance shafts, vents and secret rooms threading through every zone. Holds secrets and shortcuts | Hidden entrances found by exploring | None (secrets only) |
 
 **Rules**

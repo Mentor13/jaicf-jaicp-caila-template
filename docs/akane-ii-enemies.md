@@ -162,7 +162,7 @@ Each entry lists: role, look, attack and telegraph, counters, weakness, AI behav
 
 - **Role:** Anchor, armored. **Cost 5. Wave 4.**
 - **Look:** a bulky enforcer in heavy plating, with a visible rear plate.
-- **Attack:** a ground slam in front. **Heavy** telegraph: an orange ink fan on the ground.
+- **Attack:** a ground slam in front. **Heavy** telegraph: a vermilion-and-white ink fan on the ground.
 - **Counters:** the original needed more than one slash. Here, the Tank dies to **one hit from behind** (rear plate), **two sword hits** from the front, a **Magnum** shot, a **Dragon Slash**, or **one hit after an EMP** strips the plating.
 - **Weakness:** slow turning (about 0.6 s), so staying behind it works. 1.0 s of recovery after a slam.
 - **AI:** advances steadily and ignores flanking positions. Its turn speed is the exploit.

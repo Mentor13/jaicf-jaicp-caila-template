@@ -350,7 +350,7 @@ Checked online in this pass. Sources are search summaries and the fan wiki, not 
 
 **Still unverified**
 
-- Item names and original behaviors for the items we kept by name (Appendix B of the main doc). The other six gadgets are new designs by agreement, so their names are not an open question.
+- Nothing blocking. The items were remixed on purpose, so their original behaviors don't need to match (Appendix B of the main doc).
 - The exact wording of the original's text and the Final Scene.
 
 **Sources**

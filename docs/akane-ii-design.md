@@ -2,7 +2,7 @@
 
 **Studio:** Ludic Studios
 **Protagonist:** Sugahara Akane
-**Status:** Draft v1.2 (pre-production)
+**Status:** Draft v1.3 (pre-production)
 **Scope:** Design only. No implementation is covered here.
 
 > **Companion documents** (detail for the sections below):
@@ -11,6 +11,8 @@
 > - [Map Design](akane-ii-map.md): the full map write-up: zones, routes, traversal, spawns and zone heat, hazards, destruction, events, secrets, navigation and boss arenas.
 > - [Boss Move Lists](akane-ii-bosses.md): attacks, windows, par times and intro and kill moments.
 > - [Run, Scoring, Onboarding, HUD and Narrative](akane-ii-run-ui-narrative.md).
+> - [Visual Briefs](akane-ii-visual-briefs.md): sprite scale, color rules, and briefs for Akane, the 16 enemies, the 6 bosses, the zones and effects.
+> - [Audio Design](akane-ii-audio.md): adaptive music, boss themes, sound effects, vocals, gameplay audio cues and the mix.
 > - [Copy Deck](akane-ii-copy-deck.md): the final draft of all player-facing story and flavor text.
 > - [Story, Endgame, Modes and Cosmetics](akane-ii-story-and-modes.md): the story premise and cast, milestone beats, Overdrive tiers, Boss Rush and Time Attack, and the cosmetics roster.
 >
@@ -43,7 +45,7 @@ Appendices: [A. Decisions Log](#appendix-a-decisions-log) · [B. Original-Game V
 
 ## 1. Art Direction
 
-A highly unique pixel art style that blends **Japanese ink wash (sumi-e)** with **modern pixel sprite animation**, with some inspiration from *Dead Cells*.
+A highly unique pixel art style that blends **Japanese ink wash (sumi-e)** with **modern pixel sprite animation**, with some inspiration from *Dead Cells*. Production details (a 640 x 360 base resolution, Akane at about 48 px, hand-drawn sprites with brush-stroke shading, role-based enemy silhouettes, and color rules) are in the [Visual Briefs](akane-ii-visual-briefs.md).
 
 **Goals**
 
@@ -780,7 +782,7 @@ There is no campaign. Story is delivered lightly, with **light continuity** from
 **Audio direction:** **traditional instruments over an electronic pulse.** Shamisen, taiko and shakuhachi sit over synth bass and drums, matching the ink wash and cyberpunk mix.
 
 - **Adaptive layers** intensify with the wave band and calm during the breather.
-- **Boss themes** are built around each boss's signature audio motif (§7.5).
+- **Boss themes:** a unique theme per boss, built from stems that add a layer for each phase, with a stinger at each phase break. Details, the full cue list and the mix are in the [Audio Design](akane-ii-audio.md) document.
 - **Gameplay audio** has strong cues for telegraphs and for off-screen or behind-the-player threats.
 
 ---
@@ -887,6 +889,8 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | Secrets | All 12 always available. Score rewards repeat each run, cosmetics and lore are one-time. Hints get subtler as the player finds more |
 | Villain and copy | Oyabun Tsukumo confirmed. Text register is dry noir with a little bite. Tsukumo's respect for Akane grows across the four beats. The wave 100 beat is just the name and the confrontation. Item lines are wry one-liners. Lore fragments mix logs, notes and graffiti. All text is in the Copy Deck |
 | Dojo tutorial | Framed as a flashback to the dojo, as the original's was. The Dojo Memory secret is a lesson about waiting |
+| Visual production | Base resolution 640 x 360, Akane about 48 px tall. Hand-drawn pixel sprites with brush-stroke shading. Enemies are grouped by role shape with a shared Yakuza identity. Boss scale varies by boss. Regular-enemy telegraphs use vermilion and white, and each boss has its own accent color |
+| Audio production | Layered adaptive stems with a motif per zone. A unique theme per boss with phase layers. Tactile organic SFX with a cyber edge. Non-verbal vocals only. Telegraph, rear-threat and boss cues are top priority in the mix |
 | Win state | None. The game stays endless, with story beats at waves 25, 50, 75 and 100 and a rotation of short beats after 100 |
 | Katsuro's rebuilds | A deliberate noir conceit. Never explained mechanically, in a one-night setting |
 | Setting and timing | 2121, the same night as the first game, continuing after the Last Stand. The whole game is one night |
@@ -914,28 +918,26 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 
 ## Appendix B: Original-Game Verification Checklist
 
-Original-game facts came from web search summaries, because the fan wiki and review pages could not be opened. Someone with the game or the studio's records should confirm each item and then delete or amend the matching note in the doc.
+Original-game facts were checked online (the fan wiki, review summaries and achievement guides), not against the game itself. Because the items were **remixed on purpose,** their original behaviors don't need to match, so this appendix lists only facts we reference for continuity.
 
-**Equipment**
+**Verified online** (sources are listed in the [Copy Deck](akane-ii-copy-deck.md) §13 and the [Loadout Detail](akane-ii-loadout.md) §3.1)
 
-- [ ] Katanas: the three names (default, **Rebi**, **Tadus**) and what each actually does.
-- [ ] Guns: the six names (**Patron v26**, **Inquisitor M103**, **Vicious S36**, **Magnum XT5**, **Double Barrel Shotgun**, **Gravitational Beam Emitter**) and their behavior and ammo rules.
-- [x] Gadgets: the five original names we kept are real, and their original effects are recorded in the [Loadout Detail](akane-ii-loadout.md) §3.1. The other six gadgets are new designs by agreement. Optional: whether to echo each original effect in the remixed versions.
-- [ ] Gadget slots: the original allowed up to two (or none). Confirm.
-- [ ] Boots: names and effects on the dash.
-- [ ] Cigarettes: names and special-attack looks.
-- [ ] Special attacks: **Dragon Slash** and **Dragon Slayer** behavior and how they charge.
-- [ ] Unlock conditions, including the reported "deflect 25 enemies' bullets" unlock for the Double Barrel Shotgun.
+- [x] Setting: Mega-Tokyo, 2121, a rainy night. Akane's vehicle crashes in the intro, she is surrounded, and she makes a final stand.
+- [x] **Ishikawa:** Akane's master (2098-2099), a Yakuza who killed five oyabuns including the Sugahara family. Akane trained under him for revenge and killed him in the Final Scene.
+- [x] The Final Scene (unlocked by collecting all equipment) is a childhood flashback. The optional tutorial is also a flashback, about 23 years before the main game.
+- [x] **Katsuro:** the boss, appearing every 100 kills, with a pink dash trail, a pistol, multi-dashes and a dying compliment. He levels up each time he is killed.
+- [x] The four enemy types: Yakuza Guy, Shooter, Tank and Cyber Ninja.
+- [x] Item names kept for continuity are real: katanas Rebi and Tadus, the six guns, and the five gadgets (Cyber Gloves, Stabilizer Bracelet, Adrenaline Shot, Magnetic Pulse Emitter, Katana Gun). The gadget effects are recorded in the loadout document.
+- [x] Akane's fate: the original has no definitive ending, and she is alive.
+- [x] Dragon Slash and Dragon Slayer are real special moves.
 
-**Enemies and boss**
+**Remaining (continuity only, not blocking)**
 
-- [ ] The four enemy types: **Yakuza Guy**, **Shooter**, **Tank** and **Cyber Ninja**, and whether any elite variants existed.
-- [ ] **Katsuro**: spawns after every 100 kills, clears other enemies, and evolves each time he is beaten (pistol, faster dashes, multi-dash slash).
-- [ ] Whether Katsuro is the only boss.
+- [ ] The original allowed up to two gadgets (per search summaries). We chose one slot on purpose.
+- [ ] Whether the original had elite variants of its four enemies.
+- [ ] The exact wording of any original text we echoed.
+- [ ] A last read of the lines marked **[CHECK]** in the [Copy Deck](akane-ii-copy-deck.md) by someone who knows the first game closely.
 
-**Story**
+**Not needed by agreement**
 
-- [ ] Setting: Mega-Tokyo, 2121, and Akane's "Last Stand" against the Yakuza.
-- [ ] **Ishikawa**: Akane's master, taught Dragon Slash, wiped out her family.
-- [x] The "Final Scene" (unlocked by collecting all equipment): a childhood flashback in which Akane defeats Ishikawa. **Confirmed.**
-- [x] Akane's fate: confirmed. The original has no definitive ending, and she is alive.
+- The original's katana, gun, boots and cigarette behaviors, and its other six gadget names: our versions are remixes or new designs.

@@ -2,7 +2,7 @@
 
 **Studio:** Ludic Studios
 **Protagonist:** Sugahara Akane
-**Status:** Draft v0.4 (pre-production)
+**Status:** Draft v0.5 (pre-production)
 **Scope:** Design only. No implementation is covered here.
 
 > Names for enemies, bosses, moves and zones are **working titles**. Items marked **[TBD]** need a decision or input from the team (several depend on the original *Akane*).
@@ -17,6 +17,7 @@
 2. [Vision and Pillars](#2-vision-and-pillars)
 3. [Core Combat and Movement](#3-core-combat-and-movement)
    - [Loadout](#36-loadout)
+   - [Flow (combo benefits)](#38-flow-combo-benefits)
 4. [The Arena Map](#4-the-arena-map)
 5. [Wave System](#5-wave-system)
 6. [Enemies](#6-enemies)
@@ -76,6 +77,8 @@ A highly unique pixel art style that blends **Japanese ink wash (sumi-e)** with 
 | 4 basic enemy types | ~16 enemy types |
 | 1 boss | Multiple bosses across 3 types |
 | Enemies could forget to attack or bug out | Robust, readable AI with flanking |
+| Flow | The combo grants three tiers of small defensive-leaning bonuses (dash recharge, special meter, Ink Step window and ammo). Falls off one tier at a time |
+| Boss combo rules | Decay paused for intros and transitions, a stall clock that slowly decays Flow when a fight stalls, reset on phase breaks, reset on boss death |
 | Dash | Dash plus precise dodge plus human shields |
 
 **Not in scope:** a campaign or story mode. It was cut because it did not fit the arcade design. Bosses live inside arcade mode instead.
@@ -235,6 +238,45 @@ Both are meter-driven, so they reward aggression. Meter values are starting poin
   - **Why:** it stays useful during boss waves without trivializing them, and the player still has to read the boss to use it.
 - **Cigarettes** change only the look of both specials.
 
+### 3.8 Flow (combo benefits)
+
+**Problem in the original:** after the combo-gated unlocks were done, a combo had no benefit. It was actually safer to have no combo and keep your distance, which encouraged conservative play. Flow gives the combo a small mechanical reason to exist, so that aggression is safer and more rewarding.
+
+**How the combo builds**
+
+- Kills, style actions (perfect Ink Steps, deflect kills, zipline kills) and human shield kills and throws all add to the combo. The shield must never break a combo.
+- The combo decays over time, and decays faster while Akane stands still (see §8).
+
+**Tiers and bonuses**
+
+Bonuses are small, temporary and defensive-leaning. They make aggressive movement safer instead of adding raw power. There is no extra damage and no invulnerability.
+
+| Tier | Combo threshold **[TBD]** | Bonus (cumulative) **[TBD: tune values]** |
+|---|---|---|
+| **Flow I** | 5 | Dash charges recharge faster |
+| **Flow II** | 15 | Special meter (Dragon Slash and Dragon Slayer) charges faster |
+| **Flow III** | 30 | Ink Step window slightly wider, and sword kills refill extra ammo |
+
+**Falling off.** When the combo decays, Akane loses **one tier at a time**, and the combo count drops to the base of the lower tier. A single mistake or pause never throws away the whole run's momentum. Dying still ends the run.
+
+**Feedback.** The ink aura around Akane grows with each tier (bold on kills, subtle elsewhere, see §1). A clear audio and visual pulse warns a moment before a tier drops.
+
+**During boss fights**
+
+- Decay is **paused** while a boss is introduced and while a boss wave is in transition.
+- During the fight, a **stall clock** measures time since the player last made progress. It starts after a grace period set per boss from the boss's par time for each phase, plus a buffer **[TBD]**.
+- Every **phase break resets the stall clock**. A boss's own slow pacing, such as the Hunter's stalking or the Warden's tide cycle, is accounted for in the par time and never punishes the player.
+- If the stall clock runs out, Flow **decays slowly**, losing one tier at long intervals. This nudges players to push toward the next window instead of waiting.
+- The clock **pauses** during boss-driven downtime: phase transitions, cutscenes and any time the boss can't be engaged.
+- **Boss death resets the decay timer**, matching the original, and the player's Flow tier is kept going into the next wave.
+- Boss hits and phase breaks count as combo actions.
+
+**Risks**
+
+- **Snowballing:** kept small by making the bonuses recharge speeds, not damage.
+- **Combo anxiety:** mitigated by the one-tier-at-a-time fall-off.
+- **Uniform top runs:** playtest to check that Flow doesn't force a single optimal style.
+
 ---
 
 ## 4. The Arena Map
@@ -393,6 +435,7 @@ The original's enemy bugs (forgetting to attack, getting stuck) are a **bug clas
 - **No consecutive repeats:** a boss rotation ensures the same boss doesn't appear back-to-back. **Katsuro opens the rotation at wave 10** and returns every third boss; the other five fill the remaining slots. A full cycle of six bosses spans 60 waves, so most runs will see a handful of them.
 - **Escalation on return:** only a **handful of bosses evolve** (Katsuro, the Hunter and the Demolisher, see §7.5). Their changes persist for the rest of the run. The other three return with the same moves and slightly tighter windows.
 - **Reward:** a large score bonus, and a clear breather before the next wave.
+- **Flow during boss fights:** combo decay is paused at first and sets in slowly if a fight stalls, then resets on the boss's death (see §3.8).
 - **Akane still dies in one hit.** Boss attacks are lethal and follow the telegraph rules.
 - **Phased weak points.** Each boss has **2–3 phases**. A phase ends when Akane lands **one clean hit** during a **vulnerability window**, which the boss opens by committing to a big attack, finishing a pattern or exposing a weak point. After the last phase, the boss dies.
   - There is no health bar. The player sees phase pips instead.
@@ -626,7 +669,7 @@ The keeper of the old floodgates under the district, who sells control of the ca
 - **Score** comes from kills, combos, style actions (Ink Steps, human shield kills, zipline kills, bullet deflects), speed and boss clears.
 - **Unlocks** come from mastery challenges. They add options, never power.
 - **Secrets** give score bonuses, cosmetic unlocks and lore fragments. They must not provide power advantages.
-- **Combo scoring** decays when Akane stands still, and kills, style actions and movement refill it. It lets players stand and shoot, but rewards keeping the pace up **[TBD: tune the decay]**.
+- **Combo scoring** decays when Akane stands still, and kills, style actions and movement refill it. It lets players stand and shoot, but rewards keeping the pace up. The combo also drives **Flow** tiers (§3.8) **[TBD: tune the decay]**.
 - **Cosmetics** (no gameplay effect, never at the cost of readability): **outfits**, **cigarette ink styles** and **sword trails and kill effects**, unlocked through milestones and challenges.
 - **Leaderboards:** a main **score** board (kills, combos, style, speed) and a separate **waves reached** board. Not split by input device.
 
@@ -707,7 +750,7 @@ There is no campaign. Story is delivered lightly, with **light continuity** from
 - [ ] Original game facts: see [Appendix B](#appendix-b-original-game-verification-checklist).
 - [ ] Tuning values: wave timers, special meter costs, vulnerability window lengths, performance budgets.
 - [ ] Map scale and crossing time (prototype).
-- [ ] Combo decay rate and the stand-still penalty.
+- [ ] Combo decay rate, the stand-still penalty, Flow thresholds and bonus values, and each boss's par time.
 
 ---
 

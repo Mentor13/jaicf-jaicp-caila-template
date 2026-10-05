@@ -333,6 +333,7 @@ The map is a single **vertical Mega-Tokyo tower district**, divided into **5 zon
 - Hidden paths, breakable walls and fake floors.
 - Environmental hints: ink stains, odd brush marks, sound cues.
 - Rewards are **non-power** items: score bonuses, cosmetics unlocks and lore fragments (see §8).
+- There are 12 secrets, all available every run, with hints that get subtler as the player finds more (see the [Map Design](akane-ii-map.md) §10).
 
 ### 4.5 Map-level risks
 
@@ -569,9 +570,11 @@ The original boss. He stalks Akane across Mega-Tokyo and appears whenever the Ya
 
 **Phases and windows**
 
-1. **Phase 1, the Duelist.** Single dashes and slashes. *Window:* he skids to a stop after a missed dash.
-2. **Phase 2, the Gunslinger** (from Tier 2). Adds a pistol between dashes. *Window:* after he reloads, or after a **perfect Ink Step** through a dash, which staggers him.
-3. **Phase 3, the Master** (from Tier 3). A rapid multi-dash that ends in a heavy slash. *Window:* the long recovery after the final slash.
+The phase list depends on the tier:
+
+- **Tier 1:** Phase 1, **the Duelist** (single dashes and slashes), then Phase 2, **the Duelist, quickened** (the same moves, faster). *Window:* he skids to a stop after a missed dash.
+- **Tier 2:** Phase 1, the Duelist. Phase 2, **the Gunslinger** (adds a pistol between dashes; *window:* after he reloads, or after a **perfect Ink Step** through a dash, which staggers him). Phase 3, the Duelist, quickened.
+- **Tier 3 and later:** Phase 1, the Duelist. Phase 2, the Gunslinger. Phase 3, **the Master** (a rapid multi-dash that ends in a heavy slash; *window:* the long recovery after the final slash).
 
 **Evolution by tier**
 
@@ -878,7 +881,7 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | Win state | None. The game stays endless, with story beats at waves 25, 50, 75 and 100 and a rotation of short beats after 100 |
 | Original canon | Treated as ambiguous. The story refers to "that night" and never states Akane's fate |
 | Akane's voice | Terse and dry, about 8 words per line at most, only at story beats |
-| Endgame | Overdrive tiers from wave 50: stacking modifiers, combined events, and fifth and sixth-tier moves for the three evolving bosses |
+| Endgame | Overdrive tiers from wave 50 (stacking modifiers and combined events). Bosses gain moves by wave tier instead, with Tiers 5 and 6 at waves 150+ and 200+ |
 | Extra modes | Boss Rush and Time Attack, unlocked after defeating Katsuro once. No daily challenge |
 | Cosmetics | About 20 unlockable items in three categories, earned from beats, secrets, milestones and mode clears |
 | Zone wake-up | **Removed.** It created free camping spots. Replaced by spawn-follow |

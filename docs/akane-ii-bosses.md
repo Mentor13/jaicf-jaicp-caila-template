@@ -62,10 +62,10 @@ A boss's par time is the **expected time per phase** for a competent first attem
 
 ### 3.2 Phase pattern
 
-- **Phase 1, Duelist:** Blood Line, Return Cut, Crescent Slash.
-- **Phase 2, Gunslinger:** adds Pistol Volley and Quickstep. Appears from **Tier 2** (wave 30+).
-- **Phase 3, Master:** adds Seven Rivers. Appears from **Tier 3** (wave 60+).
-- **Tier 4** (wave 100+): Mirror Step and recombined patterns. Windows become tighter by a small amount.
+- **Tier 1:** Phase 1, Duelist (Blood Line, Return Cut, Crescent Slash). Phase 2, Duelist quickened (the same moves, faster).
+- **Tier 2** (wave 30+): Phase 1, Duelist. Phase 2, **Gunslinger** (adds Pistol Volley and Quickstep). Phase 3, Duelist quickened.
+- **Tier 3** (wave 60+): Phase 1, Duelist. Phase 2, Gunslinger. Phase 3, **Master** (adds Seven Rivers).
+- **Tier 4** (wave 100+): the same three phases with Mirror Step, recombined patterns and slightly tighter windows.
 - **Tiers 5 and 6** (wave 150+ and 200+): Twin Rivers and Final Draw (see §9).
 
 ### 3.3 Design notes

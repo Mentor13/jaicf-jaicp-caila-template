@@ -52,16 +52,29 @@ The title is **AKANE II,** always in all-caps.
 
 The original game is officially styled *Akane* on storefronts such as Steam and the PlayStation Store, but its logo, promotional materials and in-game typography display the name in **all-caps (AKANE)** to match its aggressive, arcade-inspired look. Akane II follows the same convention: **AKANE II** everywhere on screen, in the logo, on cards and in the end card.
 
-### 2.2 Typography rules
+### 2.2 The original logo (from the supplied capsule art)
 
-- **All text on screen is all-caps.** This includes the title, text cards and the end card.
-- **Use the original game's typography.** The logo lockup, text cards and any UI shown must use the **same display typeface and treatment as the original *Akane's* logo and in-game text,** so the sequel reads as the same brand.
-- **The "II"** is the Roman numeral, set in the same face, weight and color treatment as "AKANE," at the same cap height, with spacing matched to the original letter spacing. It is not a separate badge, subtitle or tagline.
-- **No substitute fonts.** Don't swap in a similar-looking font.
-- **Color on cards:** paper white with an ink-black shadow. **Vermilion and white are reserved for enemy telegraphs** (see the visual briefs), so cards never use vermilion.
-- **Motion for the title:** the lockup appears as an ink stroke that "cuts" across the screen, followed by a short Ink Step-style afterimage and one hit-stop frame (see §4, shot 26).
+The original's wordmark, as shown on its Steam capsule, is:
 
-> **Sourcing note:** I could not identify the original's typeface from public sources (the store pages and the studio site could not be opened, and no source names the font). The art team should take the type directly from **Ludic's original logo and UI assets** instead of matching by eye. Until then, any mockup should be marked as a placeholder.
+- **All-caps AKANE** in a **heavy, blocky sans-serif,** set large and tight.
+- **Solid saturated red** fill, over dark artwork, so it reads instantly.
+- A **distressed, blood-spattered texture** across the letters: ragged edges, flecks and splatter, so the lettering looks hit and stained, not clean.
+- A **red angular shape** to the right of the E that reads as a blade or arrow mark. I can't tell from the image alone whether it is part of the logo lockup or part of the art, so it needs checking against Ludic's logo file.
+- The whole lockup is placed over busy, high-contrast comic-style character art, and it stays legible against it.
+
+I can't name the exact typeface from the image, and I won't guess. The wordmark looks like a heavy sans (possibly custom or modified) with a spatter overlay.
+
+### 2.3 Typography rules for AKANE II
+
+- **The title lockup follows the original:** all-caps **AKANE II,** in the **same heavy blocky face, solid red fill and spatter-and-splash texture.**
+- **The "II"** is the Roman numeral in the same face, weight, red and texture, at the same cap height, with spacing matched to the original letter spacing. It sits on the baseline with the letters and is not a separate badge, subtitle or tagline.
+- **The splatter reads as ink and blood together:** in Akane II the spatter can pick up the game's ink-splash look (brush-edged flecks), but the lettering, red and heavy weight stay recognizably the original's.
+- **Text cards** use **the original's clean in-game display face,** all-caps, **paper white with an ink-black shadow.** (I don't know what the in-game face is. Take it from the original's UI files, see below.)
+- **Red is the logo's color, not the cards' color.** The logo lockup is the one place red is used as a brand color. Text cards never use red, and the red of the lockup never appears on the gameplay layer, where vermilion is reserved for enemy telegraphs.
+- **No substitute fonts,** and no recreating the logo by eye.
+- **Motion for the title:** the lockup appears as an ink stroke that "cuts" across the screen, then resolves into the red, spattered lettering, followed by a short Ink Step-style afterimage and one hit-stop frame (see §4, shot 26).
+
+> **Sourcing note:** the supplied image is a raster capsule, so it works as a **reference** but not as production art. The art team should take the logo and the in-game display face directly from **Ludic's original logo and UI source files,** and confirm what the red shape beside the E is.
 
 ---
 
@@ -246,7 +259,7 @@ Rules for all cut-downs: all-caps title, no date, and the same platform list.
 
 ## 9. Open items
 
-- [ ] The original's logo typeface and treatment: take it from Ludic's own assets (§2).
+- [ ] The original's logo and in-game display face as source files, plus what the red shape beside the E is (§2).
 - [ ] Final music for the trailer, or a trailer edit of the game's score.
 - [ ] Whether "WISHLIST NOW" appears (depends on a live store page).
 - [ ] The official platform logos and their usage rules.

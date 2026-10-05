@@ -91,6 +91,10 @@ Chosen to give smooth motion at any refresh rate (including the uncapped PC opti
 - **Known trade-off:** different objects' pixel grids can sit offset from each other by a fraction of an art pixel. This is invisible in an ink-wash style and is the price of smooth motion.
 - **Things to check in testing:** parallax layers, rain and particle streaks, normal-mapped lighting (lights also interpolate), and text and UI (which should snap to the grid).
 
+### 1.6 Title lockup
+
+The title is always **AKANE II** in all-caps, matching the original's logo: a **heavy, blocky sans** in **solid saturated red** with a **distressed, blood-spattered texture,** with the Roman numeral "II" set in the same face, red and texture. Red is the logo's brand color only. It is never used on the gameplay layer, where vermilion is reserved for enemy telegraphs, and never on text cards or UI. Take the logo and display face from Ludic's original source files. Details are in the [gameplay trailer plan](akane-ii-gameplay-trailer.md) §2.
+
 ## 2. Akane
 
 - **Base design:** follows the original character art. She is an **adult** swordswoman.

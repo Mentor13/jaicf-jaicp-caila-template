@@ -85,7 +85,7 @@ Akane keeps the original structure. In the first game, equipment came in five ty
 
 - **Sword:** primary close-range kill tool. Can also deflect bullets (the original rewarded this with an unlock for deflecting 25 enemies' shots in one run).
 - **Gun:** ranged option on a limited ammo budget that sword kills refill.
-- **Gadget:** one equipped gadget. The original allowed up to two, or none **[TBD: one or two slots]**.
+- **Gadget:** **one** equipped gadget (the original allowed up to two). With a single slot, the gadget is a defining choice for the run, so every gadget must be strong on its own.
 - **Specials:** the original's **Dragon Slash** (a dash that kills everything in its path) and **Dragon Slayer** (a screen-clearing attack). They return in §3.7.
 
 ### 3.2 Feel and responsiveness
@@ -158,20 +158,44 @@ The original had six: **Patron v26** (starter), **Inquisitor M103**, **Vicious S
 | **Double Barrel** | Close-range cone | Clears a cone of enemies | Knocks Akane back. Short range |
 | **Gravitational Beam Emitter** *(strange)* | Pulls enemies into a clump | A setup tool that holds enemies for about 1.5 seconds, for the sword or a Dragon Slash to finish | No direct kill |
 
-#### Gadgets (8 planned, 11 in the original)
+#### Gadgets (11)
 
-The original had **11** gadgets. The ones confirmed by search are **Cyber Gloves**, **Stabilizer Bracelet**, **Adrenaline Shot**, **Magnetic Pulse Emitter** and **Katana Gun**. The other six are **[TBD: not found]**, so this list is a remix of the known five plus three new ones.
+**One gadget slot**, chosen before a run. The original had **11** gadgets, and we match that count. The five confirmed by search (**Cyber Gloves**, **Stabilizer Bracelet**, **Adrenaline Shot**, **Magnetic Pulse Emitter**, **Katana Gun**) are kept by name, and the other six are new designs. The remaining original gadgets could not be found, so this roster is a full remix.
+
+The roster covers four families, and **every gadget is an active or always-on tool strong enough to carry a run on its own**. Three are deliberate oddballs; the rest are practical.
+
+**Weapon augments (4)**
 
 | Gadget | Idea | Strength | Cost |
 |---|---|---|---|
-| **Cyber Gloves** | Reinforced grip | Human shields last longer and throws hit harder. Ties the gadget to the new shield system | Doesn't help against unshieldable enemies |
-| **Stabilizer Bracelet** | Steady frame | Widens the Ink Step window and removes gun recoil | Passive and subtle |
-| **Adrenaline Shot** | Kill-fueled burst | Kill chains trigger a brief slow-motion burst | Weak when you are not chaining |
-| **Magnetic Pulse Emitter** | Short EMP | Disables cybernetic enemies (Shooters, Cyber Ninjas) and strips armor | Short range, slow recharge |
 | **Katana Gun** | Gun mounted on the sword | Every swing also fires a shot along the swing arc | Drains ammo twice as fast |
-| **Grapple Anchor** *(new)* | Hook launcher | Grapples ledges, enemies and zipline anchors for fast traversal | Slow to reuse |
-| **Hologram Decoy** *(strange, new)* | Projects a fake Akane | Enemies target the decoy for a few seconds, which also disrupts flanking | Long cooldown |
-| **Sumi Bomb** *(new)* | Ink cloud | Breaks enemy line of sight, so enemies lose tracking and bunch up | Also blocks Akane's view |
+| **Magnetic Pulse Emitter** | Short EMP | Disables cybernetic enemies (Shooters, Cyber Ninjas, Drone Handlers) and strips Tank armor | Short range, slow recharge |
+| **Stabilizer Bracelet** | Steady frame | Widens the Ink Step window, refunds the dash on a successful Ink Step, and removes gun recoil | Passive. Rewards skill, gives no active power |
+| **Adrenaline Shot** | Kill-fueled burst | Kill chains trigger a brief slow-motion burst with faster attacks | Weak when you are not chaining |
+
+**Traversal (2)**
+
+| Gadget | Idea | Strength | Cost |
+|---|---|---|---|
+| **Grapple Anchor** | Hook launcher | Grapples ledges, zipline anchors and enemies. Fast vertical movement on the new map | Slow to reuse, needs a target |
+| **Updraft Fan** *(oddball)* | Deployable wind pad | Places a fan that launches Akane (and thrown items) upward. Lets players **build their own shortcut** on the map | Limited charges, the fan is destructible, and enemies can use it too |
+
+**AI manipulation (3)**
+
+| Gadget | Idea | Strength | Cost |
+|---|---|---|---|
+| **Hologram Decoy** *(oddball)* | Projects a fake Akane | Enemies target the decoy for a few seconds, which breaks flanking and pulls attackers apart | Long cooldown. Smart enemies (Duelist) are not fooled |
+| **Sumi Bomb** | Ink cloud | Breaks enemy line of sight, so enemies lose tracking and bunch up | Also blocks Akane's view |
+| **Lure Beacon** | Thrown noise device | Draws enemies to a spot for a few seconds, setting up Dragon Slash lines and Gravitational Beam clumps | Does not affect bosses |
+
+**Human shield synergy (2)**
+
+| Gadget | Idea | Strength | Cost |
+|---|---|---|---|
+| **Cyber Gloves** | Reinforced grip | Human shields last longer, can be held while dashing, and throws hit harder | Helps nothing if no enemy can be grabbed (Tanks, bosses) |
+| **Marionette Wire** *(oddball)* | Wires a grabbed enemy | The captured enemy becomes a **controllable puppet** that walks ahead of Akane as a mobile shield and then detonates or drops on release | Short duration. Akane stays exposed from behind and the sides |
+
+**Design check for a one-slot system:** each gadget must have a clear "go-to" situation (what it excels at), a clear weakness, and at least one gadget-specific high score strategy. Playtests should compare gadget usage and the top runs. No gadget should be required to clear any wave or boss.
 
 #### Boots (4)
 
@@ -435,7 +459,6 @@ There is no campaign. Story is delivered lightly, with **light continuity** from
 - [ ] Wave advancement: clear-based, timed, or hybrid?
 - [ ] Boss interval: every 5 waves, or a different cadence?
 - [ ] Map: number of zones, theme per zone, and total traversal scale.
-- [ ] Gadget slots: one or two (the original allowed up to two)?
 - [ ] Does Dragon Slayer affect bosses, and what is its meter cost?
 - [ ] Platforms and input methods.
 - [ ] Multiplayer or co-op (currently out of scope).
@@ -450,7 +473,8 @@ There is no campaign. Story is delivered lightly, with **light continuity** from
 | Campaign / story mode | **Cut.** Does not fit the arcade design |
 | Boss placement | Inside arcade mode, at wave milestones (every N waves) |
 | Boss types | Roaming, arena-shifting and standard duel |
-| Combat toolkit | Original five slots (katana, gun, gadget, boots, cigarette), remixed: 7 katanas, 6 guns, 8 gadgets, 4 boots |
+| Combat toolkit | Original five slots (katana, gun, gadget, boots, cigarette), remixed: 7 katanas, 6 guns, 11 gadgets (one slot), 4 boots |
 | Progression | No power progression. Items unlock as sidegrades through mastery challenges |
+| Gadgets | One slot, 11 gadgets across four families (weapon augments, traversal, AI manipulation, human shield synergy), with 3 oddballs |
 | Enemy roster | ~16 types, introduced progressively across arcade waves |
 | Story | Light continuity with the original. Katsuro returns as the Nemesis |

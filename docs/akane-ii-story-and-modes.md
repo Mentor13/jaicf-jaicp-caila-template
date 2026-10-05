@@ -2,7 +2,7 @@
 
 Companion to [akane-ii-design.md](akane-ii-design.md) (§9 Story and Presentation, §8 Progression and Scoring).
 
-> Names are working titles. All text is **draft copy.** The story is deliberately written to **work with either outcome of the original game's ending,** because the original's canon is ambiguous (see §4).
+> Names are working titles. All text is **draft copy.** It builds on one confirmed fact: the original has no definitive ending, and **Akane is alive** (see §4).
 
 ## Contents
 
@@ -116,21 +116,21 @@ The rotation is deliberately generic so it can't contradict a future sequel.
 
 ## 4. Canon handling
 
-The original game's ending is **ambiguous** for our purposes, so this story is written to work either way.
+**Confirmed canon:** the original *Akane* has **no definitive ending, and Akane is alive.** This story builds on exactly that and nothing more.
 
 **Rules**
 
-- Never state Akane's fate at the Last Stand. Refer to it as **"that night."**
-- Never describe how the original ended beyond what the Final Scene (a flashback to Akane facing Ishikawa) already shows.
-- Akane II's story starts at a new point in time and does not need the first game's outcome.
+- **Akane is alive,** and the story can say so plainly.
+- Do not add detail about how the Last Stand ended, or about what happened to anyone else in it. Refer to it as **"that night."**
+- Do not invent an ending for the original. The first game's open ending stays open.
+- Never describe the original beyond what the Final Scene (a flashback to Akane facing Ishikawa) already shows.
+- Akane II's story starts at a new point in time and does not need the first game's outcome beyond her survival.
 - The Katsuro explanation (rebuilt, obsessed) works whether or not the first game defeated him.
 
-**Edits made to existing text**
+**Text affected**
 
-- The **intro card** no longer says "the Last Stand is behind her." (see the revised card in the narrative document).
-- **Lore fragment 3** no longer says "survived the Last Stand." It now reads as a neutral log entry.
-
-If the team later confirms the original's ending, the text can become more specific without changing the structure.
+- The **intro card** states that Akane walked away from that night (see the narrative document).
+- **Lore fragment 3** reads "Status: alive."
 
 ---
 
@@ -248,7 +248,8 @@ About **20 unlockable cosmetics** at launch (plus a default in each category), i
 
 ## 9. Open items
 
-- [ ] Verify the original's ending and confirm that this story never contradicts it.
+- [x] Original canon confirmed: no definitive ending, and Akane is alive.
+- [ ] Verify the Final Scene details against the original game (Appendix B of the main doc).
 - [ ] Final copy for beats, the rotating post-100 lines, and the Tsukumo reveal.
 - [ ] Whether Tsukumo should appear in any boss title card lines.
 - [ ] Art for the ink silhouette beats.

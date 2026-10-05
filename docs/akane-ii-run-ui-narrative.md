@@ -213,7 +213,7 @@ Menus use the same brush-drawn identity: ink-stroke selection, a calm layout and
 
 ### 6.1 Intro card (shown at the first launch and available from the menu)
 
-> *Mega-Tokyo, 2121. Whatever was settled that night, the Yakuza are still counting.*
+> *Mega-Tokyo, 2121. Akane walked away from that night. The Yakuza are still counting.*
 > *Oyabun Tsukumo owns this district. Katsuro has been sent again. So have the others.*
 > *Akane remembers the city in ink. She intends to leave it in ink as well.*
 
@@ -259,7 +259,7 @@ Twelve short text pieces. Found in the secrets listed in the map spec. They read
 |---|---|---|
 | 1 | Koi Pond Wall | *"The old master taught three things: breathe, wait, cut. She learned the third first."* |
 | 2 | Pipe Whisper | *"Water remembers everything that was dropped into it. It gives back the heavy things first."* |
-| 3 | Server Room terminal 1 | *Log: "Contract 118. Subject: Sugahara A. Status: active. Escalate. Authorized: T."* |
+| 3 | Server Room terminal 1 | *Log: "Contract 118. Subject: Sugahara A. Status: alive. Escalate. Authorized: T."* |
 | 4 | Server Room terminal 2 | *Log: "Katsuro reassigned. Third time. Second Pistol requisitioned."* |
 | 5 | Server Room terminal 3 | *Log: "Hunter requires no surveillance. He prefers to be the surveillance."* |
 | 6 | Server Room terminal 4 | *Log: "Dojo basement sealed after the Ishikawa incident. Do not reopen."* |
@@ -272,7 +272,7 @@ Twelve short text pieces. Found in the secrets listed in the map spec. They read
 
 ### 6.5 Final Scene
 
-Found by collecting all twelve fragments and opening the Old Dojo. A short **flashback** in ink, drawn with Akane as a child facing Ishikawa and winning the duel, in the spirit of the original's Final Scene. It is a text-and-image sequence of about 60 seconds. It grants a cosmetic reward and a codex entry on Ishikawa **[TBD: verify against the original's ending before final copy]**.
+Found by collecting all twelve fragments and opening the Old Dojo. A short **flashback** in ink, drawn with Akane as a child facing Ishikawa and winning the duel, in the spirit of the original's Final Scene. It is a text-and-image sequence of about 60 seconds. It grants a cosmetic reward and a codex entry on Ishikawa **[TBD: verify the Final Scene details against the original before final copy]**.
 
 ### 6.6 Item flavor
 

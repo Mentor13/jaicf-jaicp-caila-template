@@ -762,7 +762,7 @@ There is no campaign. Story is delivered lightly, with **light continuity** from
 
 **Akane II continuity approach**
 
-- Akane II is set in **Mega-Tokyo** in a district run by **Oyabun Tsukumo,** and Akane has come to **finish the fight.** The original's ending is ambiguous, so the story refers to "that night" and never states her fate.
+- Akane II is set in **Mega-Tokyo** in a district run by **Oyabun Tsukumo,** and Akane has come to **finish the fight.** The original has no definitive ending and Akane is alive, so the story says she survived, refers to the Last Stand only as "that night," and adds nothing more.
 - **Katsuro** returns as her Nemesis: rebuilt by the Yakuza after every defeat, and obsessed with learning her. Tsukumo never appears in a fight and is revealed by name at wave 100.
 - Story beats play at waves 25, 50, 75 and 100. Details, cast, voice rules, Overdrive tiers, modes and cosmetics are in the [Story, Endgame, Modes and Cosmetics](akane-ii-story-and-modes.md) document.
 - New bosses are lieutenants or hired killers from the same network, so they reuse the setting without needing a new plot.
@@ -829,7 +829,7 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 - [ ] Tuning values: wave timers, special meter costs, vulnerability window lengths, performance budgets.
 - [ ] Map scale and crossing time (prototype).
 - [ ] Combo decay rate, the stand-still penalty, Flow thresholds and bonus values, and each boss's par time.
-- [ ] Story copy: final text for beats, the post-100 rotation and the Tsukumo reveal, plus confirming the original's ending (see the story and modes document §9).
+- [ ] Story copy: final text for beats, the post-100 rotation and the Tsukumo reveal (see the story and modes document §9).
 
 ---
 
@@ -879,7 +879,7 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | Destruction | Broad, in tiers: indestructible structure (including at least two cover pieces per space), major destructibles that stay broken for the run, and decor. Route connectivity is built on the structural tier only |
 | Secrets | All 12 always available. Score rewards repeat each run, cosmetics and lore are one-time. Hints get subtler as the player finds more |
 | Win state | None. The game stays endless, with story beats at waves 25, 50, 75 and 100 and a rotation of short beats after 100 |
-| Original canon | Treated as ambiguous. The story refers to "that night" and never states Akane's fate |
+| Original canon | Confirmed: the original has no definitive ending, and Akane is alive. The story says she survived, refers to the Last Stand only as "that night," and invents nothing more |
 | Akane's voice | Terse and dry, about 8 words per line at most, only at story beats |
 | Endgame | Overdrive tiers from wave 50 (stacking modifiers and combined events). Bosses gain moves by wave tier instead, with Tiers 5 and 6 at waves 150+ and 200+ |
 | Extra modes | Boss Rush and Time Attack, unlocked after defeating Katsuro once. No daily challenge |
@@ -925,4 +925,4 @@ Original-game facts came from web search summaries, because the fan wiki and rev
 - [ ] Setting: Mega-Tokyo, 2121, and Akane's "Last Stand" against the Yakuza.
 - [ ] **Ishikawa**: Akane's master, taught Dragon Slash, wiped out her family.
 - [ ] The "Final Scene" (unlocked by collecting all equipment): a childhood flashback in which Akane defeats Ishikawa.
-- [ ] Anything that contradicts the continuity in §9, such as Akane's fate at the end of the original.
+- [x] Akane's fate: confirmed. The original has no definitive ending, and she is alive.

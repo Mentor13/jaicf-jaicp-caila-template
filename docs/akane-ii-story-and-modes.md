@@ -20,7 +20,7 @@ Companion to [akane-ii-design.md](akane-ii-design.md) (§9 Story and Presentatio
 
 ## 1. Premise and tone
 
-**Premise.** Mega-Tokyo, 2121. A single Yakuza head, **Oyabun Tsukumo,** controls one vertical district of the city: its roofs, its canals, its shrines and the infrastructure beneath. Akane has come to **finish the fight,** and the only way is up, through everything his organization sends.
+**Premise.** Mega-Tokyo, some time after the first game (which is set in 2121) **[TBD: year]**. A single Yakuza head, **Oyabun Tsukumo,** controls one vertical district of the city: its roofs, its canals, its shrines and the infrastructure beneath. Akane has come to **finish the fight,** and the only way is up, through everything his organization sends.
 
 **Tone.** Terse, dry and noir. Sparse text and no exposition dumps. The world tells the story (codex entries, logs, boss title cards) and Akane says almost nothing.
 
@@ -34,7 +34,7 @@ Companion to [akane-ii-design.md](akane-ii-design.md) (§9 Story and Presentatio
 
 ### Akane (Sugahara Akane)
 
-- An **adult.** The childhood seen in the original's Final Scene is her past.
+- An **adult,** as she was during the first game's main gameplay. Her childhood appears only in flashbacks: the original's tutorial (about 23 years before the main game) and its Final Scene.
 - The protagonist. Terse, dry, driven.
 - **Goal:** finish the fight. The Yakuza will not stop, so she goes after the head of the district's hold on the city.
 - Her relationship with the dojo and Ishikawa is the emotional undertone (see the lore fragments), never exposition.
@@ -124,7 +124,7 @@ The rotation is deliberately generic so it can't contradict a future sequel.
 - **Akane is alive,** and the story can say so plainly.
 - Do not add detail about how the Last Stand ended, or about what happened to anyone else in it. Refer to it as **"that night."**
 - Do not invent an ending for the original. The first game's open ending stays open.
-- The original's **Final Scene** is real, and it is a flashback to Akane's past (as a child, facing Ishikawa). Treat it as history. **Akane is an adult in Akane II,** and nothing in the present story shows her as a child.
+- The original's **Final Scene** and its **tutorial** are real flashbacks to Akane's childhood (the tutorial is set about 23 years before the main game; the Final Scene shows her as a child facing Ishikawa). Treat both as history. **Akane was an adult during the first game's gameplay and is an adult in Akane II,** and nothing in the present story shows her as a child.
 - Do not restage or retell the original's Final Scene. Akane II's own flashback (the Dojo Memory) shows a different moment.
 - Never describe the original beyond what the Final Scene already shows.
 - Akane II's story starts at a new point in time and does not need the first game's outcome beyond her survival.
@@ -252,7 +252,8 @@ About **20 unlockable cosmetics** at launch (plus a default in each category), i
 ## 9. Open items
 
 - [x] Original canon confirmed: no definitive ending, and Akane is alive.
-- [x] The original's Final Scene is real and set in the past. Akane is an adult in Akane II.
+- [x] The original's Final Scene is real and set in the past. Akane was an adult during the first game's gameplay and is an adult in Akane II.
+- [ ] Decide whether Akane II's Dojo tutorial is also framed as a flashback (as the original's was). See the narrative document §4.1.
 - [ ] Final copy for beats, the rotating post-100 lines, and the Tsukumo reveal.
 - [ ] Whether Tsukumo should appear in any boss title card lines.
 - [ ] Art for the ink silhouette beats.

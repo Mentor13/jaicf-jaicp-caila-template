@@ -756,9 +756,10 @@ There is no campaign. Story is delivered lightly, with **light continuity** from
 
 **What the original established** (from search summaries, **[TBD: verify against the game]**)
 
-- Setting: **Mega-Tokyo, 2121**. Akane has angered the Yakuza and made her "Last Stand" against them.
+- Setting: **Mega-Tokyo, 2121** (the first game's year). Akane has angered the Yakuza and made her "Last Stand" against them.
 - Her master, **Ishikawa**, taught her the Dragon Slash technique, and she developed her own Dragon Slayer. Ishikawa wiped out the Sugahara family and other clan heads.
-- The original's "Final Scene" (unlocked by collecting all equipment) is a **flashback, set in the past,** of Akane confronting Ishikawa as a child and defeating him in a duel. This is confirmed. **Akane is an adult in Akane II,** so the Final Scene is part of her past, never the present.
+- The original's "Final Scene" (unlocked by collecting all equipment) is a **flashback, set in the past,** of Akane confronting Ishikawa as a child and defeating him in a duel. This is confirmed.
+- The original's optional **tutorial** is also a flashback: it takes place about **23 years before the main game,** with Akane as a child training under Ishikawa (per search summaries). **Akane was an adult during the main gameplay of the first game, and she is an adult in Akane II.** Her childhood appears only in flashbacks.
 
 **Akane II continuity approach**
 

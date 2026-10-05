@@ -140,6 +140,8 @@ If the same deflect kill happened at no Flow, it would score 150 + 100 = 250. Th
 
 An optional, menu-accessible set of short lessons. Each is skippable and replayable.
 
+**Framing option [TBD]:** the original's optional tutorial was a flashback, set about 23 years before the main game, with Akane as a child training under Ishikawa. The Dojo could keep that framing (lessons as memories of the same dojo), or be presented as a plain training space. The name "Dojo" is chosen to work with either.
+
 | Lesson | Teaches |
 |---|---|
 | Movement | Moving, jumping, dashing and charges |
@@ -213,7 +215,7 @@ Menus use the same brush-drawn identity: ink-stroke selection, a calm layout and
 
 ### 6.1 Intro card (shown at the first launch and available from the menu)
 
-> *Mega-Tokyo, 2121. Akane walked away from that night. The Yakuza are still counting.*
+> *Mega-Tokyo. Akane walked away from that night. The Yakuza are still counting.*
 > *Oyabun Tsukumo owns this district. Katsuro has been sent again. So have the others.*
 > *Akane remembers the city in ink. She intends to leave it in ink as well.*
 
@@ -274,7 +276,7 @@ Twelve short text pieces. Found in the secrets listed in the map spec. They read
 
 Found by collecting all twelve fragments and opening the Old Dojo. A short **flashback** in ink, about 60 seconds, as text and images.
 
-- **It is a past memory,** and Akane is an adult in the present. The scene shows a **training lesson** from her apprenticeship under Ishikawa, with the young Akane learning the technique she later made her own. It does **not** restage the original game's Final Scene (the childhood duel), which stays the original's own moment and part of her past.
+- **It is a past memory,** and Akane is an adult in the present. The scene shows a **late-apprenticeship lesson** under Ishikawa, between the original's tutorial flashback (her early training) and its Final Scene (the duel), with the young Akane learning the technique she later made her own. It does **not** restage either of those original flashbacks, which stay the original's own moments and part of her past.
 - It frames the lore fragment she leaves in the dojo (*"Master, I did not come to be forgiven. I came to finish the lesson."*), written as an adult looking back.
 - It grants a cosmetic reward (*Crimson Dojo Gi*) and a codex entry on Ishikawa.
 - The codex entry stays brief and does not retell the original's story: *Ishikawa taught her. Ishikawa is gone. The dojo has been sealed since.*

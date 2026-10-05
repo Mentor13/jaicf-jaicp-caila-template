@@ -388,7 +388,7 @@ The original's enemy bugs (forgetting to attack, getting stuck) are a **bug clas
 
 - A boss arrives at **every 10th wave** (waves 10, 20, 30 and so on), replacing the normal wave. Like the original, the other enemies are cleared so the boss gets the player's full attention. This keeps the original's rhythm of a boss every N kills but adapts it to waves.
 - **No consecutive repeats:** a boss rotation ensures the same boss doesn't appear back-to-back. **Katsuro opens the rotation at wave 10** and returns every third boss; the other five fill the remaining slots. A full cycle of six bosses spans 60 waves, so most runs will see a handful of them.
-- **Escalation on return:** when a boss appears again later in a run, it gains new attacks or a modified phase, so repeats stay fresh.
+- **Escalation on return:** only a **handful of bosses evolve** (Katsuro, the Hunter and the Demolisher, see §7.5). Their changes persist for the rest of the run. The other three return with the same moves and slightly tighter windows.
 - **Reward:** a large score bonus, and a clear breather before the next wave.
 - **Akane still dies in one hit.** Boss attacks are lethal and follow the telegraph rules.
 - **Phased weak points.** Each boss has **2–3 phases**. A phase ends when Akane lands **one clean hit** during a **vulnerability window**, which the boss opens by committing to a big attack, finishing a pattern or exposing a weak point. After the last phase, the boss dies.
@@ -419,15 +419,199 @@ Alter the map during the fight: collapse a bridge, flood a tunnel, cut a zipline
 | **The Demolisher** | Arena-shifting | Operates a wrecking rig that collapses sections of rooftops and bridges, shrinking safe ground |
 | **The Floodgate Warden** | Arena-shifting | Floods and drains the Underpass, shifting routes between phases |
 
-**Initial target:** 6 bosses (2 per type), with room for more post-launch **[TBD]**.
+**Initial target:** 6 bosses (2 per type), with room for more post-launch **[TBD]**. Full designs are in §7.5.
 
 ### 7.4 Boss design rules
 
-- **Katsuro's escalation** persists through a run. Each time he is beaten his next appearance is harder, but bosses other than him use a fixed escalation per type.
+- **Evolution is limited to three bosses** (Katsuro, the Hunter, the Demolisher). It resets with each new run, so every run starts fair.
+- **One skill per boss.** Each boss is built around one clear test of the toolkit (see §7.5), so the fights rotate through different skills.
 - Every boss attack follows the shared telegraph language (§1).
 - No boss can be defeated by a single exploit (for example, only human shields). Multiple valid approaches are expected.
 - Bosses never spawn or move in ways that make traversal tools unusable for long. Cut ziplines come back or have alternatives.
 - Roaming bosses must always be **perceivable**: audio and visual cues indicate their direction when off-screen.
+
+### 7.5 Boss designs
+
+All bosses are **grounded Yakuza cyberpunk**: lieutenants, enforcers and hired killers from Katsuro's network, so they fit the original's setting. Each tests **one skill**, and each has a signature telegraph sound that can be recognized with the screen off.
+
+**Fight length target:** about 60–90 seconds for a first-time appearance, **[TBD: tune in playtests]**. A phase is ended by one clean hit in a vulnerability window (§7.1).
+
+**Appearance order.** Katsuro always opens at wave 10 and returns every third boss (waves 10, 40, 70 and so on). The other five fill the remaining slots in a shuffled order that shows every one of them before any repeats.
+
+| Boss | Type | Tests | Zone | Evolves? |
+|---|---|---|---|---|
+| Katsuro | Standard Duel | Reading dashes, Ink Step | Shrine Heights (top arena) | **Yes** |
+| The Debt Collector | Standard Duel | Deflecting and gun reading | Neon Plaza | No |
+| The Hunter | Roaming | Awareness and positioning | Rooftop Signage, Underpass Canals, Hidden Network | **Yes** |
+| The Crimson Kite | Roaming | Vertical movement | Rooftop Signage and Shrine Heights | No |
+| The Demolisher | Arena-shifting | Route planning | Rooftop Signage | **Yes** |
+| The Floodgate Warden | Arena-shifting | Timing and rhythm | Underpass Canals | No |
+
+---
+
+#### Katsuro, the Nemesis
+
+*Standard Duel · Tests: reading dashes and Ink Step · Evolves*
+
+The original boss. He stalks Akane across Mega-Tokyo and appears whenever the Yakuza's patience runs out. He is a swordsman first, and his dashes are his whole language.
+
+- **Look:** a lean silhouette in a dark coat. His accent color is a hot red slash trail. His sword drags a line of ink behind it.
+- **Telegraph:** a red ink line shows each dash path, and a low drum hit marks the commit.
+- **Arena:** the open top of Shrine Heights, with little cover, so the fight is purely about dashes and spacing.
+
+**Phases and windows**
+
+1. **Phase 1, the Duelist.** Single dashes and slashes. *Window:* he skids to a stop after a missed dash.
+2. **Phase 2, the Gunslinger** (from his second appearance). Adds a pistol between dashes. *Window:* after he reloads, or after a **perfect Ink Step** through a dash, which staggers him.
+3. **Phase 3, the Master** (from his third appearance). A rapid multi-dash that ends in a heavy slash. *Window:* the long recovery after the final slash.
+
+**Evolution across appearances in a run**
+
+| Appearance | Wave | What he has |
+|---|---|---|
+| 1st | 10 | Two phases: single dashes, and faster dashes. No gun |
+| 2nd | 40 | Adds the pistol phase |
+| 3rd | 70 | Adds the multi-dash finisher |
+| 4th and later | 100+ | All moves, with tighter windows and combos that chain the three phases in new orders |
+
+**Why it works:** each dash has a fixed, learnable timing, so the fight is a rhythm duel. It is the cleanest Ink Step test in the game. Katsuro never cheats the telegraph rules, because that is what makes the nemesis fight fair.
+
+---
+
+#### The Debt Collector
+
+*Standard Duel · Tests: deflecting and gun reading · Does not evolve*
+
+A loan-shark enforcer in a long coat with a ledger tablet, who never shows up to a fight without a collection list. His rifle-arm fires numbered rounds, and every shot is "owed".
+
+- **Look:** a heavy coat, a floating ledger drone, a cybernetic arm cannon. Accent color: gold coin-yellow, used only for his bullets and telegraphs.
+- **Telegraph:** a coin-spin sound and a yellow ink line show where each shot lands.
+- **Arena:** the Neon Plaza, whose stalls give the player cover and sightlines.
+
+**Phases and windows**
+
+1. **Phase 1, Interest.** Slow shots in fan patterns. Deflecting a shot back at him staggers him. *Window:* a deflected shot hits him, or he reloads (a 2-second cylinder spin).
+2. **Phase 2, Collection.** Adds marked floor tiles that explode after a delay and drones that fire crossing lines. *Window:* after the drones are cut down, he steps back to recalculate.
+3. **Phase 3, Default.** A full-screen barrage of numbered shots in a readable rhythm. *Window:* the pause when he empties his ledger.
+
+**Tested skill:** deflecting and reading bullet lines. A **Rebi** katana makes deflection forgiving, while other loadouts need to dodge more. The **Double Barrel** or **Magnum** can punish his reload.
+
+**Why it works:** it is a ranged duel that rewards the sword's deflect, so it doesn't force players to rely on the gun.
+
+---
+
+#### The Hunter
+
+*Roaming · Tests: awareness and positioning · Evolves*
+
+A cloaked Cyber Ninja elite hired to end Akane quietly. There's no arena. He stalks her across the map and decides when to strike.
+
+- **Look:** a nearly invisible silhouette, shimmering cloak lines, a thin wire-whip. Accent color: pale violet, used only for his cloak flicker and strikes.
+- **Telegraph:** an audio whisper and a shimmer in the direction he is coming from, a clear half-second before a strike. Directional audio is **required** for this fight to be fair.
+- **Zones:** roams across the Rooftop Signage, Underpass Canals and Hidden Network. Does not enter Shrine Heights.
+
+**Behavior and windows**
+
+1. **Phase 1, Stalk.** He cloaks, trails Akane, and lunges from behind. *Window:* after a missed lunge, he is stuck in a recovery pose for about 1 second.
+2. **Phase 2, Decoys.** He leaves cloaked decoys that also lunge. *Window:* hitting the real one during its recovery, or revealing him with an **EMP**.
+3. **Phase 3, Cornered.** He stops hiding and fights in the open, with wire sweeps that cut off routes. *Window:* the end of each wire sweep.
+
+**Evolution across appearances in a run**
+
+| Appearance | What he adds |
+|---|---|
+| 1st | Stalking and lunges |
+| 2nd | **Wire traps** strung across ziplines and corridors, which cut ziplines when triggered |
+| 3rd and later | **Spotter drones** that reveal Akane's position anywhere on the map, forcing her to destroy them |
+
+**Tested skill:** staying aware and using the whole map. The best answers are the **Hologram Decoy**, **Sumi Bomb**, **EMP** and good routes through the Hidden Network.
+
+**Why it works:** most bosses ask you to fight in an arena. The Hunter turns the map into a hunting ground and forces the player to use it.
+
+---
+
+#### The Crimson Kite
+
+*Roaming · Tests: vertical movement · Does not evolve*
+
+A Yakuza-owned combat drone-mech piloted remotely from a safe room. It rules the air above the rooftops, and ground players are targets.
+
+- **Look:** a red-and-white winged frame, long rotor blades like brush strokes. Accent color: crimson, used only for dive lines and its core.
+- **Telegraph:** a rising whine, then a red ink line drawn from the sky to the target spot. The line holds for a fixed duration before the dive.
+- **Zones:** Rooftop Signage and Shrine Heights.
+
+**Phases and windows**
+
+1. **Phase 1, Strafing.** Dives along telegraphed lines. After each dive it crashes briefly into the roof. *Window:* the crash stagger, when its core is exposed to a sword or gun hit.
+2. **Phase 2, Perch.** Perches on signage and drops mines and small drones. *Window:* when it lands to reload, at close range, reachable with a **Grapple Anchor**, **Updraft Fan** or **Geta Springs**.
+3. **Phase 3, Storm.** Rapid dives across the whole map in readable lines. *Window:* the final dive leaves a long crash that opens its core.
+
+**Tested skill:** going vertical. Anyone without a vertical tool must use ziplines, climbs and the environment, so the fight is winnable with any loadout.
+
+**Why it works:** it makes the new map's verticality matter in a boss fight.
+
+---
+
+#### The Demolisher
+
+*Arena-shifting · Tests: route planning · Evolves*
+
+A demolition-crew boss who operates a wrecking rig mounted on a crane. He's tearing the Rooftop Signage zone down to flush Akane out.
+
+- **Look:** a heavy exo-suit pilot in a crane cab, a swinging wrecking ball on a chain. Accent color: hazard orange, used only for impact zones and the ball.
+- **Telegraph:** a warning klaxon, an orange ink circle on the ground, and a chain-tension creak before each swing.
+- **Zone:** the Rooftop Signage, the main zipline network.
+
+**Phases and windows**
+
+1. **Phase 1, Teardown.** Wrecking-ball swings that destroy roof sections. *Window:* the ball embeds itself in the roof, exposing the cab to a sword or gun hit.
+2. **Phase 2, Collapse.** Collapses entire platforms and cuts ziplines, so Akane must find new routes. *Window:* the crane arm lowers to reload, if Akane can reach the cab by zipline.
+3. **Phase 3, Last Swing.** The ground is mostly gone. Wide swings across what's left, readable and fast. *Window:* the arm stuck after a wide miss.
+
+**Persistent map damage:** destroyed rooftops **stay broken for the rest of the run**, which opens some routes and closes others. Every route must keep the map connected (see risks).
+
+**Evolution across appearances in a run**
+
+| Appearance | What he adds |
+|---|---|
+| 1st | Wrecking ball and roof collapses |
+| 2nd | Adds a **grabber claw** that pulls ziplines down and drags Akane toward the ball |
+| 3rd and later | Adds **rebuilt hazard platforms**: he drops scaffolding that is intentionally unstable |
+
+**Tested skill:** reading the terrain and planning the next two moves. It is the strongest fight for players who like exploring.
+
+**Why it works:** it makes the map itself a boss, and its persistent damage shows the player that their run is changing the world.
+
+---
+
+#### The Floodgate Warden
+
+*Arena-shifting · Tests: timing and rhythm · Does not evolve*
+
+The keeper of the old floodgates under the district, who sells control of the canals to the Yakuza. He floods the Underpass to drown anyone who trespasses.
+
+- **Look:** a bulky figure in a waterproof exo-rig, a pump-cannon, and a tide gauge on his chest. Accent color: deep teal, used only for the water level and his gauge.
+- **Telegraph:** a rising bell tone, a teal wave line, and a visible water gauge, all showing the next tide.
+- **Zone:** the Underpass Canals.
+
+**Phases and windows**
+
+1. **Phase 1, High Tide.** The canal floods and drains in a fixed, readable rhythm. Water kills on contact when it's too deep. Slides and high routes avoid it. *Window:* during the drain, when his pump station is exposed.
+2. **Phase 2, Undertow.** Adds currents that push Akane and floating debris to ride. *Window:* between two currents, when he pauses to recharge.
+3. **Phase 3, Flood Gates.** The tide cycles faster, and gates open and close to reshape routes. *Window:* the moment the gates all close.
+
+**Tested skill:** learning a rhythm and moving through changing terrain on time. The **Geta Springs** and **Rail Skates** boots help, and the **Updraft Fan** opens new high routes.
+
+**Why it works:** it's a puzzle-like fight where the boss is almost passive, and the pace comes from the environment.
+
+---
+
+#### Cross-boss design checks
+
+- **Coverage:** between them the bosses test reading (Katsuro), deflecting (Debt Collector), awareness (Hunter), vertical movement (Kite), route planning (Demolisher) and rhythm (Warden). No two bosses test the same skill.
+- **Loadout fairness:** every boss has at least two valid ways to land a hit, and none requires a specific katana, gun or gadget.
+- **Telegraph audit:** each boss's accent color is used only for its own attacks, and each has a distinct audio motif.
+- **Map integrity:** any persistent map damage must preserve at least two routes between every pair of zones **[TBD: needs level design review]**.
 
 ---
 
@@ -527,6 +711,8 @@ There is no campaign. Story is delivered lightly, with **light continuity** from
 | Platforms | PC and Nintendo Switch |
 | Input | Gamepad-first, with keyboard and mouse equally satisfying |
 | Boss types | Roaming, arena-shifting and standard duel |
+| Boss tone | Grounded Yakuza cyberpunk, with each boss testing one skill |
+| Boss evolution | Only Katsuro, the Hunter and the Demolisher evolve across appearances in a run. Evolution resets each run |
 | Combat toolkit | Original five slots (katana, gun, gadget, boots, cigarette), remixed: 7 katanas, 6 guns, 11 gadgets (one slot), 4 boots |
 | Progression | No power progression. Items unlock as sidegrades through mastery challenges |
 | Gadgets | One slot, 11 gadgets across four families (weapon augments, traversal, AI manipulation, human shield synergy), with 3 oddballs |

@@ -42,6 +42,7 @@ Companion to [akane-ii-design.md](akane-ii-design.md) (§9 Story and Presentatio
 ### Katsuro (the Nemesis)
 
 - **Rebuilt and obsessed.** Within this one night, the Yakuza's field engineers rebuild him with cybernetics each time he is beaten, and he **remembers every defeat.** His evolution across a run is the story: he is learning Akane.
+- **The rebuilds are a noir conceit.** A man rebuilt within hours, again and again, is meant to read as myth, not engineering. The text never explains the mechanics, and nobody asks.
 - He has no stated personal tie to her. That keeps him compatible with the original.
 - In text he is treated like a force of nature: patient, relentless, and a little sad.
 

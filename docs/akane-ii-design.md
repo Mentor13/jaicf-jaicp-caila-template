@@ -881,6 +881,7 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | Destruction | Broad, in tiers: indestructible structure (including at least two cover pieces per space), major destructibles that stay broken for the run, and decor. Route connectivity is built on the structural tier only |
 | Secrets | All 12 always available. Score rewards repeat each run, cosmetics and lore are one-time. Hints get subtler as the player finds more |
 | Win state | None. The game stays endless, with story beats at waves 25, 50, 75 and 100 and a rotation of short beats after 100 |
+| Katsuro's rebuilds | A deliberate noir conceit. Never explained mechanically, in a one-night setting |
 | Setting and timing | 2121, the same night as the first game, continuing after the Last Stand. The whole game is one night |
 | Night clock | The night deepens across waves (late night, midnight, small hours, before dawn), and dawn never comes. Baseline weather is light rain |
 | Original canon | Confirmed: the original has no definitive ending, and Akane is alive. The story says she survived, refers to the Last Stand only as "the Last Stand" or "earlier tonight," and invents nothing more |

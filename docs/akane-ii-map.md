@@ -445,7 +445,8 @@ Occasional, telegraphed environmental events add variety. Each is announced abou
 - Events happen roughly **every 6-8 waves,** starting at wave 7.
 - Events **never occur on boss waves or elite events,** and never overlap each other.
 - The wave director picks events without repeating until all have been seen.
-- Events can be turned off with an **accessibility toggle** that also removes the score bonus tied to them, if any **[TBD]**.
+- Events carry **no score bonus.** They exist to change how the map plays, not to reward surviving them, so the accessibility toggle that turns them off costs players nothing on the leaderboards.
+- Events can be turned off with an **accessibility toggle.**
 
 ---
 
@@ -616,7 +617,7 @@ The graybox is complete when all of these hold (for level designers and QA):
 
 - [ ] Zone wake-up schedule (§8.2): keep, change, or remove?
 - [ ] Accent hue collisions with boss colors: art review.
-- [ ] Event frequency and whether to give them a score bonus.
+- [ ] Event frequency (tune in playtests).
 - [ ] Exact map scale and crossing times (graybox).
 - [ ] Heat values and effects (tune).
 - [ ] Budgets for destructibles and debris (Switch tests).

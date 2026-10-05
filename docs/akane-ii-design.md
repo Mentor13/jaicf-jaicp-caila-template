@@ -809,7 +809,7 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | Map scale and camera | About 6 x 5 screens, with a mid-zoom camera (about one screen plus look-ahead) |
 | Map variation | Fixed geometry every run. Variety comes from waves, spawns, events and boss damage |
 | Navigation | Optional minimap, off by default. Landmarks are the primary navigation |
-| Environmental events | Three scripted, telegraphed events (Rain Shower, Blackout, Canal Surge) about every 6-8 waves from wave 7 |
+| Environmental events | Three scripted, telegraphed events (Rain Shower, Blackout, Canal Surge) about every 6-8 waves from wave 7. No score bonus, and they can be turned off in accessibility options |
 | Hazards | Falls are always safe. A few marked, rhythmic lethal hazards only |
 | Anti-camping | Zone heat: staying in a zone redistributes the wave's spawns toward it, without adding budget |
 | Destruction | Broad, in tiers: indestructible structure (including at least two cover pieces per space), major destructibles that stay broken for the run, and decor. Route connectivity is built on the structural tier only |

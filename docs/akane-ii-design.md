@@ -2,7 +2,7 @@
 
 **Studio:** Ludic Studios
 **Protagonist:** Sugahara Akane
-**Status:** Draft v1.3 (pre-production)
+**Status:** Draft v1.4 (pre-production)
 **Scope:** Design only. No implementation is covered here.
 
 > **Companion documents** (detail for the sections below):
@@ -45,7 +45,7 @@ Appendices: [A. Decisions Log](#appendix-a-decisions-log) · [B. Original-Game V
 
 ## 1. Art Direction
 
-A highly unique pixel art style that blends **Japanese ink wash (sumi-e)** with **modern pixel sprite animation**, with some inspiration from *Dead Cells*. Production details (a 640 x 360 base resolution, Akane at about 48 px, hand-drawn sprites with brush-stroke shading, role-based enemy silhouettes, and color rules) are in the [Visual Briefs](akane-ii-visual-briefs.md).
+A highly unique pixel art style that blends **Japanese ink wash (sumi-e)** with **modern pixel sprite animation**, with some inspiration from *Dead Cells*. Production details (a 640 x 360 base resolution, Akane at about 48 px, hand-drawn sprites with brush-stroke shading, role-based enemy silhouettes, and color rules) are in the [Visual Briefs](akane-ii-visual-briefs.md), including the environment quality bar taken from *Dead Cells* (dynamic lighting with hand-drawn normal maps, gradient-map color grading, layered parallax, fake volumetrics and dense particles).
 
 **Goals**
 
@@ -890,6 +890,7 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | Villain and copy | Oyabun Tsukumo confirmed. Text register is dry noir with a little bite. Tsukumo's respect for Akane grows across the four beats. The wave 100 beat is just the name and the confrontation. Item lines are wry one-liners. Lore fragments mix logs, notes and graffiti. All text is in the Copy Deck |
 | Dojo tutorial | Framed as a flashback to the dojo, as the original's was. The Dojo Memory secret is a lesson about waiting |
 | Visual production | Base resolution 640 x 360, Akane about 48 px tall. Hand-drawn pixel sprites with brush-stroke shading. Enemies are grouped by role shape with a shared Yakuza identity. Boss scale varies by boss. Regular-enemy telegraphs use vermilion and white, and each boss has its own accent color |
+| Environment quality | Take *Dead Cells'* environment quality bar, not its 3D-to-2D animation pipeline: dynamic lighting with hand-drawn normal maps, gradient maps for zone color and the night clock, 4 parallax layers (3 on Switch), fake volumetrics, dense particles and wet reflections. Telegraphs and hazards stay on an unlit layer so lighting never hurts readability |
 | Audio production | Layered adaptive stems with a motif per zone. A unique theme per boss with phase layers. Tactile organic SFX with a cyber edge. Non-verbal vocals only. Telegraph, rear-threat and boss cues are top priority in the mix |
 | Win state | None. The game stays endless, with story beats at waves 25, 50, 75 and 100 and a rotation of short beats after 100 |
 | Katsuro's rebuilds | A deliberate noir conceit. Never explained mechanically, in a one-night setting |

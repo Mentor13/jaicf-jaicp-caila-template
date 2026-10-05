@@ -14,6 +14,7 @@ Companion to [akane-ii-design.md](akane-ii-design.md) (§1 Art Direction). Brief
 6. [Effects and UI visuals](#6-effects-and-ui-visuals)
 7. [Animation guidelines](#7-animation-guidelines)
 8. [Asset inventory](#8-asset-inventory)
+9. [Environment quality: lighting, volumetrics and particles](#9-environment-quality-lighting-volumetrics-and-particles)
 
 ---
 
@@ -27,7 +28,7 @@ Companion to [akane-ii-design.md](akane-ii-design.md) (§1 Art Direction). Brief
 | Akane's height | About **48 px** |
 | Standard enemies | 40-56 px tall (Tank about 72 px) |
 | Bosses | Varied by boss (see §4), from human-scale to about 4x |
-| Production method | **Hand-drawn pixel sprites** with brush-stroke shading |
+| Production method | **Hand-drawn pixel sprites** with brush-stroke shading, lit by a dynamic lighting system (see §9) |
 | Frame rate | 60 FPS gameplay. Sprite animation at 12-24 frames per second of art, with smooth timing |
 
 ### 1.2 The look
@@ -265,8 +266,99 @@ Rough counts for scoping (animation sets, not individual frames).
 | Named elites | 8 | Base sprite plus markers and one extra animation each |
 | Modifier overlays | 5 | Reused across enemies |
 | Bosses | 6 | Katsuro has 6 tier looks. The environmental bosses are large multi-part sprites |
-| Zone tilesets and backdrops | 5 | Plus lighting bands for the night clock |
+| Zone tilesets and backdrops | 5 | Grayscale albedo, hand-drawn normal maps, emissive masks and gradient maps. The night clock is a gradient-map set, not extra art |
 | Destructible sets | About 15 object types | With broken states |
 | Effects | About 25 distinct effects | See §6 |
 | UI / HUD | About 30 elements | Brush-drawn |
 | Story beat and codex images | 4 beat silhouettes, Dojo Memory (about 8 images) | Ink illustrations |
+
+---
+
+## 9. Environment quality: lighting, volumetrics and particles
+
+*Dead Cells* sets the bar for how a 2D pixel game can look and feel: its environments are lit, layered, foggy and full of moving particles, so a flat 2D scene reads as a real space. We take that **quality bar** (but not the 3D-to-2D animation pipeline, see §1.1). Our rainy neon ink-wash night is a very good fit: wet surfaces, glowing signs, steam, mist and drifting ink all benefit from this treatment.
+
+**What *Dead Cells* does** (from published interviews and write-ups; the detailed articles could not be opened, so this is based on summaries)
+
+- **Hand-drawn normal maps** for backgrounds and decorations, so a **dynamic 3D-style lighting system** lights pixel art from the correct direction while respecting base colors. Normal maps are drawn by hand, which also lets artists emphasize volumes and improve background readability.
+- **Gradient maps** over grayscale parallax art, so changing one gradient map re-colors a whole biome without redrawing.
+- **Parallax:** about four layers of background, with distant architecture fading into fog, plus **foreground clouds or fog** for depth.
+- **Density of the air:** constant fog and particles moving in front of the camera, with biome-specific variables for lighting color, smoke, water, mist and vegetation density.
+- **Analogous palettes** to add depth, with a saturated palette and a strong, coherent architectural theme.
+- **Combat feedback:** many particles, hit-stop (a one-frame freeze on strong hits, followed by a slow-down) and other fighting-game techniques.
+
+### 9.1 What we adopt, adapted to Akane II
+
+| Technique | How we use it |
+|---|---|
+| **Dynamic lighting with hand-drawn normal maps** | All environment art (tiles, props, backgrounds) is painted as grayscale albedo plus a **hand-drawn normal map** and an **emissive mask.** Lights: neon signs, lanterns, stall lamps, fluorescent strips, gunfire and explosion flashes, and Akane's Flow aura |
+| **Gradient maps for color** | Grayscale parallax and tile art, colored by a **gradient map per zone.** The same gradient system drives the **night clock** (late night to pre-dawn) and the Blackout event, so lighting bands cost almost no extra art |
+| **Layered parallax** | **4 background layers on PC, 3 on Switch,** from distant skyline in fog to near silhouettes, plus **foreground mist and rain layers** that pass in front of the action at low opacity |
+| **Fake volumetrics** | Neon haze cones, searchlight shafts, steam and mist banks: additive, noise-textured light shapes and fog sprites that react to lights. Not a true volumetric simulation |
+| **Air density and particles** | Rain (several depths), mist, steam, embers, dust, paper scraps, neon glints and moths around lights. Density is a per-zone variable, and rises or falls with the weather and the night clock |
+| **Wet surfaces** | Reflections of neon on wet ground: a mirrored, distorted strip with specular from the normal map. Puddles ripple when Akane or enemies land |
+| **Combat feedback** | Hit-stop (short, consistent, tunable), ink-splash particles on kills, brief slow-down on Ink Step, and screen shake (all adjustable in accessibility options) |
+| **Post-processing** | Subtle bloom on emissives, vignette, a slight paper-and-ink grain, and a brief chromatic shift on strong hits. All render at the **base resolution** to keep pixels crisp |
+
+### 9.2 Ink-wash specific effects
+
+These are what make the environment ours, not a *Dead Cells* copy:
+
+- **Bokashi fog:** depth fog drawn as soft ink-wash gradients (graded washes), so far layers dissolve like a brush painting.
+- **Ink in water:** ink drifts and blooms in puddles and canal water, and bleeds slowly when something lands in it.
+- **Brush-stroke rain:** rain streaks drawn as thin brush strokes, in a few depths.
+- **Ink dust on destruction:** broken objects release ink-colored dust and a short wash splash.
+- **Paper and lantern light:** warm light through paper screens and lanterns in Shrine Heights and the Old Dojo, which contrasts with the cold neon elsewhere.
+- **Negative space (*ma*):** some backgrounds deliberately leave empty washed areas, so the busy foreground reads clearly.
+
+### 9.3 Zone lighting recipes
+
+| Zone | Key lights | Volumetrics and air | Surfaces |
+|---|---|---|---|
+| **Neon Plaza** | Pink and warm neon signs, stall lamps, vending machine glow | Steam from stalls, haze under the fish sign, backlit rain | Wet ground reflecting neon, puddles |
+| **Rooftop Signage** | Electric blue sign spill, red warning lights, sweeping searchlights | Wind-driven rain, cable sparks, shafts from signs | Wet metal and glass, sign reflections |
+| **Shrine Heights** | Warm lanterns, a cold moon rim light, jade accents | Low mist, drifting paper scraps, soft rain | Wet stone, lantern glow on the torii |
+| **Underpass Canals** | Teal lamp strips, flickering fluorescents | Dripping, steam from pipes, flood haze during Canal Surge | Water with ink bloom, wet concrete |
+| **Hidden Network** | Dim fluorescent, server lights, a few warm bulbs | Dust motes, cable sparks | Metal grates, flickering panels |
+
+### 9.4 Lighting rules for gameplay
+
+Environment quality must never cost readability.
+
+- **Telegraphs, hazard marks and Akane's silhouette are on an unlit, emissive layer.** Lighting, fog and bloom never dim or hide them.
+- **Fog and particle density have a readability cap** in combat areas, and foreground layers stay low-opacity.
+- **The night clock and the Blackout event** change the gradient maps and light levels, but must keep telegraph and walkable-surface contrast.
+- **Lights from threats:** boss attacks and enemy telegraphs may add small glows in their own colors, but **never light the scene in a way that mimics another enemy's color.**
+- **Hit-stop and shake** follow the accessibility sliders, and never mute audio.
+
+### 9.5 Characters and normal maps
+
+- **Akane and the six bosses:** hand-drawn normal maps, so they take light from neon and lanterns convincingly.
+- **Standard enemies:** a lighter treatment (rim light and a tint from the nearest strong light), with no full normal maps, to keep the workload and the Switch budget in check.
+- **Named elites** use their base enemy's treatment.
+
+### 9.6 Budgets (starting values)
+
+| Budget | PC | Switch |
+|---|---|---|
+| Dynamic lights per screen | About 12 | About 6 |
+| Baked or static lights | Most neon and signage | Most neon and signage |
+| Parallax layers | 4 | 3 |
+| Particles on screen | About 800 | About 300 |
+| Post-processing | Bloom, vignette, grain | Half-resolution bloom, vignette |
+| Reflections | Per-strip reflections on wet ground | Reduced to key surfaces |
+
+### 9.7 Production notes
+
+- Each environment asset ships as: **grayscale albedo, normal map, emissive mask** (and an optional reflection mask).
+- One **lighting artist role** owns light placement per zone, the gradient maps and the night clock.
+- Hand-drawn normal maps are slower than generated ones, but they are what gave *Dead Cells* its look, so we budget for them on environments, Akane and bosses.
+- A **lighting pass** is part of the graybox acceptance: readability checks in each lighting band, in rain, and with Blackout.
+
+**Sources**
+
+- [Interview With the Developers of Dead Cells (80.lv)](https://80.lv/articles/interview-with-the-developers-of-dead-cells)
+- [Dead Cells: Your Next Favorite Pixelart Game (80.lv)](https://80.lv/articles/dead-cells-your-next-favorite-pixelart-game)
+- [Art Design Deep Dive: Giving back colors to cryptic worlds in Dead Cells (Game Developer)](https://www.gamedeveloper.com/production/art-design-deep-dive-giving-back-colors-to-cryptic-worlds-in-i-dead-cells-i-)
+- [Art Design Deep Dive: Using a 3D pipeline for 2D animation in Dead Cells (Game Developer)](https://www.gamedeveloper.com/production/art-design-deep-dive-using-a-3d-pipeline-for-2d-animation-in-i-dead-cells-i-)
+- [The Visual Effects of Dead Cells (Unity forum)](https://discussions.unity.com/t/the-visual-effects-of-dead-cells/689349)

@@ -524,6 +524,8 @@ Twelve secrets. All rewards are **non-power** (score, cosmetics, lore). All 12 a
 
 ## 14. Art, audio and visual language
 
+**Lighting and atmosphere.** Environment lighting, fog, particles and reflections follow the quality bar in the [Visual Briefs](akane-ii-visual-briefs.md) §9 (dynamic lighting with normal maps, gradient maps for zone color and the night clock, layered parallax, wet reflections).
+
 **Night and weather.** The map is a rainy 2121 night, with light rain as the baseline and the lighting deepening across wave bands (late night, midnight, small hours, before dawn, and then a night that never ends). Wet surfaces add reflections of neon. Lighting bands never reduce the contrast of walkable surfaces, hazard marks or telegraphs.
 
 ### 14.1 Zone accent hues

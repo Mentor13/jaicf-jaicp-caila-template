@@ -2,7 +2,7 @@
 
 **Studio:** Ludic Studios
 **Protagonist:** Sugahara Akane
-**Status:** Draft v1.8 (pre-production)
+**Status:** Draft v1.9 (pre-production)
 **Scope:** Design only. No implementation is covered here.
 
 > **Companion documents** (detail for the sections below):
@@ -11,7 +11,7 @@
 > - [Map Design](akane-ii-map.md): the full map write-up: zones, routes, traversal, spawns and zone heat, hazards, destruction, events, secrets, navigation and boss arenas.
 > - [Boss Move Lists](akane-ii-bosses.md): attacks, windows, par times and intro and kill moments.
 > - [Run, Scoring, Onboarding, HUD and Narrative](akane-ii-run-ui-narrative.md).
-> - [Visual Briefs](akane-ii-visual-briefs.md): sprite scale, color rules, and briefs for Akane, the 16 enemies, the 6 bosses, the zones and effects.
+> - [Visual Briefs](akane-ii-visual-briefs.md): sprite scale, color rules, and briefs for Akane, the 16 enemies, the 6 bosses, the zones, effects and kill animations.
 > - [Audio Design](akane-ii-audio.md): adaptive music, boss themes, sound effects, vocals, gameplay audio cues and the mix.
 > - [Copy Deck](akane-ii-copy-deck.md): the final draft of all player-facing story and flavor text.
 > - [Story, Endgame, Modes and Cosmetics](akane-ii-story-and-modes.md): the story premise and cast, milestone beats, Overdrive tiers, Boss Rush and Time Attack, and the cosmetics roster.
@@ -63,6 +63,7 @@ A highly unique pixel art style that blends **Japanese ink wash (sumi-e)** with 
 **Decided art rules**
 
 - **Night and rain:** the whole game is one rainy night in 2121. Lighting deepens with the wave band (see the story and modes document), and dawn never arrives. Zone hues and telegraphs must stay readable in every lighting band.
+- **Kill animations:** gore is bright red as in the original, with **full gore only.** Sword kills use a procedural slice along the real cut, gun kills are headshots, and kills never lock Akane (no finishers). Full details are in the [Visual Briefs](akane-ii-visual-briefs.md) §10.
 - **Ink effects:** *bold on kills, restrained elsewhere.* Kills get a satisfying ink splash. Hits and movement get subtle effects, so the combat plane stays readable in crowded waves and on Switch.
 - **Palette:** a **shared ink wash base** for the whole game, with **one accent hue per zone** (for example, neon pink for the Plaza and teal for the Canals). Zone accents must never clash with the reserved telegraph and boss accent colors.
 - **Cyberpunk and ink wash together:** the ink wash is **how Akane sees and remembers the city**. Neon and technology show through as bright ink accents. This also connects to the original's flashback ending and gives Ink Step and the ink effects a story reason.
@@ -660,8 +661,8 @@ A cloaked Cyber Ninja elite hired to end Akane quietly. There's no arena. He sta
 
 A Yakuza-owned combat drone-mech piloted remotely from a safe room. It rules the air above the rooftops, and ground players are targets.
 
-- **Look:** a red-and-white winged frame, long rotor blades like brush strokes. Accent color: crimson, used only for dive lines and its core.
-- **Telegraph:** a rising whine, then a red ink line drawn from the sky to the target spot. The line holds for a fixed duration before the dive.
+- **Look:** a red-and-white winged frame, long rotor blades like brush strokes. Accent color: **lime,** used only for dive lines and its core (red is reserved for gore and the logo).
+- **Telegraph:** a rising whine, then a lime ink line drawn from the sky to the target spot. The line holds for a fixed duration before the dive.
 - **Zones:** Rooftop Signage and Shrine Heights.
 
 **Phases and windows**
@@ -847,6 +848,7 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 8. **Original Switch performance.** A large vertical map with many AI-driven enemies and broad destruction is demanding on 4 GB of RAM. *Mitigation:* the original Switch is the floor, with budget tiers, performance budgets from day one, and simple AI LODs for distant enemies. Switch 2 has far more headroom.
 9. **Input parity.** Mouse aiming can out-perform stick aiming. *Mitigation:* tune enemy telegraphs and windows to be forgiving enough for both, and watch leaderboard data.
 10. **Hybrid wave timer.** Stacking waves on stragglers may overwhelm players. *Mitigation:* the straggler marking, and a cap on total active enemies.
+11. **Rating and storefront compliance.** Full red gore with no gore setting may limit placements, age ratings or trailer rules on some storefronts. *Mitigation:* check each platform's content rules early, and keep the option to add a gore setting later without touching gameplay.
 
 ### Open questions
 
@@ -905,8 +907,13 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | Secrets | All 12 always available. Score rewards repeat each run, cosmetics and lore are one-time. Hints get subtler as the player finds more |
 | Villain and copy | Oyabun Tsukumo confirmed. Text register is dry noir with a little bite. Tsukumo's respect for Akane grows across the four beats. The wave 100 beat is just the name and the confrontation. Item lines are wry one-liners. Lore fragments mix logs, notes and graffiti. All text is in the Copy Deck |
 | Dojo tutorial | Framed as a flashback to the dojo, as the original's was. The Dojo Memory secret is a lesson about waiting |
-| Visual production | Base resolution 640 x 360, Akane about 48 px tall. Hand-drawn pixel sprites with brush-stroke shading. Enemies are grouped by role shape with a shared Yakuza identity. Boss scale varies by boss. Regular-enemy telegraphs use vermilion and white, and each boss has its own accent color |
+| Visual production | Base resolution 640 x 360, Akane about 48 px tall. Hand-drawn pixel sprites with brush-stroke shading. Enemies are grouped by role shape with a shared Yakuza identity. Boss scale varies by boss. Regular-enemy telegraphs are white-hot (white with a black ink outline), red belongs to gore and the logo, and each boss has its own accent color (the Kite's is lime) |
 | Environment quality | Take *Dead Cells'* environment quality bar, not its 3D-to-2D animation pipeline: dynamic lighting with hand-drawn normal maps, gradient maps for zone color and the night clock, 4 parallax layers (3 on Switch), fake volumetrics, dense particles and wet reflections. Telegraphs and hazards stay on an unlit layer so lighting never hurts readability |
+| Kill animations | No finishers: kills never lock Akane. Sword kills use a procedural slice along the real cut angle. Gun kills are headshots (as in the original), with a head reaction and headgear gag per enemy. Context kills, enemy-specific beats and a rare gag about 1 kill in 20. Hit-stop is 2-3 frames |
+| Gore and stains | Bright red gore as in the original, full gore only. Stains are painted on the background and rinsed away by the rain over 1-2 minutes, with pooled caps |
+| Telegraph color change | Regular-enemy telegraphs changed from vermilion-and-white to **white-hot** so that red belongs to gore and the logo. Boss accents stay, except the Crimson Kite's, which is now lime |
+| Kill sound ladder | Kill sounds step up a musical scale with the Flow combo, in the score's key, and reset when the combo breaks |
+| Kill effects (cosmetic) | A small category of five alternate kill looks (Sakura, Glitch, Ash, Paper, Neon Ink), unlocked by milestones. Cosmetic only |
 | Audio production | Layered adaptive stems with a motif per zone. A unique theme per boss with phase layers. Tactile organic SFX with a cyber edge. Non-verbal vocals only. Telegraph, rear-threat and boss cues are top priority in the mix |
 | Win state | None. The game stays endless, with story beats at waves 25, 50, 75 and 100 and a rotation of short beats after 100 |
 | Katsuro's rebuilds | A deliberate noir conceit. Never explained mechanically, in a one-night setting |
@@ -916,7 +923,7 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | Akane's voice | Terse and dry, about 8 words per line at most, only at story beats |
 | Endgame | Overdrive tiers from wave 50 (stacking modifiers and combined events). Bosses gain moves by wave tier instead, with Tiers 5 and 6 at waves 150+ and 200+ |
 | Extra modes | Boss Rush and Time Attack, unlocked after defeating Katsuro once. No daily challenge |
-| Cosmetics | About 20 unlockable items in three categories, earned from beats, secrets, milestones and mode clears |
+| Cosmetics | About 25 unlockable items in four categories (outfits, sword trails, cigarette ink styles and kill effects), earned from beats, secrets, milestones and mode clears |
 | Zone wake-up | **Removed.** It created free camping spots. Replaced by spawn-follow |
 | Hue collisions | Low-saturation, static zone set dressing, plus dimming set-dressing accents during a boss fight if needed |
 | Frame rate | PC: uncapped option plus caps and vsync. Both Switches: a stable 60 FPS target. Simulation is a fixed 60 Hz step with render interpolation, so gameplay and leaderboards are identical at any frame rate |

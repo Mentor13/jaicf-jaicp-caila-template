@@ -2,7 +2,7 @@
 
 **Studio:** Ludic Studios
 **Protagonist:** Sugahara Akane
-**Status:** Draft v0.8 (pre-production)
+**Status:** Draft v0.9 (pre-production)
 **Scope:** Design only. No implementation is covered here.
 
 > **Companion documents** (detail for the sections below):
@@ -11,6 +11,7 @@
 > - [Map Design](akane-ii-map.md): the full map write-up: zones, routes, traversal, spawns and zone heat, hazards, destruction, events, secrets, navigation and boss arenas.
 > - [Boss Move Lists](akane-ii-bosses.md): attacks, windows, par times and intro and kill moments.
 > - [Run, Scoring, Onboarding, HUD and Narrative](akane-ii-run-ui-narrative.md).
+> - [Story, Endgame, Modes and Cosmetics](akane-ii-story-and-modes.md): the story premise and cast, milestone beats, Overdrive tiers, Boss Rush and Time Attack, and the cosmetics roster.
 >
 > Names for enemies, bosses, moves and zones are **working titles**. Items marked **[TBD]** need a decision or input from the team (several depend on the original *Akane*).
 >
@@ -359,6 +360,7 @@ Enemies arrive in **waves** across the whole map. The game is infinite, with dif
 ### 5.2 Spawning on a large map
 
 - Enemies **spawn out of sight** at spawn points in different zones and route toward the player. They never spawn in the player's view.
+- Every zone is live from wave 1, and spawns follow Akane (out of sight, within a short travel time), so no zone is a free camping spot. See the [Map Design](akane-ii-map.md) §8.
 - Spawn points are chosen to **encourage use of the whole map**. The game weights spawns away from the player's last N seconds of positions, so camping a corner is not optimal.
 - Wave composition draws from a **budget system**: each enemy type has a cost, and each wave has a budget. Higher waves unlock more expensive types.
 - **Pressure rules:** a cap on simultaneous active attackers (see §6.3) keeps fights fair even when there are many enemies.
@@ -700,8 +702,9 @@ There is no campaign. Story is delivered lightly, with **light continuity** from
 
 **Akane II continuity approach**
 
-- Akane II is set in **Mega-Tokyo some time after the Last Stand**, with remnants of the Yakuza and their cyber-enhanced enforcers still hunting her.
-- **Katsuro** returns as her Nemesis and the face of that pursuit.
+- Akane II is set in **Mega-Tokyo** in a district run by **Oyabun Tsukumo,** and Akane has come to **finish the fight.** The original's ending is ambiguous, so the story refers to "that night" and never states her fate.
+- **Katsuro** returns as her Nemesis: rebuilt by the Yakuza after every defeat, and obsessed with learning her. Tsukumo never appears in a fight and is revealed by name at wave 100.
+- Story beats play at waves 25, 50, 75 and 100. Details, cast, voice rules, Overdrive tiers, modes and cosmetics are in the [Story, Endgame, Modes and Cosmetics](akane-ii-story-and-modes.md) document.
 - New bosses are lieutenants or hired killers from the same network, so they reuse the setting without needing a new plot.
 - Story is told through short intro text, boss and enemy flavor text, environmental details and lore fragments found in secret rooms.
 - The ink wash style is the way Akane remembers and sees the city (see §1).
@@ -766,6 +769,7 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 - [ ] Tuning values: wave timers, special meter costs, vulnerability window lengths, performance budgets.
 - [ ] Map scale and crossing time (prototype).
 - [ ] Combo decay rate, the stand-still penalty, Flow thresholds and bonus values, and each boss's par time.
+- [ ] Story copy: final text for beats, the post-100 rotation and the Tsukumo reveal, plus confirming the original's ending (see the story and modes document §9).
 
 ---
 
@@ -814,6 +818,14 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | Anti-camping | Zone heat: staying in a zone redistributes the wave's spawns toward it, without adding budget |
 | Destruction | Broad, in tiers: indestructible structure (including at least two cover pieces per space), major destructibles that stay broken for the run, and decor. Route connectivity is built on the structural tier only |
 | Secrets | All 12 always available. Score rewards repeat each run, cosmetics and lore are one-time. Hints get subtler as the player finds more |
+| Win state | None. The game stays endless, with story beats at waves 25, 50, 75 and 100 and a rotation of short beats after 100 |
+| Original canon | Treated as ambiguous. The story refers to "that night" and never states Akane's fate |
+| Akane's voice | Terse and dry, about 8 words per line at most, only at story beats |
+| Endgame | Overdrive tiers from wave 50: stacking modifiers, combined events, and fifth and sixth-tier moves for the three evolving bosses |
+| Extra modes | Boss Rush and Time Attack, unlocked after defeating Katsuro once. No daily challenge |
+| Cosmetics | About 20 unlockable items in three categories, earned from beats, secrets, milestones and mode clears |
+| Zone wake-up | **Removed.** It created free camping spots. Replaced by spawn-follow |
+| Hue collisions | Low-saturation, static zone set dressing, plus dimming set-dressing accents during a boss fight if needed |
 | Platforms | PC and Nintendo Switch |
 | Input | Gamepad-first, with keyboard and mouse equally satisfying |
 | Boss types | Roaming, arena-shifting and standard duel |
@@ -823,7 +835,7 @@ HUD layout and onboarding are in the [Run, Scoring, Onboarding, HUD and Narrativ
 | Progression | No power progression. Items unlock as sidegrades through mastery challenges |
 | Gadgets | One slot, 11 gadgets across four families (weapon augments, traversal, AI manipulation, human shield synergy), with 3 oddballs |
 | Enemy roster | ~16 types, introduced progressively across arcade waves |
-| Story | Light continuity with the original. Katsuro returns as the Nemesis |
+| Story | Light continuity with the original. Akane's goal is to finish the fight against Oyabun Tsukumo, who never appears in a fight. Katsuro is the Nemesis, rebuilt and obsessed |
 
 ---
 

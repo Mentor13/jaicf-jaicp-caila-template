@@ -13,7 +13,7 @@ Companion to [akane-ii-design.md](akane-ii-design.md) (§4 The Arena Map). This 
 5. [Route graph](#5-route-graph)
 6. [Traversal systems](#6-traversal-systems)
 7. [Combat spaces and flanking](#7-combat-spaces-and-flanking)
-8. [Spawning, zone wake-up and zone heat](#8-spawning-zone-wake-up-and-zone-heat)
+8. [Spawning, spawn-follow and zone heat](#8-spawning-spawn-follow-and-zone-heat)
 9. [Environment: hazards, destruction and events](#9-environment-hazards-destruction-and-events)
 10. [Secrets](#10-secrets)
 11. [Navigation aids](#11-navigation-aids)
@@ -330,7 +330,7 @@ Updrafts are visible as upward ink streaks. Each launches Akane about 6-10 tiles
 
 ---
 
-## 8. Spawning, zone wake-up and zone heat
+## 8. Spawning, spawn-follow and zone heat
 
 ### 8.1 Spawn points
 
@@ -340,22 +340,18 @@ Enemies spawn **out of sight,** at least 12 tiles from Akane, and weighted away 
 |---|---|---|
 | Neon Plaza | 3 (north, west and east alleys) | 1 high anchor for Zipline Raiders (Z-D) |
 | Rooftop Signage | 3 (ladders, a helipad, a stairwell) | 2 high anchors (Z-B, Z-A) |
-| Shrine Heights | 1 (the approach stairs) | 1 perch for Snipers |
+| Shrine Heights | 2 (the approach stairs, and the back stairs from the maintenance shaft) | 1 perch for Snipers |
 | Underpass Canals | 3 (drain mouths) | none |
 | Hidden Network | 2 (vent exits) | 3 ambush nodes for Phantoms |
 
-### 8.2 Zone wake-up (proposal)
+### 8.2 Spawn-follow (every zone is always live)
 
-To teach the map gradually, the zones that receive spawns open up over the run. Akane can go anywhere at any time, but enemies only spawn in woken zones.
+Every zone can spawn enemies from wave 1. There is **no sleeping zone,** because a sleeping zone would be a free camping spot.
 
-| Waves | Active spawn zones |
-|---|---|
-| 1-4 | Neon Plaza, Canals (west drain mouth only) |
-| 5-9 | Plaza, Canals, lower Rooftops |
-| 10-14 | All of the above, plus upper Rooftops and Shrine Heights |
-| 15+ | All zones, including the Hidden Network |
-
-**[TBD: review. This is my proposal, and it hasn't been confirmed.]**
+- **Spawn-follow rule:** each wave picks its spawn points from those that are **out of sight and within about 6-15 seconds of travel** from Akane, wherever she is. A player who runs to the top of the map is met at the top of the map.
+- **Every zone can host a full wave.** Each zone has at least two ground spawn points and one special spawn point, so the rule works everywhere (Shrine Heights has two ground spawns for this reason).
+- **Early game is taught by the enemy roster and wave size,** not by geography. Waves 1-9 introduce one new enemy per wave and use small budgets (see the enemy document), so the whole map is open but each wave is small and readable.
+- **Spawn zones are weighted by zone affinity** (§8.3) and **zone heat** (§8.4), not locked.
 
 ### 8.3 Zone affinity
 
@@ -615,8 +611,8 @@ The graybox is complete when all of these hold (for level designers and QA):
 
 **Open questions**
 
-- [ ] Zone wake-up schedule (§8.2): keep, change, or remove?
-- [ ] Accent hue collisions with boss colors: art review.
+- [x] Zone wake-up schedule: **removed** (it created free camping spots). Replaced by spawn-follow (§8.2).
+- [ ] Accent hue collisions with boss colors: the approach is decided (§14.1), art review confirms specific cases.
 - [ ] Event frequency (tune in playtests).
 - [ ] Exact map scale and crossing times (graybox).
 - [ ] Heat values and effects (tune).

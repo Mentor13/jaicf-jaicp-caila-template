@@ -14,7 +14,8 @@ Companion to [akane-ii-design.md](akane-ii-design.md) (§7 Bosses). Phase struct
 6. [The Crimson Kite](#6-the-crimson-kite)
 7. [The Demolisher](#7-the-demolisher)
 8. [The Floodgate Warden](#8-the-floodgate-warden)
-9. [Intro and kill moments](#9-intro-and-kill-moments)
+9. [Overdrive moves](#9-overdrive-moves-wave-75-and-wave-100)
+10. [Intro and kill moments](#10-intro-and-kill-moments)
 
 ---
 
@@ -183,21 +184,35 @@ A boss's par time is the **expected time per phase** for a competent first attem
 
 ---
 
-## 9. Intro and kill moments
+## 9. Overdrive moves (wave 75+ and wave 100+)
 
-### 9.1 Intro
+The three evolving bosses gain extra moves in the endgame (see the story and modes document, §6). Overdrive II (wave 75-99) adds the **fifth-tier** move, and Overdrive III (wave 100+) adds the **sixth-tier** move. Par times increase by 10% per tier.
+
+| Boss | Fifth-tier move | Sixth-tier move |
+|---|---|---|
+| **Katsuro** | **Twin Rivers:** two Seven Rivers paths drawn at once, with a shared safe gap | **Final Draw:** the full path is drawn in reverse after the strike, forcing a second read |
+| **The Hunter** | **Wire Web:** a net of wires strung across a zone, with a visible gap | **Silent Pair:** a decoy Hunter that lunges in sync with the real one |
+| **The Demolisher** | **Double Ball:** two wrecking balls with staggered swings | **Foundation Break:** a floor-wide collapse with a marked safe island |
+
+All new moves follow the usual telegraph rules (Heavy tier or longer), and each opens a normal vulnerability window.
+
+---
+
+## 10. Intro and kill moments
+
+### 10.1 Intro
 
 - The fight starts with a **2-second brush title card:** the boss's name and a one-line epithet. The player is in control the whole time.
 - Other enemies clear from the arena (they fade out in ink) before the card appears.
 - The boss's theme begins as the card fades.
 
-### 9.2 Kill moment
+### 10.2 Kill moment
 
 - The final phase-ending hit triggers a **freeze-frame ink slash** (0.4 s), then the boss dissolves into an ink splash.
 - The score tally appears briefly, then the usual breather begins.
 - Flow decay is reset (see main doc §3.8).
 
-### 9.3 Boss lines
+### 10.3 Boss lines
 
 | Boss | Epithet on the title card |
 |---|---|

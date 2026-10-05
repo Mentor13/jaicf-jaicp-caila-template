@@ -19,7 +19,7 @@ Companion to [akane-ii-design.md](akane-ii-design.md) (§5, §8, §9, §10).
 
 ### 1.1 Menu
 
-The main menu offers: **Arcade, Tutorial, Armory (loadout and unlock progress), Codex, Leaderboards, Options.** The player can go straight to Arcade without touching anything else.
+The main menu offers: **Arcade, Tutorial, Armory (loadout and unlock progress), Codex, Leaderboards, Options.** **Boss Rush** and **Time Attack** appear after the player defeats Katsuro once (see the story and modes document). The player can go straight to Arcade without touching anything else.
 
 ### 1.2 The run loop
 
@@ -213,8 +213,8 @@ Menus use the same brush-drawn identity: ink-stroke selection, a calm layout and
 
 ### 6.1 Intro card (shown at the first launch and available from the menu)
 
-> *Mega-Tokyo. The Last Stand is behind her, and the Yakuza are still counting.*
-> *Katsuro has been sent again. So have the others.*
+> *Mega-Tokyo, 2121. Whatever was settled that night, the Yakuza are still counting.*
+> *Oyabun Tsukumo owns this district. Katsuro has been sent again. So have the others.*
 > *Akane remembers the city in ink. She intends to leave it in ink as well.*
 
 ### 6.2 Enemy codex (draft entries)
@@ -259,7 +259,7 @@ Twelve short text pieces. Found in the secrets listed in the map spec. They read
 |---|---|---|
 | 1 | Koi Pond Wall | *"The old master taught three things: breathe, wait, cut. She learned the third first."* |
 | 2 | Pipe Whisper | *"Water remembers everything that was dropped into it. It gives back the heavy things first."* |
-| 3 | Server Room terminal 1 | *Log: "Contract 118. Subject: Sugahara A. Status: survived the Last Stand. Escalate."* |
+| 3 | Server Room terminal 1 | *Log: "Contract 118. Subject: Sugahara A. Status: active. Escalate. Authorized: T."* |
 | 4 | Server Room terminal 2 | *Log: "Katsuro reassigned. Third time. Second Pistol requisitioned."* |
 | 5 | Server Room terminal 3 | *Log: "Hunter requires no surveillance. He prefers to be the surveillance."* |
 | 6 | Server Room terminal 4 | *Log: "Dojo basement sealed after the Ishikawa incident. Do not reopen."* |
